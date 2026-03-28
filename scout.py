@@ -321,6 +321,18 @@ def win_pct(wins: int, losses: int) -> float:
     return wins / total if total > 0 else 0.5
 
 
+def _game_local_date(espn_date_str: str) -> str:
+    """Convert ESPN's UTC date string to the local calendar date (YYYY-MM-DD)."""
+    if not espn_date_str:
+        return date.today().isoformat()
+    try:
+        # ESPN format: "2026-03-28T02:30:00Z"
+        dt_utc = datetime.strptime(espn_date_str[:19], "%Y-%m-%dT%H:%M:%S").replace(tzinfo=timezone.utc)
+        return dt_utc.astimezone().date().isoformat()
+    except Exception:
+        return date.today().isoformat()
+
+
 def analyze_game(game: dict, dk_event: Optional[dict], sport: str, weights: dict) -> Optional[dict]:
     """
     Score each team using learned weights and produce a pick.
@@ -582,7 +594,7 @@ def analyze_game(game: dict, dk_event: Optional[dict], sport: str, weights: dict
         "ou_line":     ou_line,
         "ou_conf":     ou_conf,
         "result":      "pending",
-        "date":        date.today().isoformat(),
+        "date":        _game_local_date(game.get("date", "")),
         "event_id":    game.get("event_id"),
         "home_score":  None,
         "away_score":  None,
@@ -628,15 +640,12 @@ def update_results(record: dict):
     for pick in pending:
         event_id = pick.get("event_id")
         result_game = results_map.get(event_id)
-        if not result_game:
-            # Try matching by team names
-            for g in results_map.values():
-                if pick["home"] in g["home_team"] or pick["away"] in g["away_team"]:
-                    result_game = g
-                    break
 
         if not result_game:
-            log.warning(f"Could not find result for: {pick['game']}")
+            # Skip — never fall back to name matching across days.
+            # Same teams play back-to-back series (common in MLB) so name
+            # matching would silently grade tomorrow's picks against today's results.
+            log.info(f"  No result found for {pick['game']} (event {event_id}) — leaving pending.")
             continue
 
         pick["home_score"] = result_game["home_score"]
