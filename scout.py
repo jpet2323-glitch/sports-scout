@@ -40,8 +40,11 @@ SPORTS = {
     "NCAAB": {"espn": "basketball/mens-college-basketball",  "odds": "basketball_ncaab","dk_id": 92483},
 }
 
-# Min confidence score (0-100) to publish a pick
-MIN_CONFIDENCE = 58
+# Min confidence score (0-100) to surface a pick
+MIN_CONFIDENCE = 70
+# Hard caps — quality over quantity
+MAX_PICKS_TOTAL   = 5
+MAX_PICKS_PER_SPORT = 2
 
 # Default model weights (overridden by record.json after learning)
 DEFAULT_WEIGHTS = {
@@ -458,6 +461,8 @@ def analyze_game(game: dict, dk_event: Optional[dict], sport: str, weights: dict
         primary_pick = f"{game['home_team'] if h_score > a_score else game['away_team']} (stat edge)"
         primary_conf = min(50 + int(diff * 1.2), 80)
         pick_type    = "Stat Edge"
+        if primary_conf < MIN_CONFIDENCE:
+            return None  # Stat edge not strong enough
     else:
         return None  # No confident pick
 
@@ -648,8 +653,9 @@ def update_results(record: dict):
         outcome = "loss"  # default
 
         if pick["pick_type"] == "Moneyline":
-            won_team = result_game["home_team"] if home_won else result_game["away_team"]
-            if won_team.lower() in pick_text.lower():
+            # Check if the team we picked actually won — use stored home/away names
+            picking_home = pick.get("home", "").lower() in pick_text.lower()
+            if (picking_home and home_won) or (not picking_home and away_won):
                 outcome = "win"
         elif pick["pick_type"] == "Spread":
             # Parse spread: "Team +/-X.X (odds)"
@@ -670,11 +676,10 @@ def update_results(record: dict):
                     elif adjusted == h_score:
                         outcome = "push"
         elif pick["pick_type"] == "Stat Edge":
-            # Moneyline-style — picked team just needs to win
-            if result_game["home_team"].lower() in pick_text.lower():
-                outcome = "win" if home_won else "loss"
-            else:
-                outcome = "win" if away_won else "loss"
+            # Use stored pick["home"] — same name used when pick was written,
+            # avoids mismatches when ESPN returns different name formats on re-fetch
+            picking_home = pick.get("home", "").lower() in pick_text.lower()
+            outcome = "win" if (picking_home and home_won) or (not picking_home and away_won) else "loss"
 
         pick["result"] = outcome
         record["overall"][{"win": "wins", "loss": "losses", "push": "pushes"}[outcome]] += 1
@@ -1110,14 +1115,28 @@ def main():
 
         dk_events = fetch_dk_direct(cfg["dk_id"])
 
+        sport_picks = []
         for game in games:
             if game["completed"]:
                 continue
             dk = match_dk_event(game, dk_events)
             pick = analyze_game(game, dk, sport, weights)
             if pick:
-                today_picks.append(pick)
-                log.info(f"  ✓ Pick: {pick['pick']} (conf {pick['confidence']}%)")
+                sport_picks.append(pick)
+
+        # Keep only the top MAX_PICKS_PER_SPORT by confidence for this sport
+        sport_picks.sort(key=lambda p: -p["confidence"])
+        for pick in sport_picks[:MAX_PICKS_PER_SPORT]:
+            today_picks.append(pick)
+            log.info(f"  ✓ Pick: {pick['pick']} (conf {pick['confidence']}%)")
+        skipped = len(sport_picks) - min(len(sport_picks), MAX_PICKS_PER_SPORT)
+        if skipped:
+            log.info(f"  Skipped {skipped} lower-confidence {sport} picks.")
+
+    # Keep only the top MAX_PICKS_TOTAL overall
+    today_picks.sort(key=lambda p: -p["confidence"])
+    today_picks = today_picks[:MAX_PICKS_TOTAL]
+    log.info(f"Final slate: {len(today_picks)} picks (cap: {MAX_PICKS_TOTAL})")
 
     # 3. Save new picks to record (avoid duplicates by event_id)
     existing_ids = {p.get("event_id") for p in record["picks_history"]}
