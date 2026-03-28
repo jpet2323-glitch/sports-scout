@@ -5,22 +5,22 @@
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 34,
-    "losses": 11,
+    "wins": 35,
+    "losses": 12,
     "pushes": 0,
-    "units_wagered": 45,
-    "units_net": 19.94,
-    "roi_pct": 44.3
+    "units_wagered": 47,
+    "units_net": 19.85,
+    "roi_pct": 42.2
   },
   "by_sport": {
     "NBA": {
-      "wins": 9,
+      "wins": 10,
       "losses": 2,
       "pushes": 0
     },
     "NHL": {
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
       "pushes": 0
     },
     "MLB": {
@@ -1439,11 +1439,11 @@
       "ou_pick": "Under 246.5",
       "ou_line": 246.5,
       "ou_conf": 58,
-      "result": "pending",
+      "result": "win",
       "date": "2026-03-28",
       "event_id": "401810934",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 109,
+      "away_score": 119,
       "features": {
         "h_win_pct": 0.3288,
         "a_win_pct": 0.3973,
@@ -1455,7 +1455,8 @@
         "ml_edge": 0.0,
         "spread_edge": 0.095,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -1553,11 +1554,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-03-28",
       "event_id": "401803510",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 5,
       "features": {
         "h_win_pct": 0.6769,
         "a_win_pct": 0.5246,
@@ -1569,7 +1570,8 @@
         "ml_edge": 0.2763,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -1610,14 +1612,14 @@
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.94,
-    "w_home_adv": 7.175,
-    "w_quality": 10.027,
-    "w_odds_edge": 2.268,
+    "w_win_pct": 33.892,
+    "w_home_adv": 7.118,
+    "w_quality": 10.028,
+    "w_odds_edge": 2.199,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 9,
-    "version": 2,
+    "samples": 11,
+    "version": 3,
     "last_updated": "2026-03-28"
   }
 }
