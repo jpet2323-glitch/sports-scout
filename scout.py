@@ -857,29 +857,71 @@ def generate_dashboard(record: dict, picks: list):
     if not picks_html:
         picks_html = '<div class="no-picks">No high-confidence picks identified for today. Check back after morning lines firm up.</div>'
 
-    # Recent history (last 20 picks)
-    history = record["picks_history"][-20:][::-1]
-    history_rows = ""
-    for p in history:
-        r = p.get("result", "pending")
-        r_class = {"win": "win", "loss": "loss", "push": "push", "pending": "pending"}.get(r, "pending")
-        r_label = {"win": "W", "loss": "L", "push": "P", "pending": "—"}.get(r, "—")
-        score_str = ""
-        if p.get("home_score") is not None:
-            score_str = f"{p['home_score']}-{p['away_score']}"
-        history_rows += f"""
-        <tr>
-          <td>{p.get('date','')}</td>
-          <td>{SPORT_EMOJI.get(p['sport'],'🎯')} {p['sport']}</td>
-          <td class="game-cell">{p['game']}</td>
-          <td class="pick-cell">{p['pick']}</td>
-          <td class="num">{p.get('confidence',0)}%</td>
-          <td class="num">{score_str}</td>
-          <td class="result {r_class}">{r_label}</td>
-        </tr>"""
+    # Build history grouped by day (newest first, excluding today's pending picks)
+    from collections import defaultdict, OrderedDict
+    days: dict = defaultdict(list)
+    today_iso = date.today().isoformat()
+    for p in record["picks_history"]:
+        if p.get("result") != "pending" or p.get("date") != today_iso:
+            days[p.get("date", "unknown")].append(p)
 
-    if not history_rows:
-        history_rows = '<tr><td colspan="7" style="text-align:center;color:#64748b">No pick history yet</td></tr>'
+    history_by_day_html = ""
+    for day in sorted(days.keys(), reverse=True):
+        day_picks = days[day]
+        day_wins   = sum(1 for p in day_picks if p.get("result") == "win")
+        day_losses = sum(1 for p in day_picks if p.get("result") == "loss")
+        day_pushes = sum(1 for p in day_picks if p.get("result") == "push")
+        day_pend   = sum(1 for p in day_picks if p.get("result") == "pending")
+        day_units  = round(day_wins * 0.91 - day_losses, 2)
+        try:
+            day_label = datetime.strptime(day, "%Y-%m-%d").strftime("%A, %B %d %Y")
+        except Exception:
+            day_label = day
+
+        rec_color = "var(--green)" if day_wins > day_losses else ("var(--red)" if day_losses > day_wins else "var(--muted)")
+        rec_str   = f"{day_wins}-{day_losses}" + (f"-{day_pushes}P" if day_pushes else "") + (f" · {day_pend} pending" if day_pend else "")
+        units_str = (f"+{day_units}u" if day_units >= 0 else f"{day_units}u")
+
+        rows = ""
+        for p in day_picks:
+            r = p.get("result", "pending")
+            score_str = f"{p['home_score']}-{p['away_score']}" if p.get("home_score") is not None else "—"
+            r_icon = {"win": "✅", "loss": "❌", "push": "🔄", "pending": "⏳"}.get(r, "—")
+            rows += f"""
+            <tr>
+              <td>{SPORT_EMOJI.get(p['sport'],'🎯')} {p['sport']}</td>
+              <td class="game-cell">{p['game']}</td>
+              <td class="pick-cell">{p['pick']}</td>
+              <td class="num" style="color:var(--muted)">{p.get('confidence',0)}%</td>
+              <td class="num">{score_str}</td>
+              <td class="result {r}" style="text-align:center">{r_icon}</td>
+            </tr>"""
+
+        history_by_day_html += f"""
+        <div class="day-block">
+          <div class="day-header" onclick="toggleDay(this)">
+            <div>
+              <span class="day-label">{day_label}</span>
+              <span class="day-record" style="color:{rec_color}">{rec_str}</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:16px">
+              <span style="font-size:0.9rem;font-weight:600;color:{'var(--green)' if day_units >= 0 else 'var(--red)'}">{'+' if day_units >= 0 else ''}{units_str}</span>
+              <span class="day-toggle">▼</span>
+            </div>
+          </div>
+          <div class="day-content">
+            <table>
+              <thead><tr>
+                <th>Sport</th><th>Game</th><th>Pick</th>
+                <th class="num">Conf</th><th class="num">Score</th><th style="text-align:center">Result</th>
+              </tr></thead>
+              <tbody>{rows}</tbody>
+            </table>
+          </div>
+        </div>"""
+
+    if not history_by_day_html:
+        history_by_day_html = '<div style="text-align:center;color:var(--muted);padding:40px">No completed picks yet — check back after your first results come in.</div>'
 
     now_str = datetime.now().strftime("%A, %B %d %Y — %I:%M %p")
 
@@ -943,6 +985,23 @@ def generate_dashboard(record: dict, picks: list):
   .result.push {{ color: var(--yellow); }}
   .result.pending {{ color: var(--muted); }}
   .footer {{ text-align: center; color: var(--muted); font-size: 0.8rem; padding: 24px; }}
+  /* ── Tabs ── */
+  .tab-bar {{ display: flex; gap: 4px; border-bottom: 2px solid var(--border); margin-bottom: 24px; }}
+  .tab-btn {{ background: none; border: none; color: var(--muted); font-size: 0.95rem; font-weight: 600; padding: 10px 20px; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: color 0.15s; }}
+  .tab-btn.active {{ color: var(--text); border-bottom-color: var(--blue); }}
+  .tab-btn:hover {{ color: var(--text); }}
+  .tab-pane {{ display: none; }}
+  .tab-pane.active {{ display: block; }}
+  /* ── History ── */
+  .day-block {{ background: var(--surface); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }}
+  .day-header {{ display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; cursor: pointer; user-select: none; }}
+  .day-header:hover {{ background: var(--surface2); }}
+  .day-label {{ font-weight: 600; font-size: 0.95rem; margin-right: 12px; }}
+  .day-record {{ font-size: 0.85rem; font-weight: 600; }}
+  .day-toggle {{ color: var(--muted); font-size: 0.8rem; transition: transform 0.2s; }}
+  .day-content {{ display: none; border-top: 1px solid var(--border); }}
+  .day-content.open {{ display: block; }}
+  .day-block.open .day-toggle {{ transform: rotate(180deg); }}
   @media (max-width: 768px) {{ .grid-2, .grid-4 {{ grid-template-columns: 1fr 1fr; }} .header {{ flex-direction: column; gap: 8px; }} }}
   @media (max-width: 500px) {{ .grid-2, .grid-4 {{ grid-template-columns: 1fr; }} }}
 </style>
@@ -982,83 +1041,80 @@ def generate_dashboard(record: dict, picks: list):
     </div>
   </div>
 
-  <!-- Main grid -->
-  <div class="grid-2">
-    <!-- Today's picks -->
-    <div style="grid-column: 1 / -1;">
-      <div class="section-title">📋 Today's Picks — {date.today().strftime('%B %d, %Y')}</div>
-      <div class="picks-grid">
-        {picks_html}
-      </div>
+  <!-- Tab bar -->
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('today', this)">📋 Today's Picks</button>
+    <button class="tab-btn" onclick="switchTab('history', this)">📅 History</button>
+    <button class="tab-btn" onclick="switchTab('stats', this)">📊 Stats</button>
+  </div>
+
+  <!-- TODAY TAB -->
+  <div id="tab-today" class="tab-pane active">
+    <div class="section-title">📋 {date.today().strftime('%A, %B %d %Y')} — {len(picks)} Pick{'s' if len(picks) != 1 else ''}</div>
+    <div class="picks-grid">
+      {picks_html}
     </div>
   </div>
 
-  <!-- Model weights -->
-  <div class="card" style="margin-bottom:20px">
-    <div class="section-title" style="margin-bottom:12px">🧠 Self-Learning Model — Weight State</div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px">
-      <div>
-        <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Win% Weight <span style="color:#64748b">(default {DEFAULT_WEIGHTS["w_win_pct"]})</span></div>
-        {_weight_bar(record["model_weights"]["w_win_pct"], DEFAULT_WEIGHTS["w_win_pct"], 10, 55)}
-      </div>
-      <div>
-        <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Home Advantage <span style="color:#64748b">(default {DEFAULT_WEIGHTS["w_home_adv"]})</span></div>
-        {_weight_bar(record["model_weights"]["w_home_adv"], DEFAULT_WEIGHTS["w_home_adv"], 2, 15)}
-      </div>
-      <div>
-        <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Quality Tier Bonus <span style="color:#64748b">(default {DEFAULT_WEIGHTS["w_quality"]})</span></div>
-        {_weight_bar(record["model_weights"]["w_quality"], DEFAULT_WEIGHTS["w_quality"], 1, 18)}
-      </div>
-      <div>
-        <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Odds Edge Multiplier <span style="color:#64748b">(default {DEFAULT_WEIGHTS["w_odds_edge"]})</span></div>
-        {_weight_bar(record["model_weights"]["w_odds_edge"], DEFAULT_WEIGHTS["w_odds_edge"], 0.3, 3.0)}
-      </div>
-    </div>
-    <div style="margin-top:12px;font-size:0.8rem;color:var(--muted)">
-      Trained on <strong style="color:var(--text)">{record["model_weights"].get("samples",0)}</strong> resolved picks &nbsp;·&nbsp;
-      Model v{record["model_weights"].get("version",1)} &nbsp;·&nbsp;
-      Last updated {record["model_weights"].get("last_updated","never")} &nbsp;·&nbsp;
-      <span style="color:#94a3b8">Green = weight grew (factor is proving useful) · Yellow = weight shrank (factor less predictive)</span>
-    </div>
+  <!-- HISTORY TAB -->
+  <div id="tab-history" class="tab-pane">
+    <div class="section-title" style="margin-bottom:20px">📅 Results by Day</div>
+    {history_by_day_html}
   </div>
 
-  <!-- By sport + history -->
-  <div class="grid-2">
+  <!-- STATS TAB -->
+  <div id="tab-stats" class="tab-pane">
+
+    <!-- By sport -->
+    <div class="grid-2" style="margin-bottom:20px">
+      <div class="card">
+        <div class="section-title" style="margin-bottom:12px">By Sport</div>
+        <table>
+          <thead><tr><th>Sport</th><th class="num">Record</th><th class="num">Win%</th></tr></thead>
+          <tbody>{by_sport_rows}</tbody>
+        </table>
+      </div>
+      <div class="card">
+        <div class="section-title" style="margin-bottom:12px">Quick Stats</div>
+        <table>
+          <tbody>
+            <tr><td>Total picks tracked</td><td class="num">{len(record['picks_history'])}</td></tr>
+            <tr><td>Avg confidence</td><td class="num">{round(sum(p.get('confidence',0) for p in record['picks_history']) / len(record['picks_history']), 0) if record['picks_history'] else 0}%</td></tr>
+            <tr><td>Pending picks</td><td class="num yellow">{sum(1 for p in record['picks_history'] if p.get('result')=='pending')}</td></tr>
+            <tr><td>Imported opening record</td><td class="num">{record['meta'].get('note','')}</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Model weights -->
     <div class="card">
-      <div class="section-title" style="margin-bottom:12px">By Sport</div>
-      <table>
-        <thead><tr><th>Sport</th><th class="num">Record</th><th class="num">Win%</th></tr></thead>
-        <tbody>{by_sport_rows}</tbody>
-      </table>
+      <div class="section-title" style="margin-bottom:12px">🧠 Self-Learning Model — Weight State</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px">
+        <div>
+          <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Win% Weight <span style="color:#64748b">(default {DEFAULT_WEIGHTS["w_win_pct"]})</span></div>
+          {_weight_bar(record["model_weights"]["w_win_pct"], DEFAULT_WEIGHTS["w_win_pct"], 10, 55)}
+        </div>
+        <div>
+          <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Home Advantage <span style="color:#64748b">(default {DEFAULT_WEIGHTS["w_home_adv"]})</span></div>
+          {_weight_bar(record["model_weights"]["w_home_adv"], DEFAULT_WEIGHTS["w_home_adv"], 2, 15)}
+        </div>
+        <div>
+          <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Quality Tier Bonus <span style="color:#64748b">(default {DEFAULT_WEIGHTS["w_quality"]})</span></div>
+          {_weight_bar(record["model_weights"]["w_quality"], DEFAULT_WEIGHTS["w_quality"], 1, 18)}
+        </div>
+        <div>
+          <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Odds Edge Multiplier <span style="color:#64748b">(default {DEFAULT_WEIGHTS["w_odds_edge"]})</span></div>
+          {_weight_bar(record["model_weights"]["w_odds_edge"], DEFAULT_WEIGHTS["w_odds_edge"], 0.3, 3.0)}
+        </div>
+      </div>
+      <div style="margin-top:12px;font-size:0.8rem;color:var(--muted)">
+        Trained on <strong style="color:var(--text)">{record["model_weights"].get("samples",0)}</strong> resolved picks &nbsp;·&nbsp;
+        Model v{record["model_weights"].get("version",1)} &nbsp;·&nbsp;
+        Last updated {record["model_weights"].get("last_updated","never")}
+      </div>
     </div>
-    <div class="card">
-      <div class="section-title" style="margin-bottom:12px">Quick Stats</div>
-      <table>
-        <tbody>
-          <tr><td>Best streak</td><td class="num green">—</td></tr>
-          <tr><td>Total picks tracked</td><td class="num">{len(record['picks_history'])}</td></tr>
-          <tr><td>Avg confidence</td><td class="num">{round(sum(p.get('confidence',0) for p in record['picks_history']) / len(record['picks_history']), 0) if record['picks_history'] else 0}%</td></tr>
-          <tr><td>Pending picks</td><td class="num yellow">{sum(1 for p in record['picks_history'] if p.get('result')=='pending')}</td></tr>
-          <tr><td>Imported opening record</td><td class="num">{record['meta'].get('note','')}</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
 
-  <!-- Pick history -->
-  <div class="card" style="margin-top:20px">
-    <div class="section-title" style="margin-bottom:12px">Recent Pick History (last 20)</div>
-    <div style="overflow-x:auto">
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th><th>Sport</th><th>Game</th><th>Pick</th>
-            <th class="num">Conf</th><th class="num">Score</th><th>Result</th>
-          </tr>
-        </thead>
-        <tbody>{history_rows}</tbody>
-      </table>
-    </div>
   </div>
 
 </div>
@@ -1073,6 +1129,37 @@ def generate_dashboard(record: dict, picks: list):
     icon.textContent = open ? '▲ Close' : '▼ Why?';
     icon.style.color = open ? 'var(--blue)' : '';
   }}
+
+  function switchTab(name, btn) {{
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + name).classList.add('active');
+    btn.classList.add('active');
+    localStorage.setItem('scout-tab', name);
+  }}
+
+  function toggleDay(header) {{
+    const block   = header.parentElement;
+    const content = block.querySelector('.day-content');
+    block.classList.toggle('open');
+    content.classList.toggle('open');
+  }}
+
+  // Restore last active tab
+  const savedTab = localStorage.getItem('scout-tab');
+  if (savedTab) {{
+    const btn = document.querySelector(`.tab-btn[onclick*="${{savedTab}}"]`);
+    if (btn) switchTab(savedTab, btn);
+  }}
+
+  // Auto-open today's day block in history if navigating there
+  document.addEventListener('DOMContentLoaded', () => {{
+    const first = document.querySelector('#tab-history .day-block');
+    if (first) {{
+      first.classList.add('open');
+      first.querySelector('.day-content').classList.add('open');
+    }}
+  }});
 </script>
 </body>
 </html>"""
