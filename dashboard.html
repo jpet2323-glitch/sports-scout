@@ -58,6 +58,23 @@
   .result.push { color: var(--yellow); }
   .result.pending { color: var(--muted); }
   .footer { text-align: center; color: var(--muted); font-size: 0.8rem; padding: 24px; }
+  /* ── Tabs ── */
+  .tab-bar { display: flex; gap: 4px; border-bottom: 2px solid var(--border); margin-bottom: 24px; }
+  .tab-btn { background: none; border: none; color: var(--muted); font-size: 0.95rem; font-weight: 600; padding: 10px 20px; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: color 0.15s; }
+  .tab-btn.active { color: var(--text); border-bottom-color: var(--blue); }
+  .tab-btn:hover { color: var(--text); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+  /* ── History ── */
+  .day-block { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+  .day-header { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; cursor: pointer; user-select: none; }
+  .day-header:hover { background: var(--surface2); }
+  .day-label { font-weight: 600; font-size: 0.95rem; margin-right: 12px; }
+  .day-record { font-size: 0.85rem; font-weight: 600; }
+  .day-toggle { color: var(--muted); font-size: 0.8rem; transition: transform 0.2s; }
+  .day-content { display: none; border-top: 1px solid var(--border); }
+  .day-content.open { display: block; }
+  .day-block.open .day-toggle { transform: rotate(180deg); }
   @media (max-width: 768px) { .grid-2, .grid-4 { grid-template-columns: 1fr 1fr; } .header { flex-direction: column; gap: 8px; } }
   @media (max-width: 500px) { .grid-2, .grid-4 { grid-template-columns: 1fr; } }
 </style>
@@ -68,7 +85,7 @@
     <h1>🎯 Sports Betting Scout</h1>
     <div class="subtitle">NBA · NHL · MLB · NCAAB · Powered by DraftKings Lines</div>
   </div>
-  <div class="timestamp">Saturday, March 28 2026 — 07:05 PM</div>
+  <div class="timestamp">Saturday, March 28 2026 — 07:08 PM</div>
 </div>
 
 <div class="container">
@@ -97,13 +114,18 @@
     </div>
   </div>
 
-  <!-- Main grid -->
-  <div class="grid-2">
-    <!-- Today's picks -->
-    <div style="grid-column: 1 / -1;">
-      <div class="section-title">📋 Today's Picks — March 28, 2026</div>
-      <div class="picks-grid">
-        
+  <!-- Tab bar -->
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('today', this)">📋 Today's Picks</button>
+    <button class="tab-btn" onclick="switchTab('history', this)">📅 History</button>
+    <button class="tab-btn" onclick="switchTab('stats', this)">📊 Stats</button>
+  </div>
+
+  <!-- TODAY TAB -->
+  <div id="tab-today" class="tab-pane active">
+    <div class="section-title">📋 Saturday, March 28 2026 — 5 Picks</div>
+    <div class="picks-grid">
+      
       <div class="pick-card" style="border-left:4px solid #22c55e" onclick="toggleCard('card-0')">
         <div class="pick-header">
           <span class="sport-badge">🏀 NBA</span>
@@ -112,13 +134,13 @@
         </div>
         <div class="pick-game">Detroit Pistons at Minnesota Timberwolves</div>
         <div class="pick-line">
-          <strong>PICK:</strong> Timberwolves ML (+195)
+          <strong>PICK:</strong> Timberwolves ML (+380)
           <span class="pick-type">Moneyline</span>
         </div>
-        <div class="pick-ou">Also: Over 198.5 (conf 60%)</div>
-        <div class="pick-notes">Home: Timberwolves 45-28 | Away: Pistons 53-20 | Also watching: Over 198.5 (conf 60)</div>
+        <div class="pick-ou">Also: Over 196.5 (conf 60%)</div>
+        <div class="pick-notes">Home: Timberwolves 45-28 | Away: Pistons 53-20 | Also watching: Over 196.5 (conf 60)</div>
         <div class="reasoning-panel" id="card-0">
-          <ul class="reasoning-list"><li>📋 <strong>Timberwolves</strong> are 45-28 (61.6% win rate) — Above average at home this season.</li><li>📋 <strong>Pistons</strong> are 53-20 (72.6% win rate) — Elite on the road this season.</li><li>🏠 Home-court/ice advantage gives <strong>Timberwolves</strong> a +7 pt scoring bonus in our model.</li><li>⭐ <strong>Timberwolves</strong> qualify as an elite team (≥60% win rate), earning a +8 quality bonus.</li><li>⭐ <strong>Pistons</strong> qualify as an elite team (≥60% win rate), earning a +8 quality bonus.</li><li>📈 DraftKings implies <strong>Timberwolves</strong> win probability at 33.9%. Our model estimates 57.1% — a +23.2% edge.</li><li>🔢 Totals lean: <strong>Over 198.5</strong> — combined team win rates suggest higher scoring output vs. the line.</li><li>🎯 <strong>Confidence: 95%</strong> — High conviction, consider 2u.</li></ul>
+          <ul class="reasoning-list"><li>📋 <strong>Timberwolves</strong> are 45-28 (61.6% win rate) — Above average at home this season.</li><li>📋 <strong>Pistons</strong> are 53-20 (72.6% win rate) — Elite on the road this season.</li><li>🏠 Home-court/ice advantage gives <strong>Timberwolves</strong> a +7 pt scoring bonus in our model.</li><li>⭐ <strong>Timberwolves</strong> qualify as an elite team (≥60% win rate), earning a +8 quality bonus.</li><li>⭐ <strong>Pistons</strong> qualify as an elite team (≥60% win rate), earning a +8 quality bonus.</li><li>📈 DraftKings implies <strong>Timberwolves</strong> win probability at 20.8%. Our model estimates 60.0% — a +39.1% edge.</li><li>🔢 Totals lean: <strong>Over 196.5</strong> — combined team win rates suggest higher scoring output vs. the line.</li><li>🎯 <strong>Confidence: 95%</strong> — High conviction, consider 2u.</li></ul>
         </div>
       </div>
       <div class="pick-card" style="border-left:4px solid #22c55e" onclick="toggleCard('card-1')">
@@ -127,15 +149,15 @@
           <span class="conf-badge" style="color:#22c55e">🔥 HIGH 95%</span>
           <span class="expand-icon" id="icon-card-1">▼ Why?</span>
         </div>
-        <div class="pick-game">Sacramento Kings at Atlanta Hawks</div>
+        <div class="pick-game">Philadelphia 76ers at Charlotte Hornets</div>
         <div class="pick-line">
-          <strong>PICK:</strong> Hawks -13.5 (-105)
-          <span class="pick-type">Spread</span>
+          <strong>PICK:</strong> 76ers ML (+270)
+          <span class="pick-type">Moneyline</span>
         </div>
-        <div class="pick-ou">Also: Under 235.5 (conf 58%)</div>
-        <div class="pick-notes">Home: Hawks 41-33 | Away: Kings 19-55 | Also watching: Under 235.5 (conf 58)</div>
+        
+        <div class="pick-notes">Home: Hornets 39-34 | Away: 76ers 40-33</div>
         <div class="reasoning-panel" id="card-1">
-          <ul class="reasoning-list"><li>📋 <strong>Hawks</strong> are 41-33 (55.4% win rate) — Above average at home this season.</li><li>📋 <strong>Kings</strong> are 19-55 (25.7% win rate) — Struggling on the road this season.</li><li>🏠 Home-court/ice advantage gives <strong>Hawks</strong> a +7 pt scoring bonus in our model.</li><li>⚠️ <strong>Kings</strong> are a struggling team (≤38% win rate), applying a −8 quality penalty.</li><li>📈 DraftKings implies <strong>Hawks</strong> win probability at 88.2%. Our model estimates 104.1% — a +15.9% edge.</li><li>📐 Spread pick: Hawks giving 13.5 points. Our cover probability exceeds the implied probability by the required 4% threshold.</li><li>🔢 Totals lean: <strong>Under 235.5</strong> — combined team win rates suggest lower scoring output vs. the line.</li><li>🎯 <strong>Confidence: 95%</strong> — High conviction, consider 2u.</li></ul>
+          <ul class="reasoning-list"><li>📋 <strong>Hornets</strong> are 39-34 (53.4% win rate) — Above average at home this season.</li><li>📋 <strong>76ers</strong> are 40-33 (54.8% win rate) — Above average on the road this season.</li><li>🏠 Home-court/ice advantage gives <strong>Hornets</strong> a +7 pt scoring bonus in our model.</li><li>📈 DraftKings implies <strong>76ers</strong> win probability at 27.0%. Our model estimates 50.1% — a +23.1% edge.</li><li>🎯 <strong>Confidence: 95%</strong> — High conviction, consider 2u.</li></ul>
         </div>
       </div>
       <div class="pick-card" style="border-left:4px solid #22c55e" onclick="toggleCard('card-2')">
@@ -146,13 +168,13 @@
         </div>
         <div class="pick-game">Minnesota Wild at Boston Bruins</div>
         <div class="pick-line">
-          <strong>PICK:</strong> Wild ML (+700)
+          <strong>PICK:</strong> Wild ML (+3000)
           <span class="pick-type">Moneyline</span>
         </div>
         
         <div class="pick-notes">Home: Bruins 40-24-8 | Away: Wild 41-20-12</div>
         <div class="reasoning-panel" id="card-2">
-          <ul class="reasoning-list"><li>📋 <strong>Bruins</strong> are 40-24-8 (62.5% win rate) — Elite at home this season.</li><li>📋 <strong>Wild</strong> are 41-20-12 (67.2% win rate) — Elite on the road this season.</li><li>🏠 Home-court/ice advantage gives <strong>Bruins</strong> a +7 pt scoring bonus in our model.</li><li>⭐ <strong>Bruins</strong> qualify as an elite team (≥60% win rate), earning a +8 quality bonus.</li><li>⭐ <strong>Wild</strong> qualify as an elite team (≥60% win rate), earning a +8 quality bonus.</li><li>📈 DraftKings implies <strong>Wild</strong> win probability at 12.5%. Our model estimates 55.4% — a +42.9% edge.</li><li>🎯 <strong>Confidence: 95%</strong> — High conviction, consider 2u.</li></ul>
+          <ul class="reasoning-list"><li>📋 <strong>Bruins</strong> are 40-24-8 (62.5% win rate) — Elite at home this season.</li><li>📋 <strong>Wild</strong> are 41-20-12 (67.2% win rate) — Elite on the road this season.</li><li>🏠 Home-court/ice advantage gives <strong>Bruins</strong> a +7 pt scoring bonus in our model.</li><li>⭐ <strong>Bruins</strong> qualify as an elite team (≥60% win rate), earning a +8 quality bonus.</li><li>⭐ <strong>Wild</strong> qualify as an elite team (≥60% win rate), earning a +8 quality bonus.</li><li>📈 DraftKings implies <strong>Wild</strong> win probability at 3.2%. Our model estimates 57.4% — a +54.2% edge.</li><li>🎯 <strong>Confidence: 95%</strong> — High conviction, consider 2u.</li></ul>
         </div>
       </div>
       <div class="pick-card" style="border-left:4px solid #22c55e" onclick="toggleCard('card-3')">
@@ -180,55 +202,316 @@
         </div>
         <div class="pick-game">Texas Rangers at Philadelphia Phillies</div>
         <div class="pick-line">
-          <strong>PICK:</strong> Phillies ML (+162)
+          <strong>PICK:</strong> Phillies ML (+336)
           <span class="pick-type">Moneyline</span>
         </div>
         
         <div class="pick-notes">Home: Phillies 1-0 | Away: Rangers 0-1</div>
         <div class="reasoning-panel" id="card-4">
-          <ul class="reasoning-list"><li>📋 <strong>Phillies</strong> are 1-0 (100.0% win rate) — Elite at home this season.</li><li>📋 <strong>Rangers</strong> are 0-1 (0.0% win rate) — Struggling on the road this season.</li><li>🏠 Home-court/ice advantage gives <strong>Phillies</strong> a +7 pt scoring bonus in our model.</li><li>⭐ <strong>Phillies</strong> qualify as an elite team (≥60% win rate), earning a +8 quality bonus.</li><li>⚠️ <strong>Rangers</strong> are a struggling team (≤38% win rate), applying a −8 quality penalty.</li><li>📈 DraftKings implies <strong>Phillies</strong> win probability at 38.2%. Our model estimates 112.7% — a +74.5% edge.</li><li>🎯 <strong>Confidence: 95%</strong> — High conviction, consider 2u.</li></ul>
+          <ul class="reasoning-list"><li>📋 <strong>Phillies</strong> are 1-0 (100.0% win rate) — Elite at home this season.</li><li>📋 <strong>Rangers</strong> are 0-1 (0.0% win rate) — Struggling on the road this season.</li><li>🏠 Home-court/ice advantage gives <strong>Phillies</strong> a +7 pt scoring bonus in our model.</li><li>⭐ <strong>Phillies</strong> qualify as an elite team (≥60% win rate), earning a +8 quality bonus.</li><li>⚠️ <strong>Rangers</strong> are a struggling team (≤38% win rate), applying a −8 quality penalty.</li><li>📈 DraftKings implies <strong>Phillies</strong> win probability at 22.9%. Our model estimates 111.7% — a +88.8% edge.</li><li>🎯 <strong>Confidence: 95%</strong> — High conviction, consider 2u.</li></ul>
         </div>
       </div>
-      </div>
     </div>
   </div>
 
-  <!-- Model weights -->
-  <div class="card" style="margin-bottom:20px">
-    <div class="section-title" style="margin-bottom:12px">🧠 Self-Learning Model — Weight State</div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px">
-      <div>
-        <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Win% Weight <span style="color:#64748b">(default 30.0)</span></div>
-        <div style="display:flex;align-items:center;gap:8px"><div style="flex:1;background:#334155;border-radius:4px;height:6px"><div style="width:53%;background:#22c55e;height:6px;border-radius:4px"></div></div><span style="font-size:0.8rem;min-width:36px;text-align:right">33.89</span></div>
-      </div>
-      <div>
-        <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Home Advantage <span style="color:#64748b">(default 7.0)</span></div>
-        <div style="display:flex;align-items:center;gap:8px"><div style="flex:1;background:#334155;border-radius:4px;height:6px"><div style="width:39%;background:#22c55e;height:6px;border-radius:4px"></div></div><span style="font-size:0.8rem;min-width:36px;text-align:right">7.12</span></div>
-      </div>
-      <div>
-        <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Quality Tier Bonus <span style="color:#64748b">(default 8.0)</span></div>
-        <div style="display:flex;align-items:center;gap:8px"><div style="flex:1;background:#334155;border-radius:4px;height:6px"><div style="width:53%;background:#22c55e;height:6px;border-radius:4px"></div></div><span style="font-size:0.8rem;min-width:36px;text-align:right">10.03</span></div>
-      </div>
-      <div>
-        <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Odds Edge Multiplier <span style="color:#64748b">(default 1.0)</span></div>
-        <div style="display:flex;align-items:center;gap:8px"><div style="flex:1;background:#334155;border-radius:4px;height:6px"><div style="width:70%;background:#22c55e;height:6px;border-radius:4px"></div></div><span style="font-size:0.8rem;min-width:36px;text-align:right">2.20</span></div>
-      </div>
-    </div>
-    <div style="margin-top:12px;font-size:0.8rem;color:var(--muted)">
-      Trained on <strong style="color:var(--text)">11</strong> resolved picks &nbsp;·&nbsp;
-      Model v3 &nbsp;·&nbsp;
-      Last updated 2026-03-28 &nbsp;·&nbsp;
-      <span style="color:#94a3b8">Green = weight grew (factor is proving useful) · Yellow = weight shrank (factor less predictive)</span>
-    </div>
+  <!-- HISTORY TAB -->
+  <div id="tab-history" class="tab-pane">
+    <div class="section-title" style="margin-bottom:20px">📅 Results by Day</div>
+    
+        <div class="day-block">
+          <div class="day-header" onclick="toggleDay(this)">
+            <div>
+              <span class="day-label">Saturday, March 28 2026</span>
+              <span class="day-record" style="color:var(--green)">8-2</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:16px">
+              <span style="font-size:0.9rem;font-weight:600;color:var(--green)">++5.28u</span>
+              <span class="day-toggle">▼</span>
+            </div>
+          </div>
+          <div class="day-content">
+            <table>
+              <thead><tr>
+                <th>Sport</th><th>Game</th><th>Pick</th>
+                <th class="num">Conf</th><th class="num">Score</th><th style="text-align:center">Result</th>
+              </tr></thead>
+              <tbody>
+            <tr>
+              <td>🏀 NBA</td>
+              <td class="game-cell">Utah Jazz at Phoenix Suns</td>
+              <td class="pick-cell">Suns -16.5 (-110)</td>
+              <td class="num" style="color:var(--muted)">95%</td>
+              <td class="num">135-129</td>
+              <td class="result loss" style="text-align:center">❌</td>
+            </tr>
+            <tr>
+              <td>⚾ MLB</td>
+              <td class="game-cell">Athletics Athletics at Toronto Blue Jays</td>
+              <td class="pick-cell">Blue Jays ML (-193)</td>
+              <td class="num" style="color:var(--muted)">95%</td>
+              <td class="num">3-2</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>⚾ MLB</td>
+              <td class="game-cell">Colorado Rockies at Miami Marlins</td>
+              <td class="pick-cell">Marlins ML (-193)</td>
+              <td class="num" style="color:var(--muted)">95%</td>
+              <td class="num">2-1</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>⚾ MLB</td>
+              <td class="game-cell">Los Angeles Angels at Houston Astros</td>
+              <td class="pick-cell">Angels ML (+123)</td>
+              <td class="num" style="color:var(--muted)">95%</td>
+              <td class="num">2-6</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>⚾ MLB</td>
+              <td class="game-cell">Kansas City Royals at Atlanta Braves</td>
+              <td class="pick-cell">Braves ML (-156)</td>
+              <td class="num" style="color:var(--muted)">95%</td>
+              <td class="num">6-0</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>⚾ MLB</td>
+              <td class="game-cell">New York Yankees at San Francisco Giants</td>
+              <td class="pick-cell">Yankees ML (-131)</td>
+              <td class="num" style="color:var(--muted)">95%</td>
+              <td class="num">0-3</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>⚾ MLB</td>
+              <td class="game-cell">Detroit Tigers at San Diego Padres</td>
+              <td class="pick-cell">Tigers ML (-115)</td>
+              <td class="num" style="color:var(--muted)">95%</td>
+              <td class="num">2-5</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>⚾ MLB</td>
+              <td class="game-cell">Arizona Diamondbacks at Los Angeles Dodgers</td>
+              <td class="pick-cell">Dodgers ML (-246)</td>
+              <td class="num" style="color:var(--muted)">95%</td>
+              <td class="num">5-4</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏀 NBA</td>
+              <td class="game-cell">Chicago Bulls at Memphis Grizzlies</td>
+              <td class="pick-cell">Bulls -4.5 (-110)</td>
+              <td class="num" style="color:var(--muted)">78%</td>
+              <td class="num">109-119</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏒 NHL</td>
+              <td class="game-cell">Seattle Kraken at Buffalo Sabres</td>
+              <td class="pick-cell">Sabres ML (+140)</td>
+              <td class="num" style="color:var(--muted)">95%</td>
+              <td class="num">2-5</td>
+              <td class="result loss" style="text-align:center">❌</td>
+            </tr></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="day-block">
+          <div class="day-header" onclick="toggleDay(this)">
+            <div>
+              <span class="day-label">Friday, March 27 2026</span>
+              <span class="day-record" style="color:var(--green)">16-4</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:16px">
+              <span style="font-size:0.9rem;font-weight:600;color:var(--green)">++10.56u</span>
+              <span class="day-toggle">▼</span>
+            </div>
+          </div>
+          <div class="day-content">
+            <table>
+              <thead><tr>
+                <th>Sport</th><th>Game</th><th>Pick</th>
+                <th class="num">Conf</th><th class="num">Score</th><th style="text-align:center">Result</th>
+              </tr></thead>
+              <tbody>
+            <tr>
+              <td>🏀 NBA</td>
+              <td class="game-cell">LA Clippers at Indiana Pacers</td>
+              <td class="pick-cell">Clippers (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">61%</td>
+              <td class="num">113-114</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏀 NBA</td>
+              <td class="game-cell">Atlanta Hawks at Boston Celtics</td>
+              <td class="pick-cell">Celtics (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">71%</td>
+              <td class="num">109-102</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏀 NBA</td>
+              <td class="game-cell">Miami Heat at Cleveland Cavaliers</td>
+              <td class="pick-cell">Cavaliers (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">70%</td>
+              <td class="num">149-128</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏀 NBA</td>
+              <td class="game-cell">Houston Rockets at Memphis Grizzlies</td>
+              <td class="pick-cell">Rockets (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">60%</td>
+              <td class="num">109-119</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏀 NBA</td>
+              <td class="game-cell">Chicago Bulls at Oklahoma City Thunder</td>
+              <td class="pick-cell">Thunder (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">80%</td>
+              <td class="num">131-113</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏀 NBA</td>
+              <td class="game-cell">New Orleans Pelicans at Toronto Raptors</td>
+              <td class="pick-cell">Raptors (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">75%</td>
+              <td class="num">119-106</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏀 NBA</td>
+              <td class="game-cell">Utah Jazz at Denver Nuggets</td>
+              <td class="pick-cell">Nuggets (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">80%</td>
+              <td class="num">135-129</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏀 NBA</td>
+              <td class="game-cell">Washington Wizards at Golden State Warriors</td>
+              <td class="pick-cell">Warriors (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">76%</td>
+              <td class="num">131-126</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏀 NBA</td>
+              <td class="game-cell">Dallas Mavericks at Portland Trail Blazers</td>
+              <td class="pick-cell">Trail Blazers (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">74%</td>
+              <td class="num">93-100</td>
+              <td class="result loss" style="text-align:center">❌</td>
+            </tr>
+            <tr>
+              <td>🏀 NBA</td>
+              <td class="game-cell">Brooklyn Nets at Los Angeles Lakers</td>
+              <td class="pick-cell">Lakers (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">80%</td>
+              <td class="num">116-99</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏒 NHL</td>
+              <td class="game-cell">Detroit Red Wings at Buffalo Sabres</td>
+              <td class="pick-cell">Sabres (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">61%</td>
+              <td class="num">2-5</td>
+              <td class="result loss" style="text-align:center">❌</td>
+            </tr>
+            <tr>
+              <td>⚾ MLB</td>
+              <td class="game-cell">New York Yankees at San Francisco Giants</td>
+              <td class="pick-cell">Yankees (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">80%</td>
+              <td class="num">0-3</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>⚾ MLB</td>
+              <td class="game-cell">Los Angeles Angels at Houston Astros</td>
+              <td class="pick-cell">Angels (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">80%</td>
+              <td class="num">2-6</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>⚾ MLB</td>
+              <td class="game-cell">Cleveland Guardians at Seattle Mariners</td>
+              <td class="pick-cell">Guardians (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">80%</td>
+              <td class="num">5-1</td>
+              <td class="result loss" style="text-align:center">❌</td>
+            </tr>
+            <tr>
+              <td>⚾ MLB</td>
+              <td class="game-cell">Detroit Tigers at San Diego Padres</td>
+              <td class="pick-cell">Tigers (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">80%</td>
+              <td class="num">2-5</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>⚾ MLB</td>
+              <td class="game-cell">Arizona Diamondbacks at Los Angeles Dodgers</td>
+              <td class="pick-cell">Dodgers (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">80%</td>
+              <td class="num">5-4</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏀 NCAAB</td>
+              <td class="game-cell">St. John's Red Storm at Duke Blue Devils</td>
+              <td class="pick-cell">Blue Devils (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">62%</td>
+              <td class="num">80-75</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏀 NCAAB</td>
+              <td class="game-cell">Alabama Crimson Tide at Michigan Wolverines</td>
+              <td class="pick-cell">Wolverines (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">64%</td>
+              <td class="num">90-77</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏀 NCAAB</td>
+              <td class="game-cell">Michigan State Spartans at UConn Huskies</td>
+              <td class="pick-cell">Huskies (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">60%</td>
+              <td class="num">67-63</td>
+              <td class="result win" style="text-align:center">✅</td>
+            </tr>
+            <tr>
+              <td>🏀 NCAAB</td>
+              <td class="game-cell">Tennessee Volunteers at Iowa State Cyclones</td>
+              <td class="pick-cell">Cyclones (stat edge, no line)</td>
+              <td class="num" style="color:var(--muted)">62%</td>
+              <td class="num">62-76</td>
+              <td class="result loss" style="text-align:center">❌</td>
+            </tr></tbody>
+            </table>
+          </div>
+        </div>
   </div>
 
-  <!-- By sport + history -->
-  <div class="grid-2">
-    <div class="card">
-      <div class="section-title" style="margin-bottom:12px">By Sport</div>
-      <table>
-        <thead><tr><th>Sport</th><th class="num">Record</th><th class="num">Win%</th></tr></thead>
-        <tbody>
+  <!-- STATS TAB -->
+  <div id="tab-stats" class="tab-pane">
+
+    <!-- By sport -->
+    <div class="grid-2" style="margin-bottom:20px">
+      <div class="card">
+        <div class="section-title" style="margin-bottom:12px">By Sport</div>
+        <table>
+          <thead><tr><th>Sport</th><th class="num">Record</th><th class="num">Win%</th></tr></thead>
+          <tbody>
         <tr>
           <td>🏀 NBA</td>
           <td class="num">10-2</td>
@@ -249,216 +532,49 @@
           <td class="num">3-1</td>
           <td class="num">75.0%</td>
         </tr></tbody>
-      </table>
+        </table>
+      </div>
+      <div class="card">
+        <div class="section-title" style="margin-bottom:12px">Quick Stats</div>
+        <table>
+          <tbody>
+            <tr><td>Total picks tracked</td><td class="num">51</td></tr>
+            <tr><td>Avg confidence</td><td class="num">79.0%</td></tr>
+            <tr><td>Pending picks</td><td class="num yellow">21</td></tr>
+            <tr><td>Imported opening record</td><td class="num">Imported opening record: 11-6</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <div class="card">
-      <div class="section-title" style="margin-bottom:12px">Quick Stats</div>
-      <table>
-        <tbody>
-          <tr><td>Best streak</td><td class="num green">—</td></tr>
-          <tr><td>Total picks tracked</td><td class="num">51</td></tr>
-          <tr><td>Avg confidence</td><td class="num">79.0%</td></tr>
-          <tr><td>Pending picks</td><td class="num yellow">21</td></tr>
-          <tr><td>Imported opening record</td><td class="num">Imported opening record: 11-6</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
 
-  <!-- Pick history -->
-  <div class="card" style="margin-top:20px">
-    <div class="section-title" style="margin-bottom:12px">Recent Pick History (last 20)</div>
-    <div style="overflow-x:auto">
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th><th>Sport</th><th>Game</th><th>Pick</th>
-            <th class="num">Conf</th><th class="num">Score</th><th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>2026-03-28</td>
-          <td>🏒 NHL</td>
-          <td class="game-cell">Utah Mammoth at Los Angeles Kings</td>
-          <td class="pick-cell">Kings ML (-115)</td>
-          <td class="num">63%</td>
-          <td class="num"></td>
-          <td class="result pending">—</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>🏒 NHL</td>
-          <td class="game-cell">Seattle Kraken at Buffalo Sabres</td>
-          <td class="pick-cell">Sabres ML (+140)</td>
-          <td class="num">95%</td>
-          <td class="num">2-5</td>
-          <td class="result loss">L</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>🏒 NHL</td>
-          <td class="game-cell">San Jose Sharks at Columbus Blue Jackets</td>
-          <td class="pick-cell">Sharks ML (+325)</td>
-          <td class="num">75%</td>
-          <td class="num"></td>
-          <td class="result pending">—</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>🏒 NHL</td>
-          <td class="game-cell">New Jersey Devils at Carolina Hurricanes</td>
-          <td class="pick-cell">Devils ML (+1200)</td>
-          <td class="num">95%</td>
-          <td class="num"></td>
-          <td class="result pending">—</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>🏀 NBA</td>
-          <td class="game-cell">Chicago Bulls at Memphis Grizzlies</td>
-          <td class="pick-cell">Bulls -4.5 (-110)</td>
-          <td class="num">78%</td>
-          <td class="num">109-119</td>
-          <td class="result win">W</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>🏀 NBA</td>
-          <td class="game-cell">Detroit Pistons at Minnesota Timberwolves</td>
-          <td class="pick-cell">Timberwolves +8.5 (-125)</td>
-          <td class="num">62%</td>
-          <td class="num"></td>
-          <td class="result pending">—</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>🏀 NCAAB</td>
-          <td class="game-cell">Purdue Boilermakers at Arizona Wildcats</td>
-          <td class="pick-cell">Wildcats (stat edge)</td>
-          <td class="num">64%</td>
-          <td class="num"></td>
-          <td class="result pending">—</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>🏀 NCAAB</td>
-          <td class="game-cell">Iowa Hawkeyes at Illinois Fighting Illini</td>
-          <td class="pick-cell">Fighting Illini (stat edge)</td>
-          <td class="num">62%</td>
-          <td class="num"></td>
-          <td class="result pending">—</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>⚾ MLB</td>
-          <td class="game-cell">Arizona Diamondbacks at Los Angeles Dodgers</td>
-          <td class="pick-cell">Dodgers ML (-246)</td>
-          <td class="num">95%</td>
-          <td class="num">5-4</td>
-          <td class="result win">W</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>⚾ MLB</td>
-          <td class="game-cell">Detroit Tigers at San Diego Padres</td>
-          <td class="pick-cell">Tigers ML (-115)</td>
-          <td class="num">95%</td>
-          <td class="num">2-5</td>
-          <td class="result win">W</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>⚾ MLB</td>
-          <td class="game-cell">New York Yankees at San Francisco Giants</td>
-          <td class="pick-cell">Yankees ML (-131)</td>
-          <td class="num">95%</td>
-          <td class="num">0-3</td>
-          <td class="result win">W</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>⚾ MLB</td>
-          <td class="game-cell">Kansas City Royals at Atlanta Braves</td>
-          <td class="pick-cell">Braves ML (-156)</td>
-          <td class="num">95%</td>
-          <td class="num">6-0</td>
-          <td class="result win">W</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>⚾ MLB</td>
-          <td class="game-cell">Chicago White Sox at Milwaukee Brewers</td>
-          <td class="pick-cell">Brewers ML (-199)</td>
-          <td class="num">95%</td>
-          <td class="num"></td>
-          <td class="result pending">—</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>⚾ MLB</td>
-          <td class="game-cell">Los Angeles Angels at Houston Astros</td>
-          <td class="pick-cell">Angels ML (+123)</td>
-          <td class="num">95%</td>
-          <td class="num">2-6</td>
-          <td class="result win">W</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>⚾ MLB</td>
-          <td class="game-cell">Pittsburgh Pirates at New York Mets</td>
-          <td class="pick-cell">Mets ML (-181)</td>
-          <td class="num">95%</td>
-          <td class="num"></td>
-          <td class="result pending">—</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>⚾ MLB</td>
-          <td class="game-cell">Colorado Rockies at Miami Marlins</td>
-          <td class="pick-cell">Marlins ML (-193)</td>
-          <td class="num">95%</td>
-          <td class="num">2-1</td>
-          <td class="result win">W</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>⚾ MLB</td>
-          <td class="game-cell">Boston Red Sox at Cincinnati Reds</td>
-          <td class="pick-cell">Red Sox ML (-156)</td>
-          <td class="num">95%</td>
-          <td class="num"></td>
-          <td class="result pending">—</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>⚾ MLB</td>
-          <td class="game-cell">Texas Rangers at Philadelphia Phillies</td>
-          <td class="pick-cell">Phillies ML (-115)</td>
-          <td class="num">95%</td>
-          <td class="num"></td>
-          <td class="result pending">—</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>⚾ MLB</td>
-          <td class="game-cell">Minnesota Twins at Baltimore Orioles</td>
-          <td class="pick-cell">Orioles ML (-163)</td>
-          <td class="num">95%</td>
-          <td class="num"></td>
-          <td class="result pending">—</td>
-        </tr>
-        <tr>
-          <td>2026-03-28</td>
-          <td>⚾ MLB</td>
-          <td class="game-cell">Athletics Athletics at Toronto Blue Jays</td>
-          <td class="pick-cell">Blue Jays ML (-193)</td>
-          <td class="num">95%</td>
-          <td class="num">3-2</td>
-          <td class="result win">W</td>
-        </tr></tbody>
-      </table>
+    <!-- Model weights -->
+    <div class="card">
+      <div class="section-title" style="margin-bottom:12px">🧠 Self-Learning Model — Weight State</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px">
+        <div>
+          <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Win% Weight <span style="color:#64748b">(default 30.0)</span></div>
+          <div style="display:flex;align-items:center;gap:8px"><div style="flex:1;background:#334155;border-radius:4px;height:6px"><div style="width:53%;background:#22c55e;height:6px;border-radius:4px"></div></div><span style="font-size:0.8rem;min-width:36px;text-align:right">33.89</span></div>
+        </div>
+        <div>
+          <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Home Advantage <span style="color:#64748b">(default 7.0)</span></div>
+          <div style="display:flex;align-items:center;gap:8px"><div style="flex:1;background:#334155;border-radius:4px;height:6px"><div style="width:39%;background:#22c55e;height:6px;border-radius:4px"></div></div><span style="font-size:0.8rem;min-width:36px;text-align:right">7.12</span></div>
+        </div>
+        <div>
+          <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Quality Tier Bonus <span style="color:#64748b">(default 8.0)</span></div>
+          <div style="display:flex;align-items:center;gap:8px"><div style="flex:1;background:#334155;border-radius:4px;height:6px"><div style="width:53%;background:#22c55e;height:6px;border-radius:4px"></div></div><span style="font-size:0.8rem;min-width:36px;text-align:right">10.03</span></div>
+        </div>
+        <div>
+          <div style="font-size:0.75rem;color:var(--muted);margin-bottom:4px">Odds Edge Multiplier <span style="color:#64748b">(default 1.0)</span></div>
+          <div style="display:flex;align-items:center;gap:8px"><div style="flex:1;background:#334155;border-radius:4px;height:6px"><div style="width:70%;background:#22c55e;height:6px;border-radius:4px"></div></div><span style="font-size:0.8rem;min-width:36px;text-align:right">2.20</span></div>
+        </div>
+      </div>
+      <div style="margin-top:12px;font-size:0.8rem;color:var(--muted)">
+        Trained on <strong style="color:var(--text)">11</strong> resolved picks &nbsp;·&nbsp;
+        Model v3 &nbsp;·&nbsp;
+        Last updated 2026-03-28
+      </div>
     </div>
+
   </div>
 
 </div>
@@ -473,6 +589,37 @@
     icon.textContent = open ? '▲ Close' : '▼ Why?';
     icon.style.color = open ? 'var(--blue)' : '';
   }
+
+  function switchTab(name, btn) {
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + name).classList.add('active');
+    btn.classList.add('active');
+    localStorage.setItem('scout-tab', name);
+  }
+
+  function toggleDay(header) {
+    const block   = header.parentElement;
+    const content = block.querySelector('.day-content');
+    block.classList.toggle('open');
+    content.classList.toggle('open');
+  }
+
+  // Restore last active tab
+  const savedTab = localStorage.getItem('scout-tab');
+  if (savedTab) {
+    const btn = document.querySelector(`.tab-btn[onclick*="${savedTab}"]`);
+    if (btn) switchTab(savedTab, btn);
+  }
+
+  // Auto-open today's day block in history if navigating there
+  document.addEventListener('DOMContentLoaded', () => {
+    const first = document.querySelector('#tab-history .day-block');
+    if (first) {
+      first.classList.add('open');
+      first.querySelector('.day-content').classList.add('open');
+    }
+  });
 </script>
 </body>
 </html>
