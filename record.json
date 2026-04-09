@@ -1,31 +1,31 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-04-08",
+    "last_updated": "2026-04-09",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 56,
-    "losses": 40,
+    "wins": 57,
+    "losses": 44,
     "pushes": 0,
-    "units_wagered": 96,
-    "units_net": 10.960000000000004,
-    "roi_pct": 11.4
+    "units_wagered": 101,
+    "units_net": 7.8700000000000045,
+    "roi_pct": 7.8
   },
   "by_sport": {
     "NBA": {
       "wins": 16,
-      "losses": 12,
+      "losses": 14,
       "pushes": 0
     },
     "NHL": {
       "wins": 7,
-      "losses": 8,
+      "losses": 9,
       "pushes": 0
     },
     "MLB": {
-      "wins": 17,
-      "losses": 13,
+      "wins": 18,
+      "losses": 14,
       "pushes": 0
     },
     "NCAAB": {
@@ -2976,11 +2976,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-08",
       "event_id": "401811017",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 136,
+      "away_score": 119,
       "features": {
         "h_win_pct": 0.6456,
         "a_win_pct": 0.3165,
@@ -2992,7 +2992,8 @@
         "ml_edge": 0.0,
         "spread_edge": 0.4583,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -3015,11 +3016,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-08",
       "event_id": "401811019",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 112,
+      "away_score": 107,
       "features": {
         "h_win_pct": 0.5443,
         "a_win_pct": 0.3165,
@@ -3031,7 +3032,8 @@
         "ml_edge": 0.1211,
         "spread_edge": 0.4415,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -3054,11 +3056,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-08",
       "event_id": "401814861",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 5,
+      "away_score": 0,
       "features": {
         "h_win_pct": 0.2727,
         "a_win_pct": 0.7273,
@@ -3070,7 +3072,8 @@
         "ml_edge": 0.3756,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -3092,11 +3095,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-04-08",
       "event_id": "401814866",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 0,
       "features": {
         "h_win_pct": 0.5455,
         "a_win_pct": 0.3333,
@@ -3108,7 +3111,8 @@
         "ml_edge": 0.4738,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -3129,11 +3133,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-08",
       "event_id": "401803596",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 0,
+      "away_score": 4,
       "features": {
         "h_win_pct": 0.5079,
         "a_win_pct": 0.5652,
@@ -3145,18 +3149,216 @@
         "ml_edge": 0.1248,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NBA",
+      "game": "Indiana Pacers at Brooklyn Nets",
+      "home": "Nets",
+      "away": "Pacers",
+      "pick": "Nets +3.5 (-108)",
+      "pick_type": "Spread",
+      "confidence": 95,
+      "notes": "Home: Nets 20-59 | Away: Pacers 18-61 | Also watching: Under 223.5 (conf 58)",
+      "reasoning": [
+        "\ud83d\udccb <strong>Nets</strong> are 20-59 (25.3% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Pacers</strong> are 18-61 (22.8% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Nets</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Nets</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u26a0\ufe0f <strong>Pacers</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Nets</strong> win probability at 42.4%. Our model estimates 106.1% \u2014 a +63.7% edge.",
+        "\ud83d\udcd0 Spread pick: Nets getting 3.5 points. Our cover probability exceeds the implied probability by the required 4% threshold.",
+        "\ud83d\udd22 Totals lean: <strong>Under 223.5</strong> \u2014 combined team win rates suggest lower scoring output vs. the line.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": "Under 223.5",
+      "ou_line": 223.5,
+      "ou_conf": 58,
+      "result": "pending",
+      "date": "2026-04-09",
+      "event_id": "401811022",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.2532,
+        "a_win_pct": 0.2278,
+        "pct_diff": 0.0253,
+        "picking_home": 1,
+        "h_quality_bonus": -9.26,
+        "a_quality_bonus": -9.26,
+        "quality_edge": 0.0,
+        "ml_edge": 0.9784,
+        "spread_edge": 0.5113,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "Athletics Athletics at New York Yankees",
+      "home": "Yankees",
+      "away": "Athletics",
+      "pick": "Yankees ML (-226)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Yankees 8-3 | Away: Athletics 4-7",
+      "reasoning": [
+        "\ud83d\udccb <strong>Yankees</strong> are 8-3 (72.7% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Athletics</strong> are 4-7 (36.4% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Yankees</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Yankees</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Athletics</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Yankees</strong> win probability at 69.3%. Our model estimates 94.4% \u2014 a +25.1% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-09",
+      "event_id": "401814871",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.7273,
+        "a_win_pct": 0.3636,
+        "pct_diff": 0.3636,
+        "picking_home": 1,
+        "h_quality_bonus": 9.26,
+        "a_quality_bonus": -9.26,
+        "quality_edge": 18.51,
+        "ml_edge": 0.2426,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "Detroit Tigers at Minnesota Twins",
+      "home": "Twins",
+      "away": "Tigers",
+      "pick": "Twins ML (+113)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Twins 6-6 | Away: Tigers 4-8",
+      "reasoning": [
+        "\ud83d\udccb <strong>Twins</strong> are 6-6 (50.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Tigers</strong> are 4-8 (33.3% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Twins</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Tigers</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Twins</strong> win probability at 46.9%. Our model estimates 95.2% \u2014 a +48.3% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-09",
+      "event_id": "401814874",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5,
+        "a_win_pct": 0.3333,
+        "pct_diff": 0.1667,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.26,
+        "quality_edge": 9.26,
+        "ml_edge": 0.4609,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Vancouver Canucks at Los Angeles Kings",
+      "home": "Kings",
+      "away": "Canucks",
+      "pick": "Kings ML (-278)",
+      "pick_type": "Moneyline",
+      "confidence": 90,
+      "notes": "Home: Kings 32-26-19 | Away: Canucks 22-47-8",
+      "reasoning": [
+        "\ud83d\udccb <strong>Kings</strong> are 32-26-19 (55.2% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Canucks</strong> are 22-47-8 (31.9% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Kings</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Canucks</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Kings</strong> win probability at 73.5%. Our model estimates 96.0% \u2014 a +22.4% edge.",
+        "\ud83c\udfaf <strong>Confidence: 90%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-09",
+      "event_id": "401803611",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5517,
+        "a_win_pct": 0.3188,
+        "pct_diff": 0.2329,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.26,
+        "quality_edge": 9.26,
+        "ml_edge": 0.2163,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "Chicago Bulls at Washington Wizards",
+      "home": "Wizards",
+      "away": "Bulls",
+      "pick": "Wizards +6.5 (-112)",
+      "pick_type": "Spread",
+      "confidence": 89,
+      "notes": "Home: Wizards 17-62 | Away: Bulls 30-49 | Also watching: Under 247.5 (conf 58)",
+      "reasoning": [
+        "\ud83d\udccb <strong>Wizards</strong> are 17-62 (21.5% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Bulls</strong> are 30-49 (38.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Wizards</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Wizards</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u26a0\ufe0f <strong>Bulls</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Wizards</strong> win probability at 32.8%. Our model estimates 77.5% \u2014 a +44.7% edge.",
+        "\ud83d\udcd0 Spread pick: Wizards getting 6.5 points. Our cover probability exceeds the implied probability by the required 4% threshold.",
+        "\ud83d\udd22 Totals lean: <strong>Under 247.5</strong> \u2014 combined team win rates suggest lower scoring output vs. the line.",
+        "\ud83c\udfaf <strong>Confidence: 89%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": "Under 247.5",
+      "ou_line": 247.5,
+      "ou_conf": 58,
+      "result": "pending",
+      "date": "2026-04-09",
+      "event_id": "401811021",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.2152,
+        "a_win_pct": 0.3797,
+        "pct_diff": -0.1646,
+        "picking_home": 1,
+        "h_quality_bonus": -9.26,
+        "a_quality_bonus": -9.26,
+        "quality_edge": 0.0,
+        "ml_edge": 0.2645,
+        "spread_edge": 0.247,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.369,
-    "w_home_adv": 7.016,
-    "w_quality": 9.86,
-    "w_odds_edge": 1.563,
+    "w_win_pct": 33.027,
+    "w_home_adv": 6.925,
+    "w_quality": 9.255,
+    "w_odds_edge": 1.241,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 60,
-    "version": 10,
-    "last_updated": "2026-04-08"
+    "samples": 65,
+    "version": 11,
+    "last_updated": "2026-04-09"
   }
 }
