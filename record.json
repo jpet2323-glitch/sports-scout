@@ -1,31 +1,31 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-04-12",
+    "last_updated": "2026-04-13",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 59,
-    "losses": 47,
+    "wins": 61,
+    "losses": 50,
     "pushes": 0,
-    "units_wagered": 106,
-    "units_net": 6.690000000000005,
-    "roi_pct": 6.3
+    "units_wagered": 111,
+    "units_net": 5.510000000000005,
+    "roi_pct": 5.0
   },
   "by_sport": {
     "NBA": {
-      "wins": 16,
+      "wins": 18,
       "losses": 16,
       "pushes": 0
     },
     "NHL": {
       "wins": 8,
-      "losses": 9,
+      "losses": 10,
       "pushes": 0
     },
     "MLB": {
       "wins": 19,
-      "losses": 15,
+      "losses": 17,
       "pushes": 0
     },
     "NCAAB": {
@@ -3529,11 +3529,11 @@
       "ou_pick": "Over 219.5",
       "ou_line": 219.5,
       "ou_conf": 60,
-      "result": "pending",
+      "result": "win",
       "date": "2026-04-12",
       "event_id": "401811041",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 113,
+      "away_score": 108,
       "features": {
         "h_win_pct": 0.679,
         "a_win_pct": 0.5556,
@@ -3545,7 +3545,8 @@
         "ml_edge": 0.5107,
         "spread_edge": 0.1972,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -3570,11 +3571,11 @@
       "ou_pick": "Under 235.5",
       "ou_line": 235.5,
       "ou_conf": 58,
-      "result": "pending",
+      "result": "win",
       "date": "2026-04-12",
       "event_id": "401811042",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 130,
+      "away_score": 117,
       "features": {
         "h_win_pct": 0.6296,
         "a_win_pct": 0.2099,
@@ -3586,7 +3587,8 @@
         "ml_edge": 0.224,
         "spread_edge": 0.5483,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -3608,11 +3610,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-12",
       "event_id": "401814914",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 9,
       "features": {
         "h_win_pct": 0.5714,
         "a_win_pct": 0.3571,
@@ -3624,7 +3626,8 @@
         "ml_edge": 0.4192,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -3646,11 +3649,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-12",
       "event_id": "401814915",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 5,
+      "away_score": 6,
       "features": {
         "h_win_pct": 0.4667,
         "a_win_pct": 0.3333,
@@ -3662,7 +3665,8 @@
         "ml_edge": 0.2663,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -3684,11 +3688,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-12",
       "event_id": "401803631",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 4,
       "features": {
         "h_win_pct": 0.5676,
         "a_win_pct": 0.3239,
@@ -3700,18 +3704,94 @@
         "ml_edge": 0.1928,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "MLB",
+      "game": "Boston Red Sox at Minnesota Twins",
+      "home": "Twins",
+      "away": "Red Sox",
+      "pick": "Twins ML (+141)",
+      "pick_type": "Moneyline",
+      "confidence": 84,
+      "notes": "Home: Twins 9-7 | Away: Red Sox 6-9",
+      "reasoning": [
+        "\ud83d\udccb <strong>Twins</strong> are 9-7 (56.2% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Red Sox</strong> are 6-9 (40.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Twins</strong> a +7 pt scoring bonus in our model.",
+        "\ud83d\udcc8 DraftKings implies <strong>Twins</strong> win probability at 41.5%. Our model estimates 69.4% \u2014 a +27.9% edge.",
+        "\ud83c\udfaf <strong>Confidence: 84%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-13",
+      "event_id": "401814926",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5625,
+        "a_win_pct": 0.4,
+        "pct_diff": 0.1625,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": 0,
+        "quality_edge": 0,
+        "ml_edge": 0.2429,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "Houston Astros at Seattle Mariners",
+      "home": "Mariners",
+      "away": "Astros",
+      "pick": "Mariners ML (-175)",
+      "pick_type": "Moneyline",
+      "confidence": 83,
+      "notes": "Home: Mariners 7-9 | Away: Astros 6-10",
+      "reasoning": [
+        "\ud83d\udccb <strong>Mariners</strong> are 7-9 (43.8% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Astros</strong> are 6-10 (37.5% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Mariners</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Astros</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Mariners</strong> win probability at 63.6%. Our model estimates 89.1% \u2014 a +25.5% edge.",
+        "\ud83c\udfaf <strong>Confidence: 83%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-13",
+      "event_id": "401814928",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.4375,
+        "a_win_pct": 0.375,
+        "pct_diff": 0.0625,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.26,
+        "quality_edge": 9.26,
+        "ml_edge": 0.2349,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.104,
-    "w_home_adv": 6.88,
-    "w_quality": 9.254,
-    "w_odds_edge": 0.769,
+    "w_win_pct": 33.084,
+    "w_home_adv": 6.836,
+    "w_quality": 9.257,
+    "w_odds_edge": 0.95,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 70,
-    "version": 12,
-    "last_updated": "2026-04-10"
+    "samples": 75,
+    "version": 13,
+    "last_updated": "2026-04-13"
   }
 }
