@@ -1,7 +1,7 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-04-14",
+    "last_updated": "2026-04-15",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
@@ -3778,6 +3778,121 @@
         "a_quality_bonus": -9.26,
         "quality_edge": 9.26,
         "ml_edge": 0.2349,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "Boston Red Sox at Minnesota Twins",
+      "home": "Twins",
+      "away": "Red Sox",
+      "pick": "Twins ML (+109)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Twins 11-7 | Away: Red Sox 6-11",
+      "reasoning": [
+        "\ud83d\udccb <strong>Twins</strong> are 11-7 (61.1% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Red Sox</strong> are 6-11 (35.3% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Twins</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Twins</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Red Sox</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Twins</strong> win probability at 47.8%. Our model estimates 94.9% \u2014 a +47.1% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-15",
+      "event_id": "401814953",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.6111,
+        "a_win_pct": 0.3529,
+        "pct_diff": 0.2582,
+        "picking_home": 1,
+        "h_quality_bonus": 9.26,
+        "a_quality_bonus": -9.26,
+        "quality_edge": 18.51,
+        "ml_edge": 0.4591,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "San Francisco Giants at Cincinnati Reds",
+      "home": "Reds",
+      "away": "Giants",
+      "pick": "Reds ML (-105)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Reds 10-7 | Away: Giants 6-11",
+      "reasoning": [
+        "\ud83d\udccb <strong>Reds</strong> are 10-7 (58.8% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Giants</strong> are 6-11 (35.3% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Reds</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Giants</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Reds</strong> win probability at 51.2%. Our model estimates 93.3% \u2014 a +42.1% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-15",
+      "event_id": "401814951",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5882,
+        "a_win_pct": 0.3529,
+        "pct_diff": 0.2353,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.26,
+        "quality_edge": 9.26,
+        "ml_edge": 0.4035,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "New York Rangers at Tampa Bay Lightning",
+      "home": "Lightning",
+      "away": "Rangers",
+      "pick": "Lightning ML (-120)",
+      "pick_type": "Moneyline",
+      "confidence": 74,
+      "notes": "Home: Lightning 50-25-6 | Away: Rangers 33-39-9",
+      "reasoning": [
+        "\ud83d\udccb <strong>Lightning</strong> are 50-25-6 (66.7% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Rangers</strong> are 33-39-9 (45.8% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Lightning</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Lightning</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Lightning</strong> win probability at 54.5%. Our model estimates 73.2% \u2014 a +18.6% edge.",
+        "\ud83c\udfaf <strong>Confidence: 74%</strong> \u2014 Standard 1u play."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-15",
+      "event_id": "401803653",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.6667,
+        "a_win_pct": 0.4583,
+        "pct_diff": 0.2083,
+        "picking_home": 1,
+        "h_quality_bonus": 9.26,
+        "a_quality_bonus": 0,
+        "quality_edge": 9.26,
+        "ml_edge": 0.1701,
         "spread_edge": 0.0,
         "had_dk_odds": 1
       }
