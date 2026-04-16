@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-04-15",
+    "last_updated": "2026-04-16",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 61,
-    "losses": 50,
+    "wins": 62,
+    "losses": 52,
     "pushes": 0,
-    "units_wagered": 111,
-    "units_net": 5.510000000000005,
-    "roi_pct": 5.0
+    "units_wagered": 114,
+    "units_net": 4.420000000000005,
+    "roi_pct": 3.9
   },
   "by_sport": {
     "NBA": {
@@ -20,12 +20,12 @@
     },
     "NHL": {
       "wins": 8,
-      "losses": 10,
+      "losses": 11,
       "pushes": 0
     },
     "MLB": {
-      "wins": 19,
-      "losses": 17,
+      "wins": 20,
+      "losses": 18,
       "pushes": 0
     },
     "NCAAB": {
@@ -3803,11 +3803,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-15",
       "event_id": "401814953",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 5,
+      "away_score": 9,
       "features": {
         "h_win_pct": 0.6111,
         "a_win_pct": 0.3529,
@@ -3819,7 +3819,8 @@
         "ml_edge": 0.4591,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -3841,11 +3842,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-04-15",
       "event_id": "401814951",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 8,
+      "away_score": 3,
       "features": {
         "h_win_pct": 0.5882,
         "a_win_pct": 0.3529,
@@ -3857,7 +3858,8 @@
         "ml_edge": 0.4035,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -3879,11 +3881,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-15",
       "event_id": "401803653",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 4,
       "features": {
         "h_win_pct": 0.6667,
         "a_win_pct": 0.4583,
@@ -3895,18 +3897,134 @@
         "ml_edge": 0.1701,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "MLB",
+      "game": "San Francisco Giants at Cincinnati Reds",
+      "home": "Reds",
+      "away": "Giants",
+      "pick": "Reds ML (-131)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Reds 11-7 | Away: Giants 6-12",
+      "reasoning": [
+        "\ud83d\udccb <strong>Reds</strong> are 11-7 (61.1% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Giants</strong> are 6-12 (33.3% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Reds</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Reds</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Giants</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Reds</strong> win probability at 56.7%. Our model estimates 95.5% \u2014 a +38.8% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-16",
+      "event_id": "401814964",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.6111,
+        "a_win_pct": 0.3333,
+        "pct_diff": 0.2778,
+        "picking_home": 1,
+        "h_quality_bonus": 8.99,
+        "a_quality_bonus": -8.99,
+        "quality_edge": 17.98,
+        "ml_edge": 0.38,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "Colorado Rockies at Houston Astros",
+      "home": "Astros",
+      "away": "Rockies",
+      "pick": "Astros ML (-199)",
+      "pick_type": "Moneyline",
+      "confidence": 82,
+      "notes": "Home: Astros 8-11 | Away: Rockies 6-12",
+      "reasoning": [
+        "\ud83d\udccb <strong>Astros</strong> are 8-11 (42.1% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Rockies</strong> are 6-12 (33.3% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Astros</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Rockies</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Astros</strong> win probability at 66.6%. Our model estimates 92.6% \u2014 a +26.0% edge.",
+        "\ud83c\udfaf <strong>Confidence: 82%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-16",
+      "event_id": "401814966",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.4211,
+        "a_win_pct": 0.3333,
+        "pct_diff": 0.0877,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -8.99,
+        "quality_edge": 8.99,
+        "ml_edge": 0.246,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Vancouver Canucks at Edmonton Oilers",
+      "home": "Oilers",
+      "away": "Canucks",
+      "pick": "Oilers ML (-325)",
+      "pick_type": "Moneyline",
+      "confidence": 70,
+      "notes": "Home: Oilers 40-30-11 | Away: Canucks 25-48-8",
+      "reasoning": [
+        "\ud83d\udccb <strong>Oilers</strong> are 40-30-11 (57.1% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Canucks</strong> are 25-48-8 (34.2% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Oilers</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Canucks</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Oilers</strong> win probability at 76.5%. Our model estimates 92.5% \u2014 a +16.0% edge.",
+        "\ud83c\udfaf <strong>Confidence: 70%</strong> \u2014 Standard 1u play."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-16",
+      "event_id": "401803662",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5714,
+        "a_win_pct": 0.3425,
+        "pct_diff": 0.229,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -8.99,
+        "quality_edge": 8.99,
+        "ml_edge": 0.1527,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.084,
-    "w_home_adv": 6.836,
-    "w_quality": 9.257,
-    "w_odds_edge": 0.95,
+    "w_win_pct": 32.983,
+    "w_home_adv": 6.792,
+    "w_quality": 8.988,
+    "w_odds_edge": 0.884,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 75,
-    "version": 13,
-    "last_updated": "2026-04-13"
+    "samples": 78,
+    "version": 14,
+    "last_updated": "2026-04-16"
   }
 }
