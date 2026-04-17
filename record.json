@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-04-16",
+    "last_updated": "2026-04-17",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 62,
-    "losses": 52,
+    "wins": 63,
+    "losses": 54,
     "pushes": 0,
-    "units_wagered": 114,
-    "units_net": 4.420000000000005,
-    "roi_pct": 3.9
+    "units_wagered": 117,
+    "units_net": 3.3300000000000054,
+    "roi_pct": 2.8
   },
   "by_sport": {
     "NBA": {
@@ -19,13 +19,13 @@
       "pushes": 0
     },
     "NHL": {
-      "wins": 8,
+      "wins": 9,
       "losses": 11,
       "pushes": 0
     },
     "MLB": {
       "wins": 20,
-      "losses": 18,
+      "losses": 20,
       "pushes": 0
     },
     "NCAAB": {
@@ -3921,11 +3921,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-16",
       "event_id": "401814964",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 0,
+      "away_score": 3,
       "features": {
         "h_win_pct": 0.6111,
         "a_win_pct": 0.3333,
@@ -3937,7 +3937,8 @@
         "ml_edge": 0.38,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -3959,11 +3960,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-16",
       "event_id": "401814966",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 3,
       "features": {
         "h_win_pct": 0.4211,
         "a_win_pct": 0.3333,
@@ -3975,7 +3976,8 @@
         "ml_edge": 0.246,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -3997,11 +3999,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-04-16",
       "event_id": "401803662",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 6,
+      "away_score": 1,
       "features": {
         "h_win_pct": 0.5714,
         "a_win_pct": 0.3425,
@@ -4013,18 +4015,95 @@
         "ml_edge": 0.1527,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "MLB",
+      "game": "San Francisco Giants at Washington Nationals",
+      "home": "Nationals",
+      "away": "Giants",
+      "pick": "Nationals ML (+129)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Nationals 9-10 | Away: Giants 7-12",
+      "reasoning": [
+        "\ud83d\udccb <strong>Nationals</strong> are 9-10 (47.4% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Giants</strong> are 7-12 (36.8% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Nationals</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Giants</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Nationals</strong> win probability at 43.7%. Our model estimates 89.4% \u2014 a +45.8% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-17",
+      "event_id": "401814976",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.4737,
+        "a_win_pct": 0.3684,
+        "pct_diff": 0.1053,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -8.73,
+        "quality_edge": 8.73,
+        "ml_edge": 0.4312,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "Chicago White Sox at Athletics Athletics",
+      "home": "Athletics",
+      "away": "White Sox",
+      "pick": "Athletics ML (-156)",
+      "pick_type": "Moneyline",
+      "confidence": 86,
+      "notes": "Home: Athletics 10-9 | Away: White Sox 6-13",
+      "reasoning": [
+        "\ud83d\udccb <strong>Athletics</strong> are 10-9 (52.6% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>White Sox</strong> are 6-13 (31.6% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Athletics</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>White Sox</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Athletics</strong> win probability at 60.9%. Our model estimates 94.6% \u2014 a +33.6% edge.",
+        "\ud83c\udfaf <strong>Confidence: 86%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-17",
+      "event_id": "401814982",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5263,
+        "a_win_pct": 0.3158,
+        "pct_diff": 0.2105,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -8.73,
+        "quality_edge": 8.73,
+        "ml_edge": 0.3258,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 32.983,
-    "w_home_adv": 6.792,
-    "w_quality": 8.988,
-    "w_odds_edge": 0.884,
+    "w_win_pct": 32.923,
+    "w_home_adv": 6.749,
+    "w_quality": 8.728,
+    "w_odds_edge": 0.748,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 78,
-    "version": 14,
-    "last_updated": "2026-04-16"
+    "samples": 81,
+    "version": 15,
+    "last_updated": "2026-04-17"
   }
 }
