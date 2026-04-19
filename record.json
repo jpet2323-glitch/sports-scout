@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-04-18",
+    "last_updated": "2026-04-19",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 63,
+    "wins": 65,
     "losses": 56,
     "pushes": 0,
-    "units_wagered": 119,
-    "units_net": 1.3300000000000054,
-    "roi_pct": 1.1
+    "units_wagered": 121,
+    "units_net": 3.1500000000000057,
+    "roi_pct": 2.6
   },
   "by_sport": {
     "NBA": {
@@ -24,7 +24,7 @@
       "pushes": 0
     },
     "MLB": {
-      "wins": 20,
+      "wins": 22,
       "losses": 22,
       "pushes": 0
     },
@@ -4116,11 +4116,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-04-18",
       "event_id": "401814994",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 4,
+      "away_score": 2,
       "features": {
         "h_win_pct": 0.5263,
         "a_win_pct": 0.35,
@@ -4132,7 +4132,8 @@
         "ml_edge": 0.3604,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -4155,11 +4156,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-04-18",
       "event_id": "401815000",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 6,
+      "away_score": 2,
       "features": {
         "h_win_pct": 0.6,
         "a_win_pct": 0.3684,
@@ -4171,18 +4172,96 @@
         "ml_edge": 0.3488,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "MLB",
+      "game": "Toronto Blue Jays at Arizona Diamondbacks",
+      "home": "Diamondbacks",
+      "away": "Blue Jays",
+      "pick": "Diamondbacks ML (-108)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Diamondbacks 13-8 | Away: Blue Jays 7-13",
+      "reasoning": [
+        "\ud83d\udccb <strong>Diamondbacks</strong> are 13-8 (61.9% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Blue Jays</strong> are 7-13 (35.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Diamondbacks</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Diamondbacks</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Blue Jays</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Diamondbacks</strong> win probability at 51.9%. Our model estimates 94.0% \u2014 a +42.0% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-19",
+      "event_id": "401815015",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.619,
+        "a_win_pct": 0.35,
+        "pct_diff": 0.269,
+        "picking_home": 1,
+        "h_quality_bonus": 8.84,
+        "a_quality_bonus": -8.84,
+        "quality_edge": 17.68,
+        "ml_edge": 0.411,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "New York Mets at Chicago Cubs",
+      "home": "Cubs",
+      "away": "Mets",
+      "pick": "Cubs ML (-136)",
+      "pick_type": "Moneyline",
+      "confidence": 87,
+      "notes": "Home: Cubs 11-9 | Away: Mets 7-14",
+      "reasoning": [
+        "\ud83d\udccb <strong>Cubs</strong> are 11-9 (55.0% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Mets</strong> are 7-14 (33.3% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Cubs</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Mets</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Cubs</strong> win probability at 57.6%. Our model estimates 93.3% \u2014 a +35.7% edge.",
+        "\ud83c\udfaf <strong>Confidence: 87%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-19",
+      "event_id": "401815009",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.55,
+        "a_win_pct": 0.3333,
+        "pct_diff": 0.2167,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -8.84,
+        "quality_edge": 8.84,
+        "ml_edge": 0.3442,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 32.788,
-    "w_home_adv": 6.663,
-    "w_quality": 8.48,
-    "w_odds_edge": 0.533,
+    "w_win_pct": 32.961,
+    "w_home_adv": 6.747,
+    "w_quality": 8.839,
+    "w_odds_edge": 0.733,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 83,
-    "version": 16,
-    "last_updated": "2026-04-18"
+    "samples": 85,
+    "version": 17,
+    "last_updated": "2026-04-19"
   }
 }
