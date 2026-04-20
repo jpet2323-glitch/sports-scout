@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-04-19",
+    "last_updated": "2026-04-20",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 65,
-    "losses": 56,
+    "wins": 66,
+    "losses": 57,
     "pushes": 0,
-    "units_wagered": 121,
-    "units_net": 3.1500000000000057,
-    "roi_pct": 2.6
+    "units_wagered": 123,
+    "units_net": 3.060000000000006,
+    "roi_pct": 2.5
   },
   "by_sport": {
     "NBA": {
@@ -24,8 +24,8 @@
       "pushes": 0
     },
     "MLB": {
-      "wins": 22,
-      "losses": 22,
+      "wins": 23,
+      "losses": 23,
       "pushes": 0
     },
     "NCAAB": {
@@ -4196,11 +4196,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-19",
       "event_id": "401815015",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 4,
+      "away_score": 10,
       "features": {
         "h_win_pct": 0.619,
         "a_win_pct": 0.35,
@@ -4212,7 +4212,8 @@
         "ml_edge": 0.411,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -4234,11 +4235,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-04-19",
       "event_id": "401815009",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 1,
       "features": {
         "h_win_pct": 0.55,
         "a_win_pct": 0.3333,
@@ -4250,18 +4251,57 @@
         "ml_edge": 0.3442,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "MLB",
+      "game": "Houston Astros at Cleveland Guardians",
+      "home": "Guardians",
+      "away": "Astros",
+      "pick": "Guardians ML (-115)",
+      "pick_type": "Moneyline",
+      "confidence": 89,
+      "notes": "Home: Guardians 13-10 | Away: Astros 8-15",
+      "reasoning": [
+        "\ud83d\udccb <strong>Guardians</strong> are 13-10 (56.5% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Astros</strong> are 8-15 (34.8% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Guardians</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Astros</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Guardians</strong> win probability at 53.5%. Our model estimates 91.8% \u2014 a +38.3% edge.",
+        "\ud83c\udfaf <strong>Confidence: 89%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-20",
+      "event_id": "401815019",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5652,
+        "a_win_pct": 0.3478,
+        "pct_diff": 0.2174,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -8.71,
+        "quality_edge": 8.71,
+        "ml_edge": 0.3676,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 32.961,
+    "w_win_pct": 32.939,
     "w_home_adv": 6.747,
-    "w_quality": 8.839,
-    "w_odds_edge": 0.733,
+    "w_quality": 8.715,
+    "w_odds_edge": 0.714,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 85,
-    "version": 17,
-    "last_updated": "2026-04-19"
+    "samples": 87,
+    "version": 18,
+    "last_updated": "2026-04-20"
   }
 }
