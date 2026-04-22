@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-04-21",
+    "last_updated": "2026-04-22",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 66,
+    "wins": 68,
     "losses": 58,
     "pushes": 0,
-    "units_wagered": 124,
-    "units_net": 2.060000000000006,
-    "roi_pct": 1.7
+    "units_wagered": 126,
+    "units_net": 3.880000000000006,
+    "roi_pct": 3.1
   },
   "by_sport": {
     "NBA": {
@@ -24,7 +24,7 @@
       "pushes": 0
     },
     "MLB": {
-      "wins": 23,
+      "wins": 25,
       "losses": 24,
       "pushes": 0
     },
@@ -4313,11 +4313,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-04-21",
       "event_id": "401815034",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 7,
+      "away_score": 4,
       "features": {
         "h_win_pct": 0.5909,
         "a_win_pct": 0.3636,
@@ -4329,7 +4329,8 @@
         "ml_edge": 0.3367,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -4351,11 +4352,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-04-21",
       "event_id": "401815028",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 8,
+      "away_score": 5,
       "features": {
         "h_win_pct": 0.5417,
         "a_win_pct": 0.375,
@@ -4367,18 +4368,135 @@
         "ml_edge": 0.2796,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "MLB",
+      "game": "Houston Astros at Cleveland Guardians",
+      "home": "Guardians",
+      "away": "Astros",
+      "pick": "Guardians ML (-143)",
+      "pick_type": "Moneyline",
+      "confidence": 85,
+      "notes": "Home: Guardians 14-11 | Away: Astros 9-16",
+      "reasoning": [
+        "\ud83d\udccb <strong>Guardians</strong> are 14-11 (56.0% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Astros</strong> are 9-16 (36.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Guardians</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Astros</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Guardians</strong> win probability at 58.8%. Our model estimates 90.8% \u2014 a +31.9% edge.",
+        "\ud83c\udfaf <strong>Confidence: 85%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-22",
+      "event_id": "401815043",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.56,
+        "a_win_pct": 0.36,
+        "pct_diff": 0.2,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -8.83,
+        "quality_edge": 8.83,
+        "ml_edge": 0.3038,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "Philadelphia Phillies at Chicago Cubs",
+      "home": "Cubs",
+      "away": "Phillies",
+      "pick": "Cubs ML (-175)",
+      "pick_type": "Moneyline",
+      "confidence": 84,
+      "notes": "Home: Cubs 14-9 | Away: Phillies 8-15",
+      "reasoning": [
+        "\ud83d\udccb <strong>Cubs</strong> are 14-9 (60.9% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Phillies</strong> are 8-15 (34.8% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Cubs</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Cubs</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Phillies</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Cubs</strong> win probability at 63.6%. Our model estimates 93.8% \u2014 a +30.2% edge.",
+        "\ud83c\udfaf <strong>Confidence: 84%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-22",
+      "event_id": "401815049",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.6087,
+        "a_win_pct": 0.3478,
+        "pct_diff": 0.2609,
+        "picking_home": 1,
+        "h_quality_bonus": 8.83,
+        "a_quality_bonus": -8.83,
+        "quality_edge": 17.66,
+        "ml_edge": 0.2946,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "Phoenix Suns at Oklahoma City Thunder",
+      "home": "Thunder",
+      "away": "Suns",
+      "pick": "Suns ML (+1100)",
+      "pick_type": "Moneyline",
+      "confidence": 75,
+      "notes": "Home: Thunder 64-18 | Away: Suns 45-37 | Also watching: Over 215.5 (conf 60)",
+      "reasoning": [
+        "\ud83d\udccb <strong>Thunder</strong> are 64-18 (78.0% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Suns</strong> are 45-37 (54.9% win rate) \u2014 Above average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Thunder</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Thunder</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Suns</strong> win probability at 8.3%. Our model estimates 34.3% \u2014 a +25.9% edge.",
+        "\ud83d\udd22 Totals lean: <strong>Over 215.5</strong> \u2014 combined team win rates suggest higher scoring output vs. the line.",
+        "\ud83c\udfaf <strong>Confidence: 75%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": "Over 215.5",
+      "ou_line": 215.5,
+      "ou_conf": 60,
+      "result": "pending",
+      "date": "2026-04-22",
+      "event_id": "401869368",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.7805,
+        "a_win_pct": 0.5488,
+        "pct_diff": -0.2317,
+        "picking_home": 0,
+        "h_quality_bonus": 8.83,
+        "a_quality_bonus": 0,
+        "quality_edge": -8.83,
+        "ml_edge": 0.2211,
+        "spread_edge": 0.1335,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 32.848,
-    "w_home_adv": 6.705,
-    "w_quality": 8.594,
-    "w_odds_edge": 0.612,
+    "w_win_pct": 33.012,
+    "w_home_adv": 6.789,
+    "w_quality": 8.832,
+    "w_odds_edge": 0.783,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 88,
-    "version": 19,
-    "last_updated": "2026-04-21"
+    "samples": 90,
+    "version": 20,
+    "last_updated": "2026-04-22"
   }
 }
