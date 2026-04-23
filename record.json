@@ -1,21 +1,21 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-04-22",
+    "last_updated": "2026-04-23",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 68,
-    "losses": 58,
+    "wins": 69,
+    "losses": 60,
     "pushes": 0,
-    "units_wagered": 126,
-    "units_net": 3.880000000000006,
-    "roi_pct": 3.1
+    "units_wagered": 129,
+    "units_net": 2.7900000000000063,
+    "roi_pct": 2.2
   },
   "by_sport": {
     "NBA": {
       "wins": 18,
-      "losses": 16,
+      "losses": 17,
       "pushes": 0
     },
     "NHL": {
@@ -24,8 +24,8 @@
       "pushes": 0
     },
     "MLB": {
-      "wins": 25,
-      "losses": 24,
+      "wins": 26,
+      "losses": 25,
       "pushes": 0
     },
     "NCAAB": {
@@ -4391,11 +4391,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-22",
       "event_id": "401815043",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 0,
+      "away_score": 2,
       "features": {
         "h_win_pct": 0.56,
         "a_win_pct": 0.36,
@@ -4407,7 +4407,8 @@
         "ml_edge": 0.3038,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -4430,11 +4431,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-04-22",
       "event_id": "401815049",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 7,
+      "away_score": 2,
       "features": {
         "h_win_pct": 0.6087,
         "a_win_pct": 0.3478,
@@ -4446,7 +4447,8 @@
         "ml_edge": 0.2946,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -4469,11 +4471,11 @@
       "ou_pick": "Over 215.5",
       "ou_line": 215.5,
       "ou_conf": 60,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-22",
       "event_id": "401869368",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 120,
+      "away_score": 107,
       "features": {
         "h_win_pct": 0.7805,
         "a_win_pct": 0.5488,
@@ -4485,18 +4487,96 @@
         "ml_edge": 0.2211,
         "spread_edge": 0.1335,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "MLB",
+      "game": "Philadelphia Phillies at Chicago Cubs",
+      "home": "Cubs",
+      "away": "Phillies",
+      "pick": "Cubs ML (+104)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Cubs 15-9 | Away: Phillies 8-16",
+      "reasoning": [
+        "\ud83d\udccb <strong>Cubs</strong> are 15-9 (62.5% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Phillies</strong> are 8-16 (33.3% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Cubs</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Cubs</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Phillies</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Cubs</strong> win probability at 49.0%. Our model estimates 95.6% \u2014 a +46.6% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-23",
+      "event_id": "401815060",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.625,
+        "a_win_pct": 0.3333,
+        "pct_diff": 0.2917,
+        "picking_home": 1,
+        "h_quality_bonus": 9.07,
+        "a_quality_bonus": -9.07,
+        "quality_edge": 18.15,
+        "ml_edge": 0.4587,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "Chicago White Sox at Arizona Diamondbacks",
+      "home": "Diamondbacks",
+      "away": "White Sox",
+      "pick": "Diamondbacks ML (-156)",
+      "pick_type": "Moneyline",
+      "confidence": 78,
+      "notes": "Home: Diamondbacks 14-10 | Away: White Sox 9-15",
+      "reasoning": [
+        "\ud83d\udccb <strong>Diamondbacks</strong> are 14-10 (58.3% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>White Sox</strong> are 9-15 (37.5% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Diamondbacks</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>White Sox</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Diamondbacks</strong> win probability at 60.9%. Our model estimates 89.9% \u2014 a +29.0% edge.",
+        "\ud83c\udfaf <strong>Confidence: 78%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-23",
+      "event_id": "401815063",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5833,
+        "a_win_pct": 0.375,
+        "pct_diff": 0.2083,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.07,
+        "quality_edge": 9.07,
+        "ml_edge": 0.2769,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.012,
+    "w_win_pct": 33.132,
     "w_home_adv": 6.789,
-    "w_quality": 8.832,
-    "w_odds_edge": 0.783,
+    "w_quality": 9.074,
+    "w_odds_edge": 0.683,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 90,
-    "version": 20,
-    "last_updated": "2026-04-22"
+    "samples": 93,
+    "version": 21,
+    "last_updated": "2026-04-23"
   }
 }
