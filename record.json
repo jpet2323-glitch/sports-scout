@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-04-23",
+    "last_updated": "2026-04-24",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 69,
-    "losses": 60,
+    "wins": 70,
+    "losses": 61,
     "pushes": 0,
-    "units_wagered": 129,
-    "units_net": 2.7900000000000063,
-    "roi_pct": 2.2
+    "units_wagered": 131,
+    "units_net": 2.7000000000000064,
+    "roi_pct": 2.1
   },
   "by_sport": {
     "NBA": {
@@ -24,8 +24,8 @@
       "pushes": 0
     },
     "MLB": {
-      "wins": 26,
-      "losses": 25,
+      "wins": 27,
+      "losses": 26,
       "pushes": 0
     },
     "NCAAB": {
@@ -4511,11 +4511,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-04-23",
       "event_id": "401815060",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 8,
+      "away_score": 7,
       "features": {
         "h_win_pct": 0.625,
         "a_win_pct": 0.3333,
@@ -4527,7 +4527,8 @@
         "ml_edge": 0.4587,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -4549,11 +4550,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-23",
       "event_id": "401815063",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 1,
+      "away_score": 4,
       "features": {
         "h_win_pct": 0.5833,
         "a_win_pct": 0.375,
@@ -4565,18 +4566,136 @@
         "ml_edge": 0.2769,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "MLB",
+      "game": "Philadelphia Phillies at Atlanta Braves",
+      "home": "Braves",
+      "away": "Phillies",
+      "pick": "Braves ML (-149)",
+      "pick_type": "Moneyline",
+      "confidence": 90,
+      "notes": "Home: Braves 18-8 | Away: Phillies 8-17",
+      "reasoning": [
+        "\ud83d\udccb <strong>Braves</strong> are 18-8 (69.2% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Phillies</strong> are 8-17 (32.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Braves</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Braves</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Phillies</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Braves</strong> win probability at 59.8%. Our model estimates 96.9% \u2014 a +37.1% edge.",
+        "\ud83c\udfaf <strong>Confidence: 90%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-24",
+      "event_id": "401815070",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.6923,
+        "a_win_pct": 0.32,
+        "pct_diff": 0.3723,
+        "picking_home": 1,
+        "h_quality_bonus": 9.2,
+        "a_quality_bonus": -9.2,
+        "quality_edge": 18.4,
+        "ml_edge": 0.3666,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "Boston Red Sox at Baltimore Orioles",
+      "home": "Orioles",
+      "away": "Red Sox",
+      "pick": "Orioles ML (-120)",
+      "pick_type": "Moneyline",
+      "confidence": 88,
+      "notes": "Home: Orioles 12-13 | Away: Red Sox 9-16",
+      "reasoning": [
+        "\ud83d\udccb <strong>Orioles</strong> are 12-13 (48.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Red Sox</strong> are 9-16 (36.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Orioles</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Red Sox</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Orioles</strong> win probability at 54.5%. Our model estimates 91.0% \u2014 a +36.5% edge.",
+        "\ud83c\udfaf <strong>Confidence: 88%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-24",
+      "event_id": "401815065",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.48,
+        "a_win_pct": 0.36,
+        "pct_diff": 0.12,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.2,
+        "quality_edge": 9.2,
+        "ml_edge": 0.3469,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "Los Angeles Lakers at Houston Rockets",
+      "home": "Rockets",
+      "away": "Lakers",
+      "pick": "Lakers ML (+270)",
+      "pick_type": "Moneyline",
+      "confidence": 70,
+      "notes": "Home: Rockets 52-30 | Away: Lakers 53-29 | Also watching: Over 206.5 (conf 60)",
+      "reasoning": [
+        "\ud83d\udccb <strong>Rockets</strong> are 52-30 (63.4% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Lakers</strong> are 53-29 (64.6% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Rockets</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Rockets</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u2b50 <strong>Lakers</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Lakers</strong> win probability at 27.0%. Our model estimates 47.4% \u2014 a +20.3% edge.",
+        "\ud83d\udd22 Totals lean: <strong>Over 206.5</strong> \u2014 combined team win rates suggest higher scoring output vs. the line.",
+        "\ud83c\udfaf <strong>Confidence: 70%</strong> \u2014 Standard 1u play."
+      ],
+      "ou_pick": "Over 206.5",
+      "ou_line": 206.5,
+      "ou_conf": 60,
+      "result": "pending",
+      "date": "2026-04-24",
+      "event_id": "401869400",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.6341,
+        "a_win_pct": 0.6463,
+        "pct_diff": 0.0122,
+        "picking_home": 0,
+        "h_quality_bonus": 9.2,
+        "a_quality_bonus": 9.2,
+        "quality_edge": 0.0,
+        "ml_edge": 0.1825,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.132,
+    "w_win_pct": 33.166,
     "w_home_adv": 6.789,
-    "w_quality": 9.074,
-    "w_odds_edge": 0.683,
+    "w_quality": 9.199,
+    "w_odds_edge": 0.733,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 93,
-    "version": 21,
-    "last_updated": "2026-04-23"
+    "samples": 95,
+    "version": 22,
+    "last_updated": "2026-04-24"
   }
 }
