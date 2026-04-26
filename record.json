@@ -1,21 +1,21 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-04-25",
+    "last_updated": "2026-04-26",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
     "wins": 73,
-    "losses": 61,
+    "losses": 64,
     "pushes": 0,
-    "units_wagered": 134,
-    "units_net": 5.430000000000007,
-    "roi_pct": 4.1
+    "units_wagered": 137,
+    "units_net": 2.430000000000007,
+    "roi_pct": 1.8
   },
   "by_sport": {
     "NBA": {
       "wins": 19,
-      "losses": 17,
+      "losses": 18,
       "pushes": 0
     },
     "NHL": {
@@ -25,7 +25,7 @@
     },
     "MLB": {
       "wins": 29,
-      "losses": 26,
+      "losses": 28,
       "pushes": 0
     },
     "NCAAB": {
@@ -4709,11 +4709,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-25",
       "event_id": "401815080",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 1,
+      "away_score": 17,
       "features": {
         "h_win_pct": 0.5,
         "a_win_pct": 0.3462,
@@ -4725,7 +4725,8 @@
         "ml_edge": 0.3876,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -4748,11 +4749,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-25",
       "event_id": "401815085",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 5,
+      "away_score": 8,
       "features": {
         "h_win_pct": 0.7037,
         "a_win_pct": 0.3077,
@@ -4764,7 +4765,8 @@
         "ml_edge": 0.4158,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -4787,11 +4789,11 @@
       "ou_pick": "Over 214.5",
       "ou_line": 214.5,
       "ou_conf": 60,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-25",
       "event_id": "401869370",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 109,
+      "away_score": 121,
       "features": {
         "h_win_pct": 0.5488,
         "a_win_pct": 0.7805,
@@ -4803,18 +4805,96 @@
         "ml_edge": 0.1703,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "MLB",
+      "game": "Philadelphia Phillies at Atlanta Braves",
+      "home": "Braves",
+      "away": "Phillies",
+      "pick": "Braves ML (-181)",
+      "pick_type": "Moneyline",
+      "confidence": 83,
+      "notes": "Home: Braves 19-9 | Away: Phillies 9-18",
+      "reasoning": [
+        "\ud83d\udccb <strong>Braves</strong> are 19-9 (67.9% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Phillies</strong> are 9-18 (33.3% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Braves</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Braves</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Phillies</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Braves</strong> win probability at 64.4%. Our model estimates 96.1% \u2014 a +31.7% edge.",
+        "\ud83c\udfaf <strong>Confidence: 83%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-26",
+      "event_id": "401815100",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.6786,
+        "a_win_pct": 0.3333,
+        "pct_diff": 0.3452,
+        "picking_home": 1,
+        "h_quality_bonus": 9.32,
+        "a_quality_bonus": -9.32,
+        "quality_edge": 18.63,
+        "ml_edge": 0.3122,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "Boston Red Sox at Baltimore Orioles",
+      "home": "Orioles",
+      "away": "Red Sox",
+      "pick": "Orioles ML (-143)",
+      "pick_type": "Moneyline",
+      "confidence": 81,
+      "notes": "Home: Orioles 13-14 | Away: Red Sox 10-17",
+      "reasoning": [
+        "\ud83d\udccb <strong>Orioles</strong> are 13-14 (48.1% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Red Sox</strong> are 10-17 (37.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Orioles</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Red Sox</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Orioles</strong> win probability at 58.8%. Our model estimates 90.0% \u2014 a +31.2% edge.",
+        "\ud83c\udfaf <strong>Confidence: 81%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-26",
+      "event_id": "401815095",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.4815,
+        "a_win_pct": 0.3704,
+        "pct_diff": 0.1111,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.32,
+        "quality_edge": 9.32,
+        "ml_edge": 0.2952,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.371,
-    "w_home_adv": 6.871,
-    "w_quality": 9.572,
-    "w_odds_edge": 0.975,
+    "w_win_pct": 33.243,
+    "w_home_adv": 6.751,
+    "w_quality": 9.316,
+    "w_odds_edge": 0.715,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 98,
-    "version": 23,
-    "last_updated": "2026-04-25"
+    "samples": 101,
+    "version": 24,
+    "last_updated": "2026-04-26"
   }
 }
