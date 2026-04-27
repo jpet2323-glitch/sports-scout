@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-04-26",
+    "last_updated": "2026-04-27",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 73,
-    "losses": 64,
+    "wins": 74,
+    "losses": 65,
     "pushes": 0,
-    "units_wagered": 137,
-    "units_net": 2.430000000000007,
-    "roi_pct": 1.8
+    "units_wagered": 139,
+    "units_net": 2.340000000000007,
+    "roi_pct": 1.7
   },
   "by_sport": {
     "NBA": {
@@ -24,8 +24,8 @@
       "pushes": 0
     },
     "MLB": {
-      "wins": 29,
-      "losses": 28,
+      "wins": 30,
+      "losses": 29,
       "pushes": 0
     },
     "NCAAB": {
@@ -4829,11 +4829,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-04-26",
       "event_id": "401815100",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 6,
+      "away_score": 2,
       "features": {
         "h_win_pct": 0.6786,
         "a_win_pct": 0.3333,
@@ -4845,7 +4845,8 @@
         "ml_edge": 0.3122,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -4867,11 +4868,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-26",
       "event_id": "401815095",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 5,
       "features": {
         "h_win_pct": 0.4815,
         "a_win_pct": 0.3704,
@@ -4883,18 +4884,58 @@
         "ml_edge": 0.2952,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NBA",
+      "game": "Oklahoma City Thunder at Phoenix Suns",
+      "home": "Suns",
+      "away": "Thunder",
+      "pick": "Suns ML (+380)",
+      "pick_type": "Moneyline",
+      "confidence": 72,
+      "notes": "Home: Suns 45-37 | Away: Thunder 64-18 | Also watching: Over 213.5 (conf 60)",
+      "reasoning": [
+        "\ud83d\udccb <strong>Suns</strong> are 45-37 (54.9% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Thunder</strong> are 64-18 (78.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Suns</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Thunder</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Suns</strong> win probability at 20.8%. Our model estimates 44.1% \u2014 a +23.3% edge.",
+        "\ud83d\udd22 Totals lean: <strong>Over 213.5</strong> \u2014 combined team win rates suggest higher scoring output vs. the line.",
+        "\ud83c\udfaf <strong>Confidence: 72%</strong> \u2014 Standard 1u play."
+      ],
+      "ou_pick": "Over 213.5",
+      "ou_line": 213.5,
+      "ou_conf": 60,
+      "result": "pending",
+      "date": "2026-04-27",
+      "event_id": "401869373",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5488,
+        "a_win_pct": 0.7805,
+        "pct_diff": -0.2317,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": 9.44,
+        "quality_edge": -9.44,
+        "ml_edge": 0.2056,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.243,
+    "w_win_pct": 33.337,
     "w_home_adv": 6.751,
-    "w_quality": 9.316,
-    "w_odds_edge": 0.715,
+    "w_quality": 9.441,
+    "w_odds_edge": 0.72,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 101,
-    "version": 24,
-    "last_updated": "2026-04-26"
+    "samples": 103,
+    "version": 25,
+    "last_updated": "2026-04-27"
   }
 }
