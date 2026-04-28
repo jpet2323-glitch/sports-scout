@@ -1,21 +1,21 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-04-27",
+    "last_updated": "2026-04-28",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
     "wins": 74,
-    "losses": 65,
+    "losses": 66,
     "pushes": 0,
-    "units_wagered": 139,
-    "units_net": 2.340000000000007,
-    "roi_pct": 1.7
+    "units_wagered": 140,
+    "units_net": 1.340000000000007,
+    "roi_pct": 1.0
   },
   "by_sport": {
     "NBA": {
       "wins": 19,
-      "losses": 18,
+      "losses": 19,
       "pushes": 0
     },
     "NHL": {
@@ -4908,11 +4908,11 @@
       "ou_pick": "Over 213.5",
       "ou_line": 213.5,
       "ou_conf": 60,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-04-27",
       "event_id": "401869373",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 122,
+      "away_score": 131,
       "features": {
         "h_win_pct": 0.5488,
         "a_win_pct": 0.7805,
@@ -4924,18 +4924,95 @@
         "ml_edge": 0.2056,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "MLB",
+      "game": "Houston Astros at Baltimore Orioles",
+      "home": "Orioles",
+      "away": "Astros",
+      "pick": "Orioles ML (-143)",
+      "pick_type": "Moneyline",
+      "confidence": 78,
+      "notes": "Home: Orioles 13-15 | Away: Astros 11-18",
+      "reasoning": [
+        "\ud83d\udccb <strong>Orioles</strong> are 13-15 (46.4% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Astros</strong> are 11-18 (37.9% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Orioles</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Astros</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Orioles</strong> win probability at 58.8%. Our model estimates 89.3% \u2014 a +30.5% edge.",
+        "\ud83c\udfaf <strong>Confidence: 78%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-28",
+      "event_id": "401815121",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.4643,
+        "a_win_pct": 0.3793,
+        "pct_diff": 0.085,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.57,
+        "quality_edge": 9.57,
+        "ml_edge": 0.2887,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "Washington Nationals at New York Mets",
+      "home": "Mets",
+      "away": "Nationals",
+      "pick": "Nationals ML (+159)",
+      "pick_type": "Moneyline",
+      "confidence": 76,
+      "notes": "Home: Mets 9-19 | Away: Nationals 13-16",
+      "reasoning": [
+        "\ud83d\udccb <strong>Mets</strong> are 9-19 (32.1% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Nationals</strong> are 13-16 (44.8% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Mets</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Mets</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Nationals</strong> win probability at 38.6%. Our model estimates 70.2% \u2014 a +31.6% edge.",
+        "\ud83c\udfaf <strong>Confidence: 76%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-04-28",
+      "event_id": "401815125",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.3214,
+        "a_win_pct": 0.4483,
+        "pct_diff": 0.1268,
+        "picking_home": 0,
+        "h_quality_bonus": -9.57,
+        "a_quality_bonus": 0,
+        "quality_edge": 9.57,
+        "ml_edge": 0.269,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.337,
-    "w_home_adv": 6.751,
-    "w_quality": 9.441,
-    "w_odds_edge": 0.72,
+    "w_win_pct": 33.429,
+    "w_home_adv": 6.711,
+    "w_quality": 9.566,
+    "w_odds_edge": 0.666,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 103,
-    "version": 25,
-    "last_updated": "2026-04-27"
+    "samples": 104,
+    "version": 26,
+    "last_updated": "2026-04-28"
   }
 }
