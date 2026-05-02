@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-05-01",
+    "last_updated": "2026-05-02",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 77,
-    "losses": 68,
+    "wins": 78,
+    "losses": 69,
     "pushes": 0,
-    "units_wagered": 145,
-    "units_net": 2.0700000000000074,
-    "roi_pct": 1.4
+    "units_wagered": 147,
+    "units_net": 1.9800000000000075,
+    "roi_pct": 1.3
   },
   "by_sport": {
     "NBA": {
@@ -24,8 +24,8 @@
       "pushes": 0
     },
     "MLB": {
-      "wins": 33,
-      "losses": 31,
+      "wins": 34,
+      "losses": 32,
       "pushes": 0
     },
     "NCAAB": {
@@ -5181,11 +5181,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-05-01",
       "event_id": "401815171",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 4,
       "features": {
         "h_win_pct": 0.375,
         "a_win_pct": 0.3226,
@@ -5197,7 +5197,8 @@
         "ml_edge": 0.4065,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -5219,11 +5220,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-05-01",
       "event_id": "401815159",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 1,
       "features": {
         "h_win_pct": 0.3871,
         "a_win_pct": 0.375,
@@ -5235,18 +5236,96 @@
         "ml_edge": 0.3319,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "MLB",
+      "game": "New York Mets at Los Angeles Angels",
+      "home": "Angels",
+      "away": "Mets",
+      "pick": "Angels ML (+104)",
+      "pick_type": "Moneyline",
+      "confidence": 88,
+      "notes": "Home: Angels 12-21 | Away: Mets 11-21",
+      "reasoning": [
+        "\ud83d\udccb <strong>Angels</strong> are 12-21 (36.4% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Mets</strong> are 11-21 (34.4% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Angels</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Angels</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u26a0\ufe0f <strong>Mets</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Angels</strong> win probability at 49.0%. Our model estimates 89.4% \u2014 a +40.4% edge.",
+        "\ud83c\udfaf <strong>Confidence: 88%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-05-02",
+      "event_id": "401815186",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.3636,
+        "a_win_pct": 0.3438,
+        "pct_diff": 0.0199,
+        "picking_home": 1,
+        "h_quality_bonus": -9.82,
+        "a_quality_bonus": -9.82,
+        "quality_edge": 0.0,
+        "ml_edge": 0.3537,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "Houston Astros at Boston Red Sox",
+      "home": "Red Sox",
+      "away": "Astros",
+      "pick": "Red Sox ML (-126)",
+      "pick_type": "Moneyline",
+      "confidence": 86,
+      "notes": "Home: Red Sox 13-19 | Away: Astros 12-21",
+      "reasoning": [
+        "\ud83d\udccb <strong>Red Sox</strong> are 13-19 (40.6% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Astros</strong> are 12-21 (36.4% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Red Sox</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Astros</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Red Sox</strong> win probability at 55.8%. Our model estimates 91.5% \u2014 a +35.7% edge.",
+        "\ud83c\udfaf <strong>Confidence: 86%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-05-02",
+      "event_id": "401815174",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.4062,
+        "a_win_pct": 0.3636,
+        "pct_diff": 0.0426,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.82,
+        "quality_edge": 9.82,
+        "ml_edge": 0.3388,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.491,
+    "w_win_pct": 33.476,
     "w_home_adv": 6.789,
-    "w_quality": 9.691,
-    "w_odds_edge": 0.738,
+    "w_quality": 9.816,
+    "w_odds_edge": 0.719,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 109,
-    "version": 29,
-    "last_updated": "2026-05-01"
+    "samples": 111,
+    "version": 30,
+    "last_updated": "2026-05-02"
   }
 }
