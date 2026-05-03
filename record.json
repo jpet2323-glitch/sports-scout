@@ -1,15 +1,15 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-05-02",
+    "last_updated": "2026-05-03",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 78,
-    "losses": 69,
+    "wins": 79,
+    "losses": 70,
     "pushes": 0,
-    "units_wagered": 147,
-    "units_net": 1.9800000000000075,
+    "units_wagered": 149,
+    "units_net": 1.8900000000000077,
     "roi_pct": 1.3
   },
   "by_sport": {
@@ -24,8 +24,8 @@
       "pushes": 0
     },
     "MLB": {
-      "wins": 34,
-      "losses": 32,
+      "wins": 35,
+      "losses": 33,
       "pushes": 0
     },
     "NCAAB": {
@@ -5260,11 +5260,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-05-02",
       "event_id": "401815186",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 4,
+      "away_score": 3,
       "features": {
         "h_win_pct": 0.3636,
         "a_win_pct": 0.3438,
@@ -5276,7 +5276,8 @@
         "ml_edge": 0.3537,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -5298,11 +5299,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-05-02",
       "event_id": "401815174",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 6,
       "features": {
         "h_win_pct": 0.4062,
         "a_win_pct": 0.3636,
@@ -5314,18 +5315,94 @@
         "ml_edge": 0.3388,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "MLB",
+      "game": "New York Mets at Los Angeles Angels",
+      "home": "Angels",
+      "away": "Mets",
+      "pick": "Angels ML (+113)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Angels 13-21 | Away: Mets 11-22",
+      "reasoning": [
+        "\ud83d\udccb <strong>Angels</strong> are 13-21 (38.2% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Mets</strong> are 11-22 (33.3% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Angels</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Mets</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Angels</strong> win probability at 46.9%. Our model estimates 94.7% \u2014 a +47.8% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-05-03",
+      "event_id": "401815201",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.3824,
+        "a_win_pct": 0.3333,
+        "pct_diff": 0.049,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.69,
+        "quality_edge": 9.69,
+        "ml_edge": 0.4609,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "Philadelphia Phillies at Miami Marlins",
+      "home": "Marlins",
+      "away": "Phillies",
+      "pick": "Marlins ML (+123)",
+      "pick_type": "Moneyline",
+      "confidence": 70,
+      "notes": "Home: Marlins 16-17 | Away: Phillies 13-20",
+      "reasoning": [
+        "\ud83d\udccb <strong>Marlins</strong> are 16-17 (48.5% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Phillies</strong> are 13-20 (39.4% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Marlins</strong> a +7 pt scoring bonus in our model.",
+        "\ud83d\udcc8 DraftKings implies <strong>Marlins</strong> win probability at 44.8%. Our model estimates 66.1% \u2014 a +21.3% edge.",
+        "\ud83c\udfaf <strong>Confidence: 70%</strong> \u2014 Standard 1u play."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-05-03",
+      "event_id": "401815191",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.4848,
+        "a_win_pct": 0.3939,
+        "pct_diff": 0.0909,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": 0,
+        "quality_edge": 0,
+        "ml_edge": 0.1874,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.476,
-    "w_home_adv": 6.789,
-    "w_quality": 9.816,
-    "w_odds_edge": 0.719,
+    "w_win_pct": 33.468,
+    "w_home_adv": 6.79,
+    "w_quality": 9.69,
+    "w_odds_edge": 0.723,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 111,
-    "version": 30,
-    "last_updated": "2026-05-02"
+    "samples": 113,
+    "version": 31,
+    "last_updated": "2026-05-03"
   }
 }
