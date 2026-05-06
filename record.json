@@ -1,7 +1,7 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-05-05",
+    "last_updated": "2026-05-06",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
@@ -5468,6 +5468,44 @@
         "a_quality_bonus": -9.44,
         "quality_edge": 9.44,
         "ml_edge": 0.4436,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "New York Mets at Colorado Rockies",
+      "home": "Rockies",
+      "away": "Mets",
+      "pick": "Rockies ML (+141)",
+      "pick_type": "Moneyline",
+      "confidence": 80,
+      "notes": "Home: Rockies 14-22 | Away: Mets 13-22",
+      "reasoning": [
+        "\ud83d\udccb <strong>Rockies</strong> are 14-22 (38.9% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Mets</strong> are 13-22 (37.1% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Rockies</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Mets</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Rockies</strong> win probability at 41.5%. Our model estimates 88.9% \u2014 a +47.4% edge.",
+        "\ud83c\udfaf <strong>Confidence: 80%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-05-06",
+      "event_id": "401815239",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.3889,
+        "a_win_pct": 0.3714,
+        "pct_diff": 0.0175,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.44,
+        "quality_edge": 9.44,
+        "ml_edge": 0.4542,
         "spread_edge": 0.0,
         "had_dk_odds": 1
       }
