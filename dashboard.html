@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sports Betting Scout — 2026-07-11</title>
+<title>Sports Betting Scout — 2026-07-12</title>
 <style>
   :root {
     --bg: #0f172a; --surface: #1e293b; --surface2: #273549;
@@ -85,7 +85,7 @@
     <h1>🎯 Sports Betting Scout</h1>
     <div class="subtitle">NBA · NHL · MLB · NCAAB · Powered by DraftKings Lines</div>
   </div>
-  <div class="timestamp">Saturday, July 11 2026 — 08:13 AM</div>
+  <div class="timestamp">Sunday, July 12 2026 — 08:57 AM</div>
 </div>
 
 <div class="container">
@@ -109,8 +109,8 @@
     </div>
     <div class="card">
       <h2>Today's Picks</h2>
-      <div class="stat-big blue">0</div>
-      <div class="stat-sub">0 high confidence</div>
+      <div class="stat-big blue">2</div>
+      <div class="stat-sub">2 high confidence</div>
     </div>
   </div>
 
@@ -123,9 +123,43 @@
 
   <!-- TODAY TAB -->
   <div id="tab-today" class="tab-pane active">
-    <div class="section-title">📋 Saturday, July 11 2026 — 0 Picks</div>
+    <div class="section-title">📋 Sunday, July 12 2026 — 2 Picks</div>
     <div class="picks-grid">
-      <div class="no-picks">No high-confidence picks identified for today. Check back after morning lines firm up.</div>
+      
+      <div class="pick-card" style="border-left:4px solid #f59e0b" onclick="toggleCard('card-0')">
+        <div class="pick-header">
+          <span class="sport-badge">⚾ MLB</span>
+          <span class="conf-badge" style="color:#f59e0b">✅ GOOD 74%</span>
+          <span class="expand-icon" id="icon-card-0">▼ Why?</span>
+        </div>
+        <div class="pick-game">Arizona Diamondbacks at Los Angeles Dodgers</div>
+        <div class="pick-line">
+          <strong>PICK:</strong> Dodgers (stat edge)
+          <span class="pick-type">Stat Edge</span>
+        </div>
+        
+        <div class="pick-notes">Home: Dodgers 61-35 | Away: Diamondbacks 48-47</div>
+        <div class="reasoning-panel" id="card-0">
+          <ul class="reasoning-list"><li>📋 <strong>Dodgers</strong> are 61-35 (63.5% win rate) — Elite at home this season.</li><li>📋 <strong>Diamondbacks</strong> are 48-47 (50.5% win rate) — Below average on the road this season.</li><li>🏠 Home-court/ice advantage gives <strong>Dodgers</strong> a +7 pt scoring bonus in our model.</li><li>⭐ <strong>Dodgers</strong> qualify as an elite team (≥60% win rate), earning a +8 quality bonus.</li><li>📊 No DraftKings line available. Pure stat model gives home team a composite score gap of 20.3 pts (threshold for pick: 8 pts).</li><li>💡 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.</li><li>🎯 <strong>Confidence: 74%</strong> — Standard 1u play.</li></ul>
+        </div>
+      </div>
+      <div class="pick-card" style="border-left:4px solid #f59e0b" onclick="toggleCard('card-1')">
+        <div class="pick-header">
+          <span class="sport-badge">⚾ MLB</span>
+          <span class="conf-badge" style="color:#f59e0b">✅ GOOD 73%</span>
+          <span class="expand-icon" id="icon-card-1">▼ Why?</span>
+        </div>
+        <div class="pick-game">Seattle Mariners at Tampa Bay Rays</div>
+        <div class="pick-line">
+          <strong>PICK:</strong> Rays (stat edge)
+          <span class="pick-type">Stat Edge</span>
+        </div>
+        
+        <div class="pick-notes">Home: Rays 56-37 | Away: Mariners 47-49</div>
+        <div class="reasoning-panel" id="card-1">
+          <ul class="reasoning-list"><li>📋 <strong>Rays</strong> are 56-37 (60.2% win rate) — Above average at home this season.</li><li>📋 <strong>Mariners</strong> are 47-49 (49.0% win rate) — Below average on the road this season.</li><li>🏠 Home-court/ice advantage gives <strong>Rays</strong> a +7 pt scoring bonus in our model.</li><li>⭐ <strong>Rays</strong> qualify as an elite team (≥60% win rate), earning a +8 quality bonus.</li><li>📊 No DraftKings line available. Pure stat model gives home team a composite score gap of 19.7 pts (threshold for pick: 8 pts).</li><li>💡 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.</li><li>🎯 <strong>Confidence: 73%</strong> — Standard 1u play.</li></ul>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -2119,9 +2153,9 @@
         <div class="section-title" style="margin-bottom:12px">Quick Stats</div>
         <table>
           <tbody>
-            <tr><td>Total picks tracked</td><td class="num">149</td></tr>
+            <tr><td>Total picks tracked</td><td class="num">151</td></tr>
             <tr><td>Avg confidence</td><td class="num">85.0%</td></tr>
-            <tr><td>Pending picks</td><td class="num yellow">13</td></tr>
+            <tr><td>Pending picks</td><td class="num yellow">15</td></tr>
             <tr><td>Imported opening record</td><td class="num">Imported opening record: 11-6</td></tr>
           </tbody>
         </table>
