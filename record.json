@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-07-12",
+    "last_updated": "2026-07-13",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
     "wins": 79,
-    "losses": 74,
+    "losses": 76,
     "pushes": 0,
-    "units_wagered": 153,
-    "units_net": -2.1099999999999923,
-    "roi_pct": -1.4
+    "units_wagered": 155,
+    "units_net": -4.109999999999992,
+    "roi_pct": -2.7
   },
   "by_sport": {
     "NBA": {
@@ -25,7 +25,7 @@
     },
     "MLB": {
       "wins": 35,
-      "losses": 37,
+      "losses": 39,
       "pushes": 0
     },
     "NCAAB": {
@@ -5532,11 +5532,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-07-12",
       "event_id": "401816138",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 5,
       "features": {
         "h_win_pct": 0.6354,
         "a_win_pct": 0.5053,
@@ -5548,7 +5548,8 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "MLB",
@@ -5571,11 +5572,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-07-12",
       "event_id": "401816133",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 8,
       "features": {
         "h_win_pct": 0.6022,
         "a_win_pct": 0.4896,
@@ -5587,18 +5588,19 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
-      }
+      },
+      "_weight_updated": true
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.389,
-    "w_home_adv": 6.638,
-    "w_quality": 9.325,
+    "w_win_pct": 33.298,
+    "w_home_adv": 6.562,
+    "w_quality": 9.09,
     "w_odds_edge": 0.327,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 117,
-    "version": 34,
-    "last_updated": "2026-05-07"
+    "samples": 119,
+    "version": 35,
+    "last_updated": "2026-07-13"
   }
 }
