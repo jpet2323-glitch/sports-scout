@@ -1,7 +1,7 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-07-31",
+    "last_updated": "2026-08-01",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
@@ -5590,6 +5590,45 @@
         "had_dk_odds": 0
       },
       "_weight_updated": true
+    },
+    {
+      "sport": "MLB",
+      "game": "Boston Red Sox at Los Angeles Dodgers",
+      "home": "Dodgers",
+      "away": "Red Sox",
+      "pick": "Dodgers (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 72,
+      "notes": "Home: Dodgers 69-41 | Away: Red Sox 58-51",
+      "reasoning": [
+        "\ud83d\udccb <strong>Dodgers</strong> are 69-41 (62.7% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Red Sox</strong> are 58-51 (53.2% win rate) \u2014 Above average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Dodgers</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Dodgers</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives home team a composite score gap of 18.8 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 72%</strong> \u2014 Standard 1u play."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-08-01",
+      "event_id": "401816357",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.6273,
+        "a_win_pct": 0.5321,
+        "pct_diff": 0.0952,
+        "picking_home": 1,
+        "h_quality_bonus": 9.09,
+        "a_quality_bonus": 0,
+        "quality_edge": 9.09,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
+      }
     }
   ],
   "model_weights": {
