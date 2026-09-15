@@ -1,0 +1,47 @@
+name: Weekly Fantasy Power Rankings
+
+on:
+  schedule:
+    # 12:00 UTC Tuesday = 8am Eastern (EDT) / 7am Eastern (EST, once DST ends in Nov)
+    - cron: '0 12 * * 2'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  power-rankings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run power rankings and send email
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          FANTASY_LEAGUE_ID: ${{ secrets.FANTASY_LEAGUE_ID }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          RECIPIENT_EMAILS: ${{ secrets.RECIPIENT_EMAILS }}
+        run: python3 power_rankings.py
+
+      - name: Commit updated rankings history
+        run: |
+          if [ ! -f power_rankings.json ]; then
+            echo "No power_rankings.json yet (no completed weeks) — nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add power_rankings.json
+          git diff --cached --quiet || git commit -m "Update power rankings history"
+          git push
