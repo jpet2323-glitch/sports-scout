@@ -1,7 +1,7 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-09-20",
+    "last_updated": "2026-09-21",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
@@ -5630,6 +5630,84 @@
         "had_dk_odds": 0
       },
       "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "New York Rangers at New Jersey Devils",
+      "home": "Devils",
+      "away": "Rangers",
+      "pick": "Devils (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 80,
+      "notes": "Home: Devils 1-0-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Devils</strong> are 1-0-0 (100.0% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Rangers</strong> are 0-0-0 (50.0% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Devils</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Devils</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives home team a composite score gap of 32.1 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 80%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-09-21",
+      "event_id": "401879645",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 1.0,
+        "a_win_pct": 0.5,
+        "pct_diff": 0.5,
+        "picking_home": 1,
+        "h_quality_bonus": 8.98,
+        "a_quality_bonus": 0,
+        "quality_edge": 8.98,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Ottawa Senators at Montreal Canadiens",
+      "home": "Canadiens",
+      "away": "Senators",
+      "pick": "Canadiens (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 80,
+      "notes": "Home: Canadiens 2-0-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Canadiens</strong> are 2-0-0 (100.0% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Senators</strong> are 0-0-0 (50.0% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Canadiens</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Canadiens</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives home team a composite score gap of 32.1 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 80%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-09-21",
+      "event_id": "401881921",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 1.0,
+        "a_win_pct": 0.5,
+        "pct_diff": 0.5,
+        "picking_home": 1,
+        "h_quality_bonus": 8.98,
+        "a_quality_bonus": 0,
+        "quality_edge": 8.98,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
+      }
     }
   ],
   "model_weights": {
