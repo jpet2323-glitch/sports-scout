@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-09-23",
+    "last_updated": "2026-09-24",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
     "wins": 82,
-    "losses": 78,
+    "losses": 80,
     "pushes": 0,
-    "units_wagered": 160,
-    "units_net": -3.379999999999992,
-    "roi_pct": -2.1
+    "units_wagered": 162,
+    "units_net": -5.379999999999992,
+    "roi_pct": -3.3
   },
   "by_sport": {
     "NBA": {
@@ -20,7 +20,7 @@
     },
     "NHL": {
       "wins": 12,
-      "losses": 12,
+      "losses": 14,
       "pushes": 0
     },
     "MLB": {
@@ -5813,11 +5813,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-09-23",
       "event_id": "401879650",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 4,
       "features": {
         "h_win_pct": 0.5,
         "a_win_pct": 0.0,
@@ -5829,7 +5829,8 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -5853,11 +5854,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-09-23",
       "event_id": "401879369",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 1,
+      "away_score": 2,
       "features": {
         "h_win_pct": 1.0,
         "a_win_pct": 0.0,
@@ -5869,18 +5870,98 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "Boston Bruins at Philadelphia Flyers",
+      "home": "Flyers",
+      "away": "Bruins",
+      "pick": "Bruins (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 80,
+      "notes": "Home: Flyers 0-2-0 | Away: Bruins 2-0-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Flyers</strong> are 0-2-0 (0.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Bruins</strong> are 2-0-0 (100.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Flyers</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Flyers</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u2b50 <strong>Bruins</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives away team a composite score gap of 44.7 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 80%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-09-24",
+      "event_id": "401879363",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.0,
+        "a_win_pct": 1.0,
+        "pct_diff": 1.0,
+        "picking_home": 0,
+        "h_quality_bonus": -8.97,
+        "a_quality_bonus": 8.97,
+        "quality_edge": 17.94,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Buffalo Sabres at Detroit Red Wings",
+      "home": "Red Wings",
+      "away": "Sabres",
+      "pick": "Red Wings (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 80,
+      "notes": "Home: Red Wings 1-0-1 | Away: Sabres 1-1-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Red Wings</strong> are 1-0-1 (100.0% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Sabres</strong> are 1-1-0 (50.0% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Red Wings</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Red Wings</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives home team a composite score gap of 32.1 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 80%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-09-24",
+      "event_id": "401879452",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 1.0,
+        "a_win_pct": 0.5,
+        "pct_diff": 0.5,
+        "picking_home": 1,
+        "h_quality_bonus": 8.97,
+        "a_quality_bonus": 0,
+        "quality_edge": 8.97,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.824,
-    "w_home_adv": 6.598,
-    "w_quality": 9.315,
+    "w_win_pct": 33.27,
+    "w_home_adv": 6.524,
+    "w_quality": 8.971,
     "w_odds_edge": 0.327,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 124,
-    "version": 38,
-    "last_updated": "2026-09-23"
+    "samples": 126,
+    "version": 39,
+    "last_updated": "2026-09-24"
   }
 }
