@@ -1,15 +1,15 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-09-24",
+    "last_updated": "2026-09-25",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 82,
-    "losses": 80,
+    "wins": 83,
+    "losses": 81,
     "pushes": 0,
-    "units_wagered": 162,
-    "units_net": -5.379999999999992,
+    "units_wagered": 164,
+    "units_net": -5.469999999999992,
     "roi_pct": -3.3
   },
   "by_sport": {
@@ -19,8 +19,8 @@
       "pushes": 0
     },
     "NHL": {
-      "wins": 12,
-      "losses": 14,
+      "wins": 13,
+      "losses": 15,
       "pushes": 0
     },
     "MLB": {
@@ -5895,11 +5895,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-09-24",
       "event_id": "401879363",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 0,
       "features": {
         "h_win_pct": 0.0,
         "a_win_pct": 1.0,
@@ -5911,7 +5911,8 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -5934,11 +5935,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-09-24",
       "event_id": "401879452",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 2,
       "features": {
         "h_win_pct": 1.0,
         "a_win_pct": 0.5,
@@ -5950,18 +5951,97 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "New York Rangers at New York Islanders",
+      "home": "Islanders",
+      "away": "Rangers",
+      "pick": "Islanders (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 75,
+      "notes": "Home: Islanders 1-1-0 | Away: Rangers 1-2-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Islanders</strong> are 1-1-0 (50.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Rangers</strong> are 1-2-0 (33.3% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Islanders</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Rangers</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives home team a composite score gap of 20.9 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 75%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-09-25",
+      "event_id": "401879649",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5,
+        "a_win_pct": 0.3333,
+        "pct_diff": 0.1667,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -8.86,
+        "quality_edge": 8.86,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Dallas Stars at Minnesota Wild",
+      "home": "Wild",
+      "away": "Stars",
+      "pick": "Stars (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 72,
+      "notes": "Home: Wild 1-1-1 | Away: Stars 3-0-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Wild</strong> are 1-1-1 (50.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Stars</strong> are 3-0-0 (100.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Wild</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Stars</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives away team a composite score gap of 18.8 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 72%</strong> \u2014 Standard 1u play."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-09-25",
+      "event_id": "401886430",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5,
+        "a_win_pct": 1.0,
+        "pct_diff": 0.5,
+        "picking_home": 0,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": 8.86,
+        "quality_edge": 8.86,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.27,
-    "w_home_adv": 6.524,
-    "w_quality": 8.971,
+    "w_win_pct": 33.085,
+    "w_home_adv": 6.561,
+    "w_quality": 8.861,
     "w_odds_edge": 0.327,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 126,
-    "version": 39,
-    "last_updated": "2026-09-24"
+    "samples": 128,
+    "version": 40,
+    "last_updated": "2026-09-25"
   }
 }
