@@ -1,15 +1,15 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-09-25",
+    "last_updated": "2026-09-26",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 83,
-    "losses": 81,
+    "wins": 84,
+    "losses": 82,
     "pushes": 0,
-    "units_wagered": 164,
-    "units_net": -5.469999999999992,
+    "units_wagered": 166,
+    "units_net": -5.559999999999992,
     "roi_pct": -3.3
   },
   "by_sport": {
@@ -19,8 +19,8 @@
       "pushes": 0
     },
     "NHL": {
-      "wins": 13,
-      "losses": 15,
+      "wins": 14,
+      "losses": 16,
       "pushes": 0
     },
     "MLB": {
@@ -5975,11 +5975,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-09-25",
       "event_id": "401879649",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 1,
+      "away_score": 6,
       "features": {
         "h_win_pct": 0.5,
         "a_win_pct": 0.3333,
@@ -5991,7 +5991,8 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -6014,11 +6015,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-09-25",
       "event_id": "401886430",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 1,
+      "away_score": 2,
       "features": {
         "h_win_pct": 0.5,
         "a_win_pct": 1.0,
@@ -6030,18 +6031,98 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "Washington Capitals at Philadelphia Flyers",
+      "home": "Flyers",
+      "away": "Capitals",
+      "pick": "Capitals (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 80,
+      "notes": "Home: Flyers 1-2-0 | Away: Capitals 2-0-1",
+      "reasoning": [
+        "\ud83d\udccb <strong>Flyers</strong> are 1-2-0 (33.3% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Capitals</strong> are 2-0-1 (100.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Flyers</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Flyers</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u2b50 <strong>Capitals</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives away team a composite score gap of 33.3 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 80%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-09-26",
+      "event_id": "401879361",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.3333,
+        "a_win_pct": 1.0,
+        "pct_diff": 0.6667,
+        "picking_home": 0,
+        "h_quality_bonus": -8.86,
+        "a_quality_bonus": 8.86,
+        "quality_edge": 17.72,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Tampa Bay Lightning at Florida Panthers",
+      "home": "Panthers",
+      "away": "Lightning",
+      "pick": "Panthers (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 80,
+      "notes": "Home: Panthers 2-0-1 | Away: Lightning 1-1-1",
+      "reasoning": [
+        "\ud83d\udccb <strong>Panthers</strong> are 2-0-1 (100.0% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Lightning</strong> are 1-1-1 (50.0% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Panthers</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Panthers</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives home team a composite score gap of 32.0 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 80%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-09-26",
+      "event_id": "401881134",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 1.0,
+        "a_win_pct": 0.5,
+        "pct_diff": 0.5,
+        "picking_home": 1,
+        "h_quality_bonus": 8.86,
+        "a_quality_bonus": 0,
+        "quality_edge": 8.86,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.085,
-    "w_home_adv": 6.561,
+    "w_win_pct": 33.206,
+    "w_home_adv": 6.524,
     "w_quality": 8.861,
     "w_odds_edge": 0.327,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 128,
-    "version": 40,
-    "last_updated": "2026-09-25"
+    "samples": 130,
+    "version": 41,
+    "last_updated": "2026-09-26"
   }
 }
