@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-09-26",
+    "last_updated": "2026-09-27",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 84,
-    "losses": 82,
+    "wins": 85,
+    "losses": 83,
     "pushes": 0,
-    "units_wagered": 166,
-    "units_net": -5.559999999999992,
-    "roi_pct": -3.3
+    "units_wagered": 168,
+    "units_net": -5.6499999999999915,
+    "roi_pct": -3.4
   },
   "by_sport": {
     "NBA": {
@@ -19,8 +19,8 @@
       "pushes": 0
     },
     "NHL": {
-      "wins": 14,
-      "losses": 16,
+      "wins": 15,
+      "losses": 17,
       "pushes": 0
     },
     "MLB": {
@@ -6056,11 +6056,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-09-26",
       "event_id": "401879361",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 1,
+      "away_score": 5,
       "features": {
         "h_win_pct": 0.3333,
         "a_win_pct": 1.0,
@@ -6072,7 +6072,8 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -6095,11 +6096,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-09-26",
       "event_id": "401881134",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 3,
       "features": {
         "h_win_pct": 1.0,
         "a_win_pct": 0.5,
@@ -6111,18 +6112,19 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
-      }
+      },
+      "_weight_updated": true
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.206,
-    "w_home_adv": 6.524,
-    "w_quality": 8.861,
+    "w_win_pct": 33.267,
+    "w_home_adv": 6.488,
+    "w_quality": 8.969,
     "w_odds_edge": 0.327,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 130,
-    "version": 41,
-    "last_updated": "2026-09-26"
+    "samples": 132,
+    "version": 42,
+    "last_updated": "2026-09-27"
   }
 }
