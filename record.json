@@ -1,7 +1,7 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-09-29",
+    "last_updated": "2026-09-30",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
@@ -6114,6 +6114,44 @@
         "had_dk_odds": 0
       },
       "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "New York Islanders at Toronto Maple Leafs",
+      "home": "Maple Leafs",
+      "away": "Islanders",
+      "pick": "Islanders ML (+100)",
+      "pick_type": "Moneyline",
+      "confidence": 83,
+      "notes": "Home: Maple Leafs 0-1-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Maple Leafs</strong> are 0-1-0 (0.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Islanders</strong> are 0-0-0 (50.0% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Maple Leafs</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Maple Leafs</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Islanders</strong> win probability at 50.0%. Our model estimates 113.4% \u2014 a +63.4% edge.",
+        "\ud83c\udfaf <strong>Confidence: 83%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-09-30",
+      "event_id": "401892431",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.0,
+        "a_win_pct": 0.5,
+        "pct_diff": 0.5,
+        "picking_home": 0,
+        "h_quality_bonus": -8.97,
+        "a_quality_bonus": 0,
+        "quality_edge": 8.97,
+        "ml_edge": 0.6753,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
     }
   ],
   "model_weights": {
