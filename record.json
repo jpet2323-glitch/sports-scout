@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-09-30",
+    "last_updated": "2026-10-01",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
     "wins": 85,
-    "losses": 83,
+    "losses": 84,
     "pushes": 0,
-    "units_wagered": 168,
-    "units_net": -5.6499999999999915,
-    "roi_pct": -3.4
+    "units_wagered": 169,
+    "units_net": -6.6499999999999915,
+    "roi_pct": -3.9
   },
   "by_sport": {
     "NBA": {
@@ -20,7 +20,7 @@
     },
     "NHL": {
       "wins": 15,
-      "losses": 17,
+      "losses": 18,
       "pushes": 0
     },
     "MLB": {
@@ -6135,11 +6135,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-09-30",
       "event_id": "401892431",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 1,
       "features": {
         "h_win_pct": 0.0,
         "a_win_pct": 0.5,
@@ -6151,18 +6151,95 @@
         "ml_edge": 0.6753,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "Philadelphia Flyers at New Jersey Devils",
+      "home": "Devils",
+      "away": "Flyers",
+      "pick": "Devils ML (-162)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Away: Flyers 0-1-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Devils</strong> are 0-0-0 (50.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Flyers</strong> are 0-1-0 (0.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Devils</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Flyers</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Devils</strong> win probability at 61.8%. Our model estimates 143.8% \u2014 a +82.0% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-01",
+      "event_id": "401891817",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5,
+        "a_win_pct": 0.0,
+        "pct_diff": 0.5,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -8.86,
+        "quality_edge": 8.86,
+        "ml_edge": 1.007,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Chicago Blackhawks at Utah Mammoth",
+      "home": "Mammoth",
+      "away": "Blackhawks",
+      "pick": "Mammoth ML (-218)",
+      "pick_type": "Moneyline",
+      "confidence": 92,
+      "notes": "Away: Blackhawks 0-1-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Mammoth</strong> are 0-0-0 (50.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Blackhawks</strong> are 0-1-0 (0.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Mammoth</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Blackhawks</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Mammoth</strong> win probability at 68.6%. Our model estimates 144.7% \u2014 a +76.2% edge.",
+        "\ud83c\udfaf <strong>Confidence: 92%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-01",
+      "event_id": "401891828",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5,
+        "a_win_pct": 0.0,
+        "pct_diff": 0.5,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -8.86,
+        "quality_edge": 8.86,
+        "ml_edge": 0.9398,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.267,
+    "w_win_pct": 33.086,
     "w_home_adv": 6.488,
-    "w_quality": 8.969,
-    "w_odds_edge": 0.327,
+    "w_quality": 8.861,
+    "w_odds_edge": 0.3,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 132,
-    "version": 42,
-    "last_updated": "2026-09-27"
+    "samples": 133,
+    "version": 43,
+    "last_updated": "2026-10-01"
   }
 }
