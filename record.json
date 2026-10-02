@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-01",
+    "last_updated": "2026-10-02",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 85,
+    "wins": 87,
     "losses": 84,
     "pushes": 0,
-    "units_wagered": 169,
-    "units_net": -6.6499999999999915,
-    "roi_pct": -3.9
+    "units_wagered": 171,
+    "units_net": -4.829999999999991,
+    "roi_pct": -2.8
   },
   "by_sport": {
     "NBA": {
@@ -19,7 +19,7 @@
       "pushes": 0
     },
     "NHL": {
-      "wins": 15,
+      "wins": 17,
       "losses": 18,
       "pushes": 0
     },
@@ -6174,11 +6174,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-01",
       "event_id": "401891817",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 2,
       "features": {
         "h_win_pct": 0.5,
         "a_win_pct": 0.0,
@@ -6190,7 +6190,8 @@
         "ml_edge": 1.007,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -6212,11 +6213,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-01",
       "event_id": "401891828",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 6,
+      "away_score": 0,
       "features": {
         "h_win_pct": 0.5,
         "a_win_pct": 0.0,
@@ -6228,18 +6229,19 @@
         "ml_edge": 0.9398,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.086,
-    "w_home_adv": 6.488,
-    "w_quality": 8.861,
-    "w_odds_edge": 0.3,
+    "w_win_pct": 33.446,
+    "w_home_adv": 6.56,
+    "w_quality": 9.073,
+    "w_odds_edge": 0.767,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 133,
-    "version": 43,
-    "last_updated": "2026-10-01"
+    "samples": 135,
+    "version": 44,
+    "last_updated": "2026-10-02"
   }
 }
