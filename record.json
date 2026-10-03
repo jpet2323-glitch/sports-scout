@@ -1,7 +1,7 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-02",
+    "last_updated": "2026-10-03",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
@@ -6231,6 +6231,84 @@
         "had_dk_odds": 1
       },
       "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "Chicago Blackhawks at Buffalo Sabres",
+      "home": "Sabres",
+      "away": "Blackhawks",
+      "pick": "Blackhawks ML (+190)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Sabres 0-1-0 | Away: Blackhawks 0-2-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Sabres</strong> are 0-1-0 (0.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Blackhawks</strong> are 0-2-0 (0.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Sabres</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Sabres</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u26a0\ufe0f <strong>Blackhawks</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Blackhawks</strong> win probability at 34.5%. Our model estimates 48.3% \u2014 a +13.8% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-03",
+      "event_id": "401891776",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.0,
+        "a_win_pct": 0.0,
+        "pct_diff": 0.0,
+        "picking_home": 0,
+        "h_quality_bonus": -9.07,
+        "a_quality_bonus": -9.07,
+        "quality_edge": 0.0,
+        "ml_edge": 0.4383,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Washington Capitals at Tampa Bay Lightning",
+      "home": "Lightning",
+      "away": "Capitals",
+      "pick": "Capitals ML (+136)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Lightning 0-1-0 | Away: Capitals 1-0-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Lightning</strong> are 0-1-0 (0.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Capitals</strong> are 1-0-0 (100.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Lightning</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Lightning</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u2b50 <strong>Capitals</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Capitals</strong> win probability at 42.4%. Our model estimates 105.0% \u2014 a +62.7% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-03",
+      "event_id": "401891826",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.0,
+        "a_win_pct": 1.0,
+        "pct_diff": 1.0,
+        "picking_home": 0,
+        "h_quality_bonus": -9.07,
+        "a_quality_bonus": 9.07,
+        "quality_edge": 18.15,
+        "ml_edge": 0.6391,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
     }
   ],
   "model_weights": {
