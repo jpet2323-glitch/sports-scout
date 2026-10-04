@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-03",
+    "last_updated": "2026-10-04",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
     "wins": 87,
-    "losses": 84,
+    "losses": 86,
     "pushes": 0,
-    "units_wagered": 171,
-    "units_net": -4.829999999999991,
-    "roi_pct": -2.8
+    "units_wagered": 173,
+    "units_net": -6.829999999999991,
+    "roi_pct": -3.9
   },
   "by_sport": {
     "NBA": {
@@ -20,7 +20,7 @@
     },
     "NHL": {
       "wins": 17,
-      "losses": 18,
+      "losses": 20,
       "pushes": 0
     },
     "MLB": {
@@ -6253,11 +6253,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-10-03",
       "event_id": "401891776",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 4,
+      "away_score": 3,
       "features": {
         "h_win_pct": 0.0,
         "a_win_pct": 0.0,
@@ -6269,7 +6269,8 @@
         "ml_edge": 0.4383,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -6292,11 +6293,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-10-03",
       "event_id": "401891826",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 1,
       "features": {
         "h_win_pct": 0.0,
         "a_win_pct": 1.0,
@@ -6308,18 +6309,95 @@
         "ml_edge": 0.6391,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "Winnipeg Jets at Detroit Red Wings",
+      "home": "Red Wings",
+      "away": "Jets",
+      "pick": "Jets ML (-105)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Red Wings 0-1-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Red Wings</strong> are 0-1-0 (0.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Jets</strong> are 0-0-1 (50.0% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Red Wings</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Red Wings</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Jets</strong> win probability at 51.2%. Our model estimates 111.0% \u2014 a +59.8% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-04",
+      "event_id": "401892442",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.0,
+        "a_win_pct": 0.5,
+        "pct_diff": 0.5,
+        "picking_home": 0,
+        "h_quality_bonus": -8.86,
+        "a_quality_bonus": 0,
+        "quality_edge": 8.86,
+        "ml_edge": 0.649,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Calgary Flames at Seattle Kraken",
+      "home": "Kraken",
+      "away": "Flames",
+      "pick": "Kraken ML (-155)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Kraken 1-1-0 | Away: Flames 0-2-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Kraken</strong> are 1-1-0 (50.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Flames</strong> are 0-2-0 (0.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Kraken</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Flames</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Kraken</strong> win probability at 60.8%. Our model estimates 136.0% \u2014 a +75.2% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-04",
+      "event_id": "401891824",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5,
+        "a_win_pct": 0.0,
+        "pct_diff": 0.5,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -8.86,
+        "quality_edge": 8.86,
+        "ml_edge": 1.0138,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.446,
+    "w_win_pct": 33.089,
     "w_home_adv": 6.56,
-    "w_quality": 9.073,
-    "w_odds_edge": 0.767,
+    "w_quality": 8.857,
+    "w_odds_edge": 0.51,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 135,
-    "version": 44,
-    "last_updated": "2026-10-02"
+    "samples": 137,
+    "version": 45,
+    "last_updated": "2026-10-04"
   }
 }
