@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-04",
+    "last_updated": "2026-10-05",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 87,
+    "wins": 89,
     "losses": 86,
     "pushes": 0,
-    "units_wagered": 173,
-    "units_net": -6.829999999999991,
-    "roi_pct": -3.9
+    "units_wagered": 175,
+    "units_net": -5.009999999999991,
+    "roi_pct": -2.9
   },
   "by_sport": {
     "NBA": {
@@ -19,7 +19,7 @@
       "pushes": 0
     },
     "NHL": {
-      "wins": 17,
+      "wins": 19,
       "losses": 20,
       "pushes": 0
     },
@@ -6332,11 +6332,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-04",
       "event_id": "401892442",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 3,
       "features": {
         "h_win_pct": 0.0,
         "a_win_pct": 0.5,
@@ -6348,7 +6348,8 @@
         "ml_edge": 0.649,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -6370,11 +6371,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-04",
       "event_id": "401891824",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 6,
+      "away_score": 1,
       "features": {
         "h_win_pct": 0.5,
         "a_win_pct": 0.0,
@@ -6386,18 +6387,171 @@
         "ml_edge": 1.0138,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "Philadelphia Flyers at Tampa Bay Lightning",
+      "home": "Lightning",
+      "away": "Flyers",
+      "pick": "Lightning ML (-205)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Lightning 1-1-0 | Away: Flyers 0-1-2",
+      "reasoning": [
+        "\ud83d\udccb <strong>Lightning</strong> are 1-1-0 (50.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Flyers</strong> are 0-1-2 (0.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Lightning</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Flyers</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Lightning</strong> win probability at 67.2%. Our model estimates 128.6% \u2014 a +61.4% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-05",
+      "event_id": "401892445",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5,
+        "a_win_pct": 0.0,
+        "pct_diff": 0.5,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.07,
+        "quality_edge": 9.07,
+        "ml_edge": 0.9641,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "San Jose Sharks at Dallas Stars",
+      "home": "Stars",
+      "away": "Sharks",
+      "pick": "Sharks ML (+145)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Stars 0-2-0 | Away: Sharks 2-0-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Stars</strong> are 0-2-0 (0.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Sharks</strong> are 2-0-0 (100.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Stars</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Stars</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u2b50 <strong>Sharks</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Sharks</strong> win probability at 40.8%. Our model estimates 104.8% \u2014 a +63.9% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-05",
+      "event_id": "401892448",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.0,
+        "a_win_pct": 1.0,
+        "pct_diff": 1.0,
+        "picking_home": 0,
+        "h_quality_bonus": -9.07,
+        "a_quality_bonus": 9.07,
+        "quality_edge": 18.13,
+        "ml_edge": 0.6535,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "New York Knicks at Philadelphia 76ers",
+      "home": "76ers",
+      "away": "Knicks",
+      "pick": "76ers ML (+154)",
+      "pick_type": "Moneyline",
+      "confidence": 75,
+      "notes": "",
+      "reasoning": [
+        "\ud83d\udccb <strong>76ers</strong> are 0-0 (50.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Knicks</strong> are 0-0 (50.0% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>76ers</strong> a +7 pt scoring bonus in our model.",
+        "\ud83d\udcc8 DraftKings implies <strong>76ers</strong> win probability at 39.4%. Our model estimates 61.5% \u2014 a +22.1% edge.",
+        "\ud83c\udfaf <strong>Confidence: 75%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-05",
+      "event_id": "401914101",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5,
+        "a_win_pct": 0.5,
+        "pct_diff": 0.0,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": 0,
+        "quality_edge": 0,
+        "ml_edge": 0.1887,
+        "spread_edge": 0.0913,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "MLB",
+      "game": "New York Yankees at Tampa Bay Rays",
+      "home": "Rays",
+      "away": "Yankees",
+      "pick": "Rays ML (+109)",
+      "pick_type": "Moneyline",
+      "confidence": 73,
+      "notes": "Home: Rays 98-64 | Away: Yankees 93-68",
+      "reasoning": [
+        "\ud83d\udccb <strong>Rays</strong> are 98-64 (60.5% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Yankees</strong> are 93-68 (57.8% win rate) \u2014 Above average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Rays</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Rays</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Rays</strong> win probability at 47.8%. Our model estimates 66.9% \u2014 a +19.0% edge.",
+        "\ud83c\udfaf <strong>Confidence: 73%</strong> \u2014 Standard 1u play."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-05",
+      "event_id": "401907986",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.6049,
+        "a_win_pct": 0.5776,
+        "pct_diff": 0.0273,
+        "picking_home": 1,
+        "h_quality_bonus": 9.07,
+        "a_quality_bonus": 0,
+        "quality_edge": 9.07,
+        "ml_edge": 0.1716,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.089,
-    "w_home_adv": 6.56,
-    "w_quality": 8.857,
-    "w_odds_edge": 0.51,
+    "w_win_pct": 33.445,
+    "w_home_adv": 6.596,
+    "w_quality": 9.067,
+    "w_odds_edge": 0.904,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 137,
-    "version": 45,
-    "last_updated": "2026-10-04"
+    "samples": 139,
+    "version": 46,
+    "last_updated": "2026-10-05"
   }
 }
