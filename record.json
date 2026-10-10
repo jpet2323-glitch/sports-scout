@@ -1,21 +1,21 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-09",
+    "last_updated": "2026-10-10",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
     "wins": 95,
-    "losses": 94,
+    "losses": 96,
     "pushes": 0,
-    "units_wagered": 189,
-    "units_net": -7.54999999999999,
-    "roi_pct": -4.0
+    "units_wagered": 191,
+    "units_net": -9.54999999999999,
+    "roi_pct": -5.0
   },
   "by_sport": {
     "NBA": {
       "wins": 22,
-      "losses": 23,
+      "losses": 25,
       "pushes": 0
     },
     "NHL": {
@@ -6968,11 +6968,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-10-09",
       "event_id": "401908940",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 100,
+      "away_score": 104,
       "features": {
         "h_win_pct": 1.0,
         "a_win_pct": 0.5,
@@ -6984,7 +6984,8 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -7005,11 +7006,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-10-09",
       "event_id": "401898395",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 117,
+      "away_score": 135,
       "features": {
         "h_win_pct": 0.5,
         "a_win_pct": 0.5,
@@ -7021,18 +7022,176 @@
         "ml_edge": 0.3001,
         "spread_edge": 0.1195,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "Philadelphia Flyers at Boston Bruins",
+      "home": "Bruins",
+      "away": "Flyers",
+      "pick": "Bruins ML (-135)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Bruins 3-2-0 | Away: Flyers 0-3-2",
+      "reasoning": [
+        "\ud83d\udccb <strong>Bruins</strong> are 3-2-0 (60.0% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Flyers</strong> are 0-3-2 (0.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Bruins</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Bruins</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Flyers</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Bruins</strong> win probability at 57.4%. Our model estimates 124.0% \u2014 a +66.6% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-10",
+      "event_id": "401892469",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.6,
+        "a_win_pct": 0.0,
+        "pct_diff": 0.6,
+        "picking_home": 1,
+        "h_quality_bonus": 8.24,
+        "a_quality_bonus": -8.24,
+        "quality_edge": 16.47,
+        "ml_edge": 0.7448,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Los Angeles Kings at Vegas Golden Knights",
+      "home": "Golden Knights",
+      "away": "Kings",
+      "pick": "Golden Knights ML (-162)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Golden Knights 4-1-0 | Away: Kings 0-2-1",
+      "reasoning": [
+        "\ud83d\udccb <strong>Golden Knights</strong> are 4-1-0 (80.0% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Kings</strong> are 0-2-1 (0.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Golden Knights</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Golden Knights</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Kings</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Golden Knights</strong> win probability at 61.8%. Our model estimates 120.9% \u2014 a +59.0% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-10",
+      "event_id": "401892481",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.8,
+        "a_win_pct": 0.0,
+        "pct_diff": 0.8,
+        "picking_home": 1,
+        "h_quality_bonus": 8.24,
+        "a_quality_bonus": -8.24,
+        "quality_edge": 16.47,
+        "ml_edge": 0.6375,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "LA Clippers at Toronto Raptors",
+      "home": "Raptors",
+      "away": "Clippers",
+      "pick": "Clippers (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 80,
+      "notes": "Home: Raptors 0-1 | Away: Clippers 1-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Raptors</strong> are 0-1 (0.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Clippers</strong> are 1-0 (100.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Raptors</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Raptors</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u2b50 <strong>Clippers</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives away team a composite score gap of 41.9 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 80%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-10",
+      "event_id": "401902645",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.0,
+        "a_win_pct": 1.0,
+        "pct_diff": 1.0,
+        "picking_home": 0,
+        "h_quality_bonus": -8.24,
+        "a_quality_bonus": 8.24,
+        "quality_edge": 16.47,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "Atlanta Hawks at Indiana Pacers",
+      "home": "Pacers",
+      "away": "Hawks",
+      "pick": "Pacers (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 80,
+      "notes": "Home: Pacers 1-0 | Away: Hawks 1-1",
+      "reasoning": [
+        "\ud83d\udccb <strong>Pacers</strong> are 1-0 (100.0% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Hawks</strong> are 1-1 (50.0% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Pacers</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Pacers</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives home team a composite score gap of 30.8 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 80%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-10",
+      "event_id": "401898396",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 1.0,
+        "a_win_pct": 0.5,
+        "pct_diff": 0.5,
+        "picking_home": 1,
+        "h_quality_bonus": 8.24,
+        "a_quality_bonus": 0,
+        "quality_edge": 8.24,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 32.172,
-    "w_home_adv": 6.665,
-    "w_quality": 8.331,
-    "w_odds_edge": 0.666,
+    "w_win_pct": 32.002,
+    "w_home_adv": 6.597,
+    "w_quality": 8.237,
+    "w_odds_edge": 0.571,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 153,
-    "version": 50,
-    "last_updated": "2026-10-09"
+    "samples": 155,
+    "version": 51,
+    "last_updated": "2026-10-10"
   }
 }
