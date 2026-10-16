@@ -1,26 +1,26 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-15",
+    "last_updated": "2026-10-16",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 105,
-    "losses": 102,
+    "wins": 107,
+    "losses": 104,
     "pushes": 0,
-    "units_wagered": 207,
-    "units_net": -6.449999999999989,
+    "units_wagered": 211,
+    "units_net": -6.629999999999988,
     "roi_pct": -3.1
   },
   "by_sport": {
     "NBA": {
-      "wins": 27,
-      "losses": 30,
+      "wins": 28,
+      "losses": 31,
       "pushes": 0
     },
     "NHL": {
-      "wins": 26,
-      "losses": 25,
+      "wins": 27,
+      "losses": 26,
       "pushes": 0
     },
     "MLB": {
@@ -7691,11 +7691,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-10-15",
       "event_id": "401892508",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 1,
       "features": {
         "h_win_pct": 0.25,
         "a_win_pct": 0.0,
@@ -7707,7 +7707,8 @@
         "ml_edge": 2.5831,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -7730,11 +7731,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-15",
       "event_id": "401892516",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 6,
+      "away_score": 2,
       "features": {
         "h_win_pct": 0.75,
         "a_win_pct": 0.1667,
@@ -7746,7 +7747,8 @@
         "ml_edge": 0.3297,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -7770,11 +7772,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-10-15",
       "event_id": "401908945",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 122,
+      "away_score": 120,
       "features": {
         "h_win_pct": 0.0,
         "a_win_pct": 0.6667,
@@ -7786,7 +7788,8 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -7809,11 +7812,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-15",
       "event_id": "401908622",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 116,
+      "away_score": 89,
       "features": {
         "h_win_pct": 0.5,
         "a_win_pct": 0.25,
@@ -7825,18 +7828,99 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NBA",
+      "game": "Boston Celtics at Philadelphia 76ers",
+      "home": "76ers",
+      "away": "Celtics",
+      "pick": "Celtics (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 80,
+      "notes": "Home: 76ers 1-2 | Away: Celtics 3-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>76ers</strong> are 1-2 (33.3% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Celtics</strong> are 3-0 (100.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>76ers</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>76ers</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u2b50 <strong>Celtics</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives away team a composite score gap of 33.0 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 80%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-16",
+      "event_id": "401898407",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.3333,
+        "a_win_pct": 1.0,
+        "pct_diff": 0.6667,
+        "picking_home": 0,
+        "h_quality_bonus": -8.98,
+        "a_quality_bonus": 8.98,
+        "quality_edge": 17.96,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "Charlotte Hornets at Memphis Grizzlies",
+      "home": "Grizzlies",
+      "away": "Hornets",
+      "pick": "Grizzlies (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 80,
+      "notes": "Home: Grizzlies 2-1 | Away: Hornets 1-2",
+      "reasoning": [
+        "\ud83d\udccb <strong>Grizzlies</strong> are 2-1 (66.7% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Hornets</strong> are 1-2 (33.3% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Grizzlies</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Grizzlies</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Hornets</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives home team a composite score gap of 35.6 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 80%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-16",
+      "event_id": "401901822",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.6667,
+        "a_win_pct": 0.3333,
+        "pct_diff": 0.3333,
+        "picking_home": 1,
+        "h_quality_bonus": 8.98,
+        "a_quality_bonus": -8.98,
+        "quality_edge": 17.96,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 32.595,
-    "w_home_adv": 6.698,
-    "w_quality": 8.886,
-    "w_odds_edge": 0.763,
+    "w_win_pct": 32.73,
+    "w_home_adv": 6.762,
+    "w_quality": 8.981,
+    "w_odds_edge": 0.371,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 171,
-    "version": 56,
-    "last_updated": "2026-10-15"
+    "samples": 175,
+    "version": 57,
+    "last_updated": "2026-10-16"
   }
 }
