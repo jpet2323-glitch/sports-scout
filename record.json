@@ -1,20 +1,20 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-16",
+    "last_updated": "2026-10-17",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 107,
+    "wins": 109,
     "losses": 104,
     "pushes": 0,
-    "units_wagered": 211,
-    "units_net": -6.629999999999988,
-    "roi_pct": -3.1
+    "units_wagered": 213,
+    "units_net": -4.809999999999988,
+    "roi_pct": -2.3
   },
   "by_sport": {
     "NBA": {
-      "wins": 28,
+      "wins": 30,
       "losses": 31,
       "pushes": 0
     },
@@ -7853,11 +7853,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-16",
       "event_id": "401898407",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 120,
+      "away_score": 125,
       "features": {
         "h_win_pct": 0.3333,
         "a_win_pct": 1.0,
@@ -7869,7 +7869,8 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -7893,11 +7894,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-16",
       "event_id": "401901822",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 117,
+      "away_score": 98,
       "features": {
         "h_win_pct": 0.6667,
         "a_win_pct": 0.3333,
@@ -7909,18 +7910,97 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "Boston Bruins at Los Angeles Kings",
+      "home": "Kings",
+      "away": "Bruins",
+      "pick": "Bruins ML (+114)",
+      "pick_type": "Moneyline",
+      "confidence": 84,
+      "notes": "Home: Kings 0-3-2 | Away: Bruins 6-2-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Kings</strong> are 0-3-2 (0.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Bruins</strong> are 6-2-0 (75.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Kings</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Kings</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u2b50 <strong>Bruins</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Bruins</strong> win probability at 46.7%. Our model estimates 107.1% \u2014 a +60.4% edge.",
+        "\ud83c\udfaf <strong>Confidence: 84%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-17",
+      "event_id": "401892530",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.0,
+        "a_win_pct": 0.75,
+        "pct_diff": 0.75,
+        "picking_home": 0,
+        "h_quality_bonus": -9.36,
+        "a_quality_bonus": 9.36,
+        "quality_edge": 18.73,
+        "ml_edge": 0.6141,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Ottawa Senators at Philadelphia Flyers",
+      "home": "Flyers",
+      "away": "Senators",
+      "pick": "Senators ML (-148)",
+      "pick_type": "Moneyline",
+      "confidence": 76,
+      "notes": "Home: Flyers 0-6-3 | Away: Senators 6-2-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Flyers</strong> are 0-6-3 (0.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Senators</strong> are 6-2-0 (75.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Flyers</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Flyers</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u2b50 <strong>Senators</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Senators</strong> win probability at 59.7%. Our model estimates 107.3% \u2014 a +47.6% edge.",
+        "\ud83c\udfaf <strong>Confidence: 76%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-17",
+      "event_id": "401892526",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.0,
+        "a_win_pct": 0.75,
+        "pct_diff": 0.75,
+        "picking_home": 0,
+        "h_quality_bonus": -9.36,
+        "a_quality_bonus": 9.36,
+        "quality_edge": 18.73,
+        "ml_edge": 0.4846,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 32.73,
-    "w_home_adv": 6.762,
-    "w_quality": 8.981,
+    "w_win_pct": 33.049,
+    "w_home_adv": 6.794,
+    "w_quality": 9.364,
     "w_odds_edge": 0.371,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 175,
-    "version": 57,
-    "last_updated": "2026-10-16"
+    "samples": 177,
+    "version": 58,
+    "last_updated": "2026-10-17"
   }
 }
