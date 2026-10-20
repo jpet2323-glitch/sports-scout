@@ -1,7 +1,7 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-18",
+    "last_updated": "2026-10-20",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
@@ -7992,6 +7992,45 @@
         "had_dk_odds": 1
       },
       "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "Los Angeles Kings at Washington Capitals",
+      "home": "Capitals",
+      "away": "Kings",
+      "pick": "Capitals ML (-155)",
+      "pick_type": "Moneyline",
+      "confidence": 93,
+      "notes": "Home: Capitals 5-3-0 | Away: Kings 0-4-2",
+      "reasoning": [
+        "\ud83d\udccb <strong>Capitals</strong> are 5-3-0 (62.5% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Kings</strong> are 0-4-2 (0.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Capitals</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Capitals</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Kings</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Capitals</strong> win probability at 60.8%. Our model estimates 128.1% \u2014 a +67.3% edge.",
+        "\ud83c\udfaf <strong>Confidence: 93%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-20",
+      "event_id": "401892542",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.625,
+        "a_win_pct": 0.0,
+        "pct_diff": 0.625,
+        "picking_home": 1,
+        "h_quality_bonus": 9.37,
+        "a_quality_bonus": -9.37,
+        "quality_edge": 18.73,
+        "ml_edge": 0.7333,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
     }
   ],
   "model_weights": {
