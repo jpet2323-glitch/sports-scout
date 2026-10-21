@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-20",
+    "last_updated": "2026-10-21",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
     "wins": 110,
-    "losses": 105,
+    "losses": 106,
     "pushes": 0,
-    "units_wagered": 215,
-    "units_net": -4.899999999999988,
-    "roi_pct": -2.3
+    "units_wagered": 216,
+    "units_net": -5.899999999999988,
+    "roi_pct": -2.7
   },
   "by_sport": {
     "NBA": {
@@ -20,7 +20,7 @@
     },
     "NHL": {
       "wins": 28,
-      "losses": 27,
+      "losses": 28,
       "pushes": 0
     },
     "MLB": {
@@ -8014,11 +8014,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-10-20",
       "event_id": "401892542",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 5,
       "features": {
         "h_win_pct": 0.625,
         "a_win_pct": 0.0,
@@ -8030,18 +8030,19 @@
         "ml_edge": 0.7333,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.05,
-    "w_home_adv": 6.794,
-    "w_quality": 9.365,
-    "w_odds_edge": 0.398,
+    "w_win_pct": 32.852,
+    "w_home_adv": 6.762,
+    "w_quality": 9.167,
+    "w_odds_edge": 0.3,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 179,
-    "version": 59,
-    "last_updated": "2026-10-18"
+    "samples": 180,
+    "version": 60,
+    "last_updated": "2026-10-21"
   }
 }
