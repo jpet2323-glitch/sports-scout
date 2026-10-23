@@ -1,16 +1,16 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-22",
+    "last_updated": "2026-10-23",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
     "wins": 110,
-    "losses": 106,
+    "losses": 107,
     "pushes": 0,
-    "units_wagered": 216,
-    "units_net": -5.899999999999988,
-    "roi_pct": -2.7
+    "units_wagered": 217,
+    "units_net": -6.899999999999988,
+    "roi_pct": -3.2
   },
   "by_sport": {
     "NBA": {
@@ -20,7 +20,7 @@
     },
     "NHL": {
       "wins": 28,
-      "losses": 28,
+      "losses": 29,
       "pushes": 0
     },
     "MLB": {
@@ -8054,11 +8054,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-10-22",
       "event_id": "401892557",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 3,
       "features": {
         "h_win_pct": 0.625,
         "a_win_pct": 0.2,
@@ -8070,18 +8070,98 @@
         "ml_edge": 0.5418,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NBA",
+      "game": "Memphis Grizzlies at Golden State Warriors",
+      "home": "Warriors",
+      "away": "Grizzlies",
+      "pick": "Grizzlies ML (+124)",
+      "pick_type": "Moneyline",
+      "confidence": 77,
+      "notes": "Home: Warriors 0-1 | Away: Grizzlies 1-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Warriors</strong> are 0-1 (0.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Grizzlies</strong> are 1-0 (100.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Warriors</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Warriors</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u2b50 <strong>Grizzlies</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Grizzlies</strong> win probability at 44.6%. Our model estimates 105.2% \u2014 a +60.6% edge.",
+        "\ud83c\udfaf <strong>Confidence: 77%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-23",
+      "event_id": "401909850",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.0,
+        "a_win_pct": 1.0,
+        "pct_diff": 1.0,
+        "picking_home": 0,
+        "h_quality_bonus": -8.97,
+        "a_quality_bonus": 8.97,
+        "quality_edge": 17.95,
+        "ml_edge": 0.6105,
+        "spread_edge": 0.4808,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "Dallas Mavericks at Indiana Pacers",
+      "home": "Pacers",
+      "away": "Mavericks",
+      "pick": "Pacers -6.5 (-110)",
+      "pick_type": "Spread",
+      "confidence": 76,
+      "notes": "Home: Pacers 1-0 | Away: Mavericks 0-1",
+      "reasoning": [
+        "\ud83d\udccb <strong>Pacers</strong> are 1-0 (100.0% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Mavericks</strong> are 0-1 (0.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Pacers</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Pacers</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Mavericks</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Pacers</strong> win probability at 69.7%. Our model estimates 121.1% \u2014 a +51.4% edge.",
+        "\ud83d\udcd0 Spread pick: Pacers giving 6.5 points. Our cover probability exceeds the implied probability by the required 4% threshold.",
+        "\ud83c\udfaf <strong>Confidence: 76%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-23",
+      "event_id": "401909844",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 1.0,
+        "a_win_pct": 0.0,
+        "pct_diff": 1.0,
+        "picking_home": 1,
+        "h_quality_bonus": 8.97,
+        "a_quality_bonus": -8.97,
+        "quality_edge": 17.95,
+        "ml_edge": 0.5305,
+        "spread_edge": 0.6867,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 32.852,
-    "w_home_adv": 6.762,
-    "w_quality": 9.167,
+    "w_win_pct": 32.718,
+    "w_home_adv": 6.73,
+    "w_quality": 8.974,
     "w_odds_edge": 0.3,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 180,
-    "version": 60,
-    "last_updated": "2026-10-21"
+    "samples": 181,
+    "version": 61,
+    "last_updated": "2026-10-23"
   }
 }
