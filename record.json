@@ -1,21 +1,21 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-23",
+    "last_updated": "2026-10-24",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 110,
-    "losses": 107,
+    "wins": 111,
+    "losses": 108,
     "pushes": 0,
-    "units_wagered": 217,
-    "units_net": -6.899999999999988,
+    "units_wagered": 219,
+    "units_net": -6.989999999999988,
     "roi_pct": -3.2
   },
   "by_sport": {
     "NBA": {
-      "wins": 30,
-      "losses": 31,
+      "wins": 31,
+      "losses": 32,
       "pushes": 0
     },
     "NHL": {
@@ -8094,11 +8094,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-23",
       "event_id": "401909850",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 108,
+      "away_score": 111,
       "features": {
         "h_win_pct": 0.0,
         "a_win_pct": 1.0,
@@ -8110,7 +8110,8 @@
         "ml_edge": 0.6105,
         "spread_edge": 0.4808,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -8134,11 +8135,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-10-23",
       "event_id": "401909844",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 105,
+      "away_score": 121,
       "features": {
         "h_win_pct": 1.0,
         "a_win_pct": 0.0,
@@ -8150,18 +8151,99 @@
         "ml_edge": 0.5305,
         "spread_edge": 0.6867,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NBA",
+      "game": "San Antonio Spurs at Dallas Mavericks",
+      "home": "Mavericks",
+      "away": "Spurs",
+      "pick": "Mavericks +12.5 (-108)",
+      "pick_type": "Spread",
+      "confidence": 84,
+      "notes": "Home: Mavericks 1-1 | Away: Spurs 0-2 | Also watching: Under 229.5 (conf 58)",
+      "reasoning": [
+        "\ud83d\udccb <strong>Mavericks</strong> are 1-1 (50.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Spurs</strong> are 0-2 (0.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Mavericks</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Spurs</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Mavericks</strong> win probability at 19.0%. Our model estimates 139.4% \u2014 a +120.4% edge.",
+        "\ud83d\udcd0 Spread pick: Mavericks getting 12.5 points. Our cover probability exceeds the implied probability by the required 4% threshold.",
+        "\ud83d\udd22 Totals lean: <strong>Under 229.5</strong> \u2014 combined team win rates suggest lower scoring output vs. the line.",
+        "\ud83c\udfaf <strong>Confidence: 84%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": "Under 229.5",
+      "ou_line": 229.5,
+      "ou_conf": 58,
+      "result": "pending",
+      "date": "2026-10-24",
+      "event_id": "401909858",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5,
+        "a_win_pct": 0.0,
+        "pct_diff": 0.5,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -8.97,
+        "quality_edge": 8.97,
+        "ml_edge": 1.4467,
+        "spread_edge": 0.875,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "Miami Heat at Charlotte Hornets",
+      "home": "Hornets",
+      "away": "Heat",
+      "pick": "Hornets +3.5 (-110)",
+      "pick_type": "Spread",
+      "confidence": 83,
+      "notes": "Home: Hornets 1-1 | Away: Heat 0-2 | Also watching: Under 229.5 (conf 58)",
+      "reasoning": [
+        "\ud83d\udccb <strong>Hornets</strong> are 1-1 (50.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Heat</strong> are 0-2 (0.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Hornets</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Heat</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Hornets</strong> win probability at 43.5%. Our model estimates 142.1% \u2014 a +98.7% edge.",
+        "\ud83d\udcd0 Spread pick: Hornets getting 3.5 points. Our cover probability exceeds the implied probability by the required 4% threshold.",
+        "\ud83d\udd22 Totals lean: <strong>Under 229.5</strong> \u2014 combined team win rates suggest lower scoring output vs. the line.",
+        "\ud83c\udfaf <strong>Confidence: 83%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": "Under 229.5",
+      "ou_line": 229.5,
+      "ou_conf": 58,
+      "result": "pending",
+      "date": "2026-10-24",
+      "event_id": "401909853",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5,
+        "a_win_pct": 0.0,
+        "pct_diff": 0.5,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -8.97,
+        "quality_edge": 8.97,
+        "ml_edge": 1.2024,
+        "spread_edge": 0.8675,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 32.718,
-    "w_home_adv": 6.73,
+    "w_win_pct": 32.719,
+    "w_home_adv": 6.699,
     "w_quality": 8.974,
     "w_odds_edge": 0.3,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 181,
-    "version": 61,
-    "last_updated": "2026-10-23"
+    "samples": 183,
+    "version": 62,
+    "last_updated": "2026-10-24"
   }
 }
