@@ -1,21 +1,21 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-24",
+    "last_updated": "2026-10-25",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 111,
-    "losses": 108,
+    "wins": 112,
+    "losses": 109,
     "pushes": 0,
-    "units_wagered": 219,
-    "units_net": -6.989999999999988,
+    "units_wagered": 221,
+    "units_net": -7.079999999999988,
     "roi_pct": -3.2
   },
   "by_sport": {
     "NBA": {
-      "wins": 31,
-      "losses": 32,
+      "wins": 32,
+      "losses": 33,
       "pushes": 0
     },
     "NHL": {
@@ -8176,11 +8176,11 @@
       "ou_pick": "Under 229.5",
       "ou_line": 229.5,
       "ou_conf": 58,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-10-24",
       "event_id": "401909858",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 106,
+      "away_score": 122,
       "features": {
         "h_win_pct": 0.5,
         "a_win_pct": 0.0,
@@ -8192,7 +8192,8 @@
         "ml_edge": 1.4467,
         "spread_edge": 0.875,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -8216,11 +8217,11 @@
       "ou_pick": "Under 229.5",
       "ou_line": 229.5,
       "ou_conf": 58,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-24",
       "event_id": "401909853",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 115,
+      "away_score": 110,
       "features": {
         "h_win_pct": 0.5,
         "a_win_pct": 0.0,
@@ -8232,18 +8233,138 @@
         "ml_edge": 1.2024,
         "spread_edge": 0.8675,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NBA",
+      "game": "Indiana Pacers at Brooklyn Nets",
+      "home": "Nets",
+      "away": "Pacers",
+      "pick": "Pacers -7.5 (-105)",
+      "pick_type": "Spread",
+      "confidence": 95,
+      "notes": "Home: Nets 0-2 | Away: Pacers 1-1 | Also watching: Under 231.5 (conf 58)",
+      "reasoning": [
+        "\ud83d\udccb <strong>Nets</strong> are 0-2 (0.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Pacers</strong> are 1-1 (50.0% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Nets</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Nets</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Pacers</strong> win probability at 73.0%. Our model estimates 111.1% \u2014 a +38.2% edge.",
+        "\ud83d\udcd0 Spread pick: Pacers giving 7.5 points. Our cover probability exceeds the implied probability by the required 4% threshold.",
+        "\ud83d\udd22 Totals lean: <strong>Under 231.5</strong> \u2014 combined team win rates suggest lower scoring output vs. the line.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": "Under 231.5",
+      "ou_line": 231.5,
+      "ou_conf": 58,
+      "result": "pending",
+      "date": "2026-10-25",
+      "event_id": "401909862",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.0,
+        "a_win_pct": 0.5,
+        "pct_diff": 0.5,
+        "picking_home": 0,
+        "h_quality_bonus": -8.97,
+        "a_quality_bonus": 0,
+        "quality_edge": 8.97,
+        "ml_edge": 0.4317,
+        "spread_edge": 0.5993,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "Orlando Magic at New York Knicks",
+      "home": "Knicks",
+      "away": "Magic",
+      "pick": "Magic ML (+240)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Knicks 0-2 | Away: Magic 0-2 | Also watching: Under 224.5 (conf 58)",
+      "reasoning": [
+        "\ud83d\udccb <strong>Knicks</strong> are 0-2 (0.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Magic</strong> are 0-2 (0.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Knicks</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Knicks</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u26a0\ufe0f <strong>Magic</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Magic</strong> win probability at 29.4%. Our model estimates 41.4% \u2014 a +12.0% edge.",
+        "\ud83d\udd22 Totals lean: <strong>Under 224.5</strong> \u2014 combined team win rates suggest lower scoring output vs. the line.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": "Under 224.5",
+      "ou_line": 224.5,
+      "ou_conf": 58,
+      "result": "pending",
+      "date": "2026-10-25",
+      "event_id": "401909863",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.0,
+        "a_win_pct": 0.0,
+        "pct_diff": 0.0,
+        "picking_home": 0,
+        "h_quality_bonus": -8.97,
+        "a_quality_bonus": -8.97,
+        "quality_edge": 0.0,
+        "ml_edge": 0.5037,
+        "spread_edge": 0.0618,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Minnesota Wild at Vancouver Canucks",
+      "home": "Canucks",
+      "away": "Wild",
+      "pick": "Wild ML (-192)",
+      "pick_type": "Moneyline",
+      "confidence": 76,
+      "notes": "Home: Canucks 2-9-1 | Away: Wild 7-3-2",
+      "reasoning": [
+        "\ud83d\udccb <strong>Canucks</strong> are 2-9-1 (18.2% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Wild</strong> are 7-3-2 (70.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Canucks</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Canucks</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u2b50 <strong>Wild</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Wild</strong> win probability at 65.8%. Our model estimates 90.6% \u2014 a +24.8% edge.",
+        "\ud83c\udfaf <strong>Confidence: 76%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-25",
+      "event_id": "401892581",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.1818,
+        "a_win_pct": 0.7,
+        "pct_diff": 0.5182,
+        "picking_home": 0,
+        "h_quality_bonus": -8.97,
+        "a_quality_bonus": 8.97,
+        "quality_edge": 17.95,
+        "ml_edge": 0.2391,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 32.719,
+    "w_win_pct": 32.718,
     "w_home_adv": 6.699,
-    "w_quality": 8.974,
-    "w_odds_edge": 0.3,
+    "w_quality": 8.973,
+    "w_odds_edge": 0.731,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 183,
-    "version": 62,
-    "last_updated": "2026-10-24"
+    "samples": 185,
+    "version": 63,
+    "last_updated": "2026-10-25"
   }
 }
