@@ -1,25 +1,25 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-28",
+    "last_updated": "2026-10-29",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 115,
-    "losses": 109,
+    "wins": 118,
+    "losses": 110,
     "pushes": 0,
-    "units_wagered": 224,
-    "units_net": -4.349999999999987,
-    "roi_pct": -1.9
+    "units_wagered": 228,
+    "units_net": -2.619999999999987,
+    "roi_pct": -1.1
   },
   "by_sport": {
     "NBA": {
-      "wins": 34,
-      "losses": 33,
+      "wins": 35,
+      "losses": 34,
       "pushes": 0
     },
     "NHL": {
-      "wins": 29,
+      "wins": 31,
       "losses": 29,
       "pushes": 0
     },
@@ -8499,11 +8499,11 @@
       "ou_pick": "Under 241.5",
       "ou_line": 241.5,
       "ou_conf": 58,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-10-28",
       "event_id": "401909881",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 117,
+      "away_score": 129,
       "features": {
         "h_win_pct": 0.5,
         "a_win_pct": 0.0,
@@ -8515,7 +8515,8 @@
         "ml_edge": 1.0442,
         "spread_edge": 0.6997,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -8539,11 +8540,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-28",
       "event_id": "401909885",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 129,
+      "away_score": 99,
       "features": {
         "h_win_pct": 0.6667,
         "a_win_pct": 0.3333,
@@ -8555,7 +8556,8 @@
         "ml_edge": 0.2982,
         "spread_edge": 0.4272,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -8578,11 +8580,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-28",
       "event_id": "401892596",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 5,
+      "away_score": 2,
       "features": {
         "h_win_pct": 0.6,
         "a_win_pct": 0.3,
@@ -8594,7 +8596,8 @@
         "ml_edge": 0.285,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -8616,11 +8619,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-28",
       "event_id": "401892599",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 5,
+      "away_score": 4,
       "features": {
         "h_win_pct": 0.6364,
         "a_win_pct": 0.5833,
@@ -8632,18 +8635,176 @@
         "ml_edge": 0.1574,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "Chicago Blackhawks at Detroit Red Wings",
+      "home": "Red Wings",
+      "away": "Blackhawks",
+      "pick": "Red Wings ML (-180)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Red Wings 5-4-3 | Away: Blackhawks 4-8-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Red Wings</strong> are 5-4-3 (55.6% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Blackhawks</strong> are 4-8-0 (33.3% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Red Wings</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Blackhawks</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Red Wings</strong> win probability at 64.3%. Our model estimates 95.7% \u2014 a +31.4% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-29",
+      "event_id": "401892600",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5556,
+        "a_win_pct": 0.3333,
+        "pct_diff": 0.2222,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.63,
+        "quality_edge": 9.63,
+        "ml_edge": 0.3045,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Vancouver Canucks at San Jose Sharks",
+      "home": "Sharks",
+      "away": "Canucks",
+      "pick": "Sharks ML (-192)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Sharks 6-6-1 | Away: Canucks 3-10-1",
+      "reasoning": [
+        "\ud83d\udccb <strong>Sharks</strong> are 6-6-1 (50.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Canucks</strong> are 3-10-1 (23.1% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Sharks</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Canucks</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Sharks</strong> win probability at 65.8%. Our model estimates 106.7% \u2014 a +40.9% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-29",
+      "event_id": "401892610",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5,
+        "a_win_pct": 0.2308,
+        "pct_diff": 0.2692,
+        "picking_home": 1,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": -9.63,
+        "quality_edge": 9.63,
+        "ml_edge": 0.4361,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "Memphis Grizzlies at Portland Trail Blazers",
+      "home": "Trail Blazers",
+      "away": "Grizzlies",
+      "pick": "Grizzlies ML (+225)",
+      "pick_type": "Moneyline",
+      "confidence": 73,
+      "notes": "Home: Trail Blazers 3-0 | Away: Grizzlies 4-0 | Also watching: Over 233.5 (conf 60)",
+      "reasoning": [
+        "\ud83d\udccb <strong>Trail Blazers</strong> are 3-0 (100.0% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Grizzlies</strong> are 4-0 (100.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Trail Blazers</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Trail Blazers</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u2b50 <strong>Grizzlies</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Grizzlies</strong> win probability at 30.8%. Our model estimates 48.1% \u2014 a +17.3% edge.",
+        "\ud83d\udd22 Totals lean: <strong>Over 233.5</strong> \u2014 combined team win rates suggest higher scoring output vs. the line.",
+        "\ud83c\udfaf <strong>Confidence: 73%</strong> \u2014 Standard 1u play."
+      ],
+      "ou_pick": "Over 233.5",
+      "ou_line": 233.5,
+      "ou_conf": 60,
+      "result": "pending",
+      "date": "2026-10-29",
+      "event_id": "401909895",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 1.0,
+        "a_win_pct": 1.0,
+        "pct_diff": 0.0,
+        "picking_home": 0,
+        "h_quality_bonus": 9.63,
+        "a_quality_bonus": 9.63,
+        "quality_edge": 0.0,
+        "ml_edge": 0.1556,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "Sacramento Kings at New Orleans Pelicans",
+      "home": "Pelicans",
+      "away": "Kings",
+      "pick": "Pelicans -5.5 (-115)",
+      "pick_type": "Spread",
+      "confidence": 71,
+      "notes": "Home: Pelicans 0-4 | Away: Kings 0-4 | Also watching: Under 236.5 (conf 58)",
+      "reasoning": [
+        "\ud83d\udccb <strong>Pelicans</strong> are 0-4 (0.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Kings</strong> are 0-4 (0.0% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Pelicans</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Pelicans</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u26a0\ufe0f <strong>Kings</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Pelicans</strong> win probability at 69.7%. Our model estimates 70.4% \u2014 a +0.7% edge.",
+        "\ud83d\udcd0 Spread pick: Pelicans giving 5.5 points. Our cover probability exceeds the implied probability by the required 4% threshold.",
+        "\ud83d\udd22 Totals lean: <strong>Under 236.5</strong> \u2014 combined team win rates suggest lower scoring output vs. the line.",
+        "\ud83c\udfaf <strong>Confidence: 71%</strong> \u2014 Standard 1u play."
+      ],
+      "ou_pick": "Under 236.5",
+      "ou_line": 236.5,
+      "ou_conf": 58,
+      "result": "pending",
+      "date": "2026-10-29",
+      "event_id": "401909894",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.0,
+        "a_win_pct": 0.0,
+        "pct_diff": 0.0,
+        "picking_home": 1,
+        "h_quality_bonus": -9.63,
+        "a_quality_bonus": -9.63,
+        "quality_edge": 0.0,
+        "ml_edge": 0.4255,
+        "spread_edge": 0.1693,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.035,
-    "w_home_adv": 6.699,
-    "w_quality": 9.252,
-    "w_odds_edge": 1.111,
+    "w_win_pct": 33.091,
+    "w_home_adv": 6.761,
+    "w_quality": 9.632,
+    "w_odds_edge": 0.99,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 188,
-    "version": 64,
-    "last_updated": "2026-10-26"
+    "samples": 192,
+    "version": 65,
+    "last_updated": "2026-10-29"
   }
 }
