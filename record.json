@@ -1,21 +1,21 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-10-30",
+    "last_updated": "2026-10-31",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 122,
-    "losses": 110,
+    "wins": 123,
+    "losses": 111,
     "pushes": 0,
-    "units_wagered": 232,
-    "units_net": 1.0200000000000133,
+    "units_wagered": 234,
+    "units_net": 0.9300000000000134,
     "roi_pct": 0.4
   },
   "by_sport": {
     "NBA": {
-      "wins": 37,
-      "losses": 34,
+      "wins": 38,
+      "losses": 35,
       "pushes": 0
     },
     "NHL": {
@@ -8821,11 +8821,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-10-30",
       "event_id": "401909278",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 125,
+      "away_score": 111,
       "features": {
         "h_win_pct": 0.75,
         "a_win_pct": 0.2,
@@ -8837,7 +8837,8 @@
         "ml_edge": 0.178,
         "spread_edge": 0.5617,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -8862,11 +8863,11 @@
       "ou_pick": "Under 222.5",
       "ou_line": 222.5,
       "ou_conf": 58,
-      "result": "pending",
+      "result": "win",
       "date": "2026-10-30",
       "event_id": "401909279",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 94,
+      "away_score": 110,
       "features": {
         "h_win_pct": 0.0,
         "a_win_pct": 0.8,
@@ -8878,18 +8879,176 @@
         "ml_edge": 0.3329,
         "spread_edge": 0.5295,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NBA",
+      "game": "Portland Trail Blazers at Utah Jazz",
+      "home": "Jazz",
+      "away": "Trail Blazers",
+      "pick": "Trail Blazers -6.5 (-110)",
+      "pick_type": "Spread",
+      "confidence": 95,
+      "notes": "Home: Jazz 1-4 | Away: Trail Blazers 3-1",
+      "reasoning": [
+        "\ud83d\udccb <strong>Jazz</strong> are 1-4 (20.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Trail Blazers</strong> are 3-1 (75.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Jazz</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Jazz</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u2b50 <strong>Trail Blazers</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Trail Blazers</strong> win probability at 72.1%. Our model estimates 91.6% \u2014 a +19.5% edge.",
+        "\ud83d\udcd0 Spread pick: Trail giving 6.5 points. Our cover probability exceeds the implied probability by the required 4% threshold.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-31",
+      "event_id": "401909896",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.2,
+        "a_win_pct": 0.75,
+        "pct_diff": 0.55,
+        "picking_home": 0,
+        "h_quality_bonus": -9.83,
+        "a_quality_bonus": 9.83,
+        "quality_edge": 19.65,
+        "ml_edge": 0.1842,
+        "spread_edge": 0.3917,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "Atlanta Hawks at New Orleans Pelicans",
+      "home": "Pelicans",
+      "away": "Hawks",
+      "pick": "Hawks -4.5 (-105)",
+      "pick_type": "Spread",
+      "confidence": 95,
+      "notes": "Home: Pelicans 1-4 | Away: Hawks 3-3 | Also watching: Under 240.5 (conf 58)",
+      "reasoning": [
+        "\ud83d\udccb <strong>Pelicans</strong> are 1-4 (20.0% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Hawks</strong> are 3-3 (50.0% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Pelicans</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Pelicans</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Hawks</strong> win probability at 64.3%. Our model estimates 85.4% \u2014 a +21.1% edge.",
+        "\ud83d\udcd0 Spread pick: Hawks giving 4.5 points. Our cover probability exceeds the implied probability by the required 4% threshold.",
+        "\ud83d\udd22 Totals lean: <strong>Under 240.5</strong> \u2014 combined team win rates suggest lower scoring output vs. the line.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": "Under 240.5",
+      "ou_line": 240.5,
+      "ou_conf": 58,
+      "result": "pending",
+      "date": "2026-10-31",
+      "event_id": "401909898",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.2,
+        "a_win_pct": 0.5,
+        "pct_diff": 0.3,
+        "picking_home": 0,
+        "h_quality_bonus": -9.83,
+        "a_quality_bonus": 0,
+        "quality_edge": 9.83,
+        "ml_edge": 0.177,
+        "spread_edge": 0.3413,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Chicago Blackhawks at Boston Bruins",
+      "home": "Bruins",
+      "away": "Blackhawks",
+      "pick": "Bruins ML (-225)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Bruins 9-4-1 | Away: Blackhawks 4-9-0",
+      "reasoning": [
+        "\ud83d\udccb <strong>Bruins</strong> are 9-4-1 (69.2% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Blackhawks</strong> are 4-9-0 (30.8% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Bruins</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Bruins</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Blackhawks</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Bruins</strong> win probability at 69.2%. Our model estimates 99.1% \u2014 a +29.9% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-31",
+      "event_id": "401892614",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.6923,
+        "a_win_pct": 0.3077,
+        "pct_diff": 0.3846,
+        "picking_home": 1,
+        "h_quality_bonus": 9.83,
+        "a_quality_bonus": -9.83,
+        "quality_edge": 19.65,
+        "ml_edge": 0.2971,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Toronto Maple Leafs at Vancouver Canucks",
+      "home": "Canucks",
+      "away": "Maple Leafs",
+      "pick": "Maple Leafs ML (-166)",
+      "pick_type": "Moneyline",
+      "confidence": 87,
+      "notes": "Home: Canucks 3-11-1 | Away: Maple Leafs 7-6-2",
+      "reasoning": [
+        "\ud83d\udccb <strong>Canucks</strong> are 3-11-1 (21.4% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Maple Leafs</strong> are 7-6-2 (53.8% win rate) \u2014 Above average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Canucks</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Canucks</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Maple Leafs</strong> win probability at 62.4%. Our model estimates 84.7% \u2014 a +22.3% edge.",
+        "\ud83c\udfaf <strong>Confidence: 87%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-10-31",
+      "event_id": "401892621",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.2143,
+        "a_win_pct": 0.5385,
+        "pct_diff": 0.3242,
+        "picking_home": 0,
+        "h_quality_bonus": -9.83,
+        "a_quality_bonus": 0,
+        "quality_edge": 9.83,
+        "ml_edge": 0.1886,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 33.241,
-    "w_home_adv": 6.853,
-    "w_quality": 9.828,
-    "w_odds_edge": 1.293,
+    "w_win_pct": 33.316,
+    "w_home_adv": 6.823,
+    "w_quality": 9.827,
+    "w_odds_edge": 1.318,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 196,
-    "version": 66,
-    "last_updated": "2026-10-30"
+    "samples": 198,
+    "version": 67,
+    "last_updated": "2026-10-31"
   }
 }
