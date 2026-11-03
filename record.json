@@ -1,25 +1,25 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-11-02",
+    "last_updated": "2026-11-03",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 129,
-    "losses": 113,
+    "wins": 130,
+    "losses": 115,
     "pushes": 0,
-    "units_wagered": 242,
-    "units_net": 4.390000000000014,
-    "roi_pct": 1.8
+    "units_wagered": 245,
+    "units_net": 3.300000000000014,
+    "roi_pct": 1.3
   },
   "by_sport": {
     "NBA": {
       "wins": 41,
-      "losses": 36,
+      "losses": 38,
       "pushes": 0
     },
     "NHL": {
-      "wins": 36,
+      "wins": 37,
       "losses": 30,
       "pushes": 0
     },
@@ -9228,11 +9228,11 @@
       "ou_pick": "Under 231.5",
       "ou_line": 231.5,
       "ou_conf": 58,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-11-02",
       "event_id": "401909909",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 104,
+      "away_score": 108,
       "features": {
         "h_win_pct": 0.2857,
         "a_win_pct": 0.4286,
@@ -9244,7 +9244,8 @@
         "ml_edge": 0.0,
         "spread_edge": 0.187,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -9269,11 +9270,11 @@
       "ou_pick": "Under 220.5",
       "ou_line": 220.5,
       "ou_conf": 58,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-11-02",
       "event_id": "401909910",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 103,
+      "away_score": 90,
       "features": {
         "h_win_pct": 0.3333,
         "a_win_pct": 0.1667,
@@ -9285,7 +9286,8 @@
         "ml_edge": 1.6243,
         "spread_edge": 0.5211,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -9308,11 +9310,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-11-02",
       "event_id": "401892631",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 2,
+      "away_score": 5,
       "features": {
         "h_win_pct": 0.3077,
         "a_win_pct": 0.6154,
@@ -9324,18 +9326,97 @@
         "ml_edge": 0.113,
         "spread_edge": 0.0,
         "had_dk_odds": 1
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NHL",
+      "game": "Winnipeg Jets at Montreal Canadiens",
+      "home": "Canadiens",
+      "away": "Jets",
+      "pick": "Canadiens ML (-192)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Canadiens 9-3-2 | Away: Jets 4-8-3",
+      "reasoning": [
+        "\ud83d\udccb <strong>Canadiens</strong> are 9-3-2 (75.0% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Jets</strong> are 4-8-3 (33.3% win rate) \u2014 Struggling on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Canadiens</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Canadiens</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u26a0\ufe0f <strong>Jets</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Canadiens</strong> win probability at 65.8%. Our model estimates 98.6% \u2014 a +32.9% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-11-03",
+      "event_id": "401892634",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.75,
+        "a_win_pct": 0.3333,
+        "pct_diff": 0.4167,
+        "picking_home": 1,
+        "h_quality_bonus": 10.42,
+        "a_quality_bonus": -10.42,
+        "quality_edge": 20.84,
+        "ml_edge": 0.3243,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Minnesota Wild at Philadelphia Flyers",
+      "home": "Flyers",
+      "away": "Wild",
+      "pick": "Wild ML (-175)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Flyers 4-8-4 | Away: Wild 10-3-3",
+      "reasoning": [
+        "\ud83d\udccb <strong>Flyers</strong> are 4-8-4 (33.3% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Wild</strong> are 10-3-3 (76.9% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Flyers</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Flyers</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u2b50 <strong>Wild</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Wild</strong> win probability at 63.6%. Our model estimates 85.2% \u2014 a +21.5% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-11-03",
+      "event_id": "401892638",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.3333,
+        "a_win_pct": 0.7692,
+        "pct_diff": 0.4359,
+        "picking_home": 0,
+        "h_quality_bonus": -10.42,
+        "a_quality_bonus": 10.42,
+        "quality_edge": 20.84,
+        "ml_edge": 0.1891,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
       }
     }
   ],
   "model_weights": {
     "w_win_pct": 33.627,
-    "w_home_adv": 6.913,
-    "w_quality": 10.321,
-    "w_odds_edge": 2.497,
+    "w_home_adv": 6.884,
+    "w_quality": 10.421,
+    "w_odds_edge": 2.06,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 206,
-    "version": 69,
-    "last_updated": "2026-11-02"
+    "samples": 209,
+    "version": 70,
+    "last_updated": "2026-11-03"
   }
 }
