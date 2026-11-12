@@ -1,26 +1,26 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-11-11",
+    "last_updated": "2026-11-12",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 152,
-    "losses": 119,
+    "wins": 155,
+    "losses": 121,
     "pushes": 0,
-    "units_wagered": 271,
-    "units_net": 19.320000000000014,
-    "roi_pct": 7.1
+    "units_wagered": 276,
+    "units_net": 20.050000000000015,
+    "roi_pct": 7.3
   },
   "by_sport": {
     "NBA": {
-      "wins": 49,
-      "losses": 40,
+      "wins": 50,
+      "losses": 41,
       "pushes": 0
     },
     "NHL": {
-      "wins": 44,
-      "losses": 32,
+      "wins": 45,
+      "losses": 33,
       "pushes": 0
     },
     "MLB": {
@@ -29,7 +29,7 @@
       "pushes": 0
     },
     "NCAAB": {
-      "wins": 12,
+      "wins": 13,
       "losses": 1,
       "pushes": 0
     }
@@ -10598,11 +10598,11 @@
       "ou_pick": "Under 226.5",
       "ou_line": 226.5,
       "ou_conf": 58,
-      "result": "pending",
+      "result": "win",
       "date": "2026-11-11",
       "event_id": "401909966",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 114,
+      "away_score": 101,
       "features": {
         "h_win_pct": 0.2727,
         "a_win_pct": 0.3636,
@@ -10614,7 +10614,8 @@
         "ml_edge": 0.353,
         "spread_edge": 0.4225,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -10637,11 +10638,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-11-11",
       "event_id": "401909967",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 107,
+      "away_score": 115,
       "features": {
         "h_win_pct": 0.6,
         "a_win_pct": 0.4545,
@@ -10653,7 +10654,8 @@
         "ml_edge": 0.0755,
         "spread_edge": 0.2194,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -10674,11 +10676,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "loss",
       "date": "2026-11-11",
       "event_id": "401892691",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 1,
+      "away_score": 3,
       "features": {
         "h_win_pct": 0.4706,
         "a_win_pct": 0.5556,
@@ -10690,7 +10692,8 @@
         "ml_edge": 0.1016,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -10713,11 +10716,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-11-11",
       "event_id": "401892692",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 2,
       "features": {
         "h_win_pct": 0.8125,
         "a_win_pct": 0.3333,
@@ -10729,7 +10732,8 @@
         "ml_edge": 0.3448,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NCAAB",
@@ -10753,11 +10757,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-11-11",
       "event_id": "401920680",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 90,
+      "away_score": 59,
       "features": {
         "h_win_pct": 1.0,
         "a_win_pct": 0.0,
@@ -10769,18 +10773,215 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NBA",
+      "game": "Toronto Raptors at Philadelphia 76ers",
+      "home": "76ers",
+      "away": "Raptors",
+      "pick": "76ers -9.5 (-117)",
+      "pick_type": "Spread",
+      "confidence": 95,
+      "notes": "Home: 76ers 9-3 | Away: Raptors 5-6 | Also watching: Over 221.5 (conf 60)",
+      "reasoning": [
+        "\ud83d\udccb <strong>76ers</strong> are 9-3 (75.0% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Raptors</strong> are 5-6 (45.5% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>76ers</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>76ers</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>76ers</strong> win probability at 81.4%. Our model estimates 74.3% \u2014 a +-7.1% edge.",
+        "\ud83d\udcd0 Spread pick: 76ers giving 9.5 points. Our cover probability exceeds the implied probability by the required 4% threshold.",
+        "\ud83d\udd22 Totals lean: <strong>Over 221.5</strong> \u2014 combined team win rates suggest higher scoring output vs. the line.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": "Over 221.5",
+      "ou_line": 221.5,
+      "ou_conf": 60,
+      "result": "pending",
+      "date": "2026-11-12",
+      "event_id": "401909976",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.75,
+        "a_win_pct": 0.4545,
+        "pct_diff": 0.2955,
+        "picking_home": 1,
+        "h_quality_bonus": 13.22,
+        "a_quality_bonus": 0,
+        "quality_edge": 13.22,
+        "ml_edge": 0.0,
+        "spread_edge": 0.2038,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NBA",
+      "game": "Detroit Pistons at Washington Wizards",
+      "home": "Wizards",
+      "away": "Pistons",
+      "pick": "Pistons -10.5 (-108)",
+      "pick_type": "Spread",
+      "confidence": 95,
+      "notes": "Home: Wizards 4-8 | Away: Pistons 7-3",
+      "reasoning": [
+        "\ud83d\udccb <strong>Wizards</strong> are 4-8 (33.3% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Pistons</strong> are 7-3 (70.0% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Wizards</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Wizards</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\u2b50 <strong>Pistons</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Pistons</strong> win probability at 81.5%. Our model estimates 86.8% \u2014 a +5.3% edge.",
+        "\ud83d\udcd0 Spread pick: Pistons giving 10.5 points. Our cover probability exceeds the implied probability by the required 4% threshold.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-11-12",
+      "event_id": "401909977",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.3333,
+        "a_win_pct": 0.7,
+        "pct_diff": 0.3667,
+        "picking_home": 0,
+        "h_quality_bonus": -13.22,
+        "a_quality_bonus": 13.22,
+        "quality_edge": 26.44,
+        "ml_edge": 0.0452,
+        "spread_edge": 0.3487,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Carolina Hurricanes at Seattle Kraken",
+      "home": "Kraken",
+      "away": "Hurricanes",
+      "pick": "Kraken ML (+245)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Kraken 9-6-1 | Away: Hurricanes 14-3-2",
+      "reasoning": [
+        "\ud83d\udccb <strong>Kraken</strong> are 9-6-1 (60.0% win rate) \u2014 Above average at home this season.",
+        "\ud83d\udccb <strong>Hurricanes</strong> are 14-3-2 (82.4% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Kraken</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Kraken</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\u2b50 <strong>Hurricanes</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcc8 DraftKings implies <strong>Kraken</strong> win probability at 29.0%. Our model estimates 55.9% \u2014 a +26.9% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-11-12",
+      "event_id": "401891808",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.6,
+        "a_win_pct": 0.8235,
+        "pct_diff": -0.2235,
+        "picking_home": 1,
+        "h_quality_bonus": 13.22,
+        "a_quality_bonus": 13.22,
+        "quality_edge": 0.0,
+        "ml_edge": 0.2055,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NHL",
+      "game": "Buffalo Sabres at Chicago Blackhawks",
+      "home": "Blackhawks",
+      "away": "Sabres",
+      "pick": "Sabres ML (-155)",
+      "pick_type": "Moneyline",
+      "confidence": 95,
+      "notes": "Home: Blackhawks 4-13-1 | Away: Sabres 8-7-3",
+      "reasoning": [
+        "\ud83d\udccb <strong>Blackhawks</strong> are 4-13-1 (23.5% win rate) \u2014 Struggling at home this season.",
+        "\ud83d\udccb <strong>Sabres</strong> are 8-7-3 (53.3% win rate) \u2014 Above average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Blackhawks</strong> a +7 pt scoring bonus in our model.",
+        "\u26a0\ufe0f <strong>Blackhawks</strong> are a struggling team (\u226438% win rate), applying a \u22128 quality penalty.",
+        "\ud83d\udcc8 DraftKings implies <strong>Sabres</strong> win probability at 60.8%. Our model estimates 92.9% \u2014 a +32.1% edge.",
+        "\ud83c\udfaf <strong>Confidence: 95%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-11-12",
+      "event_id": "401892702",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.2353,
+        "a_win_pct": 0.5333,
+        "pct_diff": 0.298,
+        "picking_home": 0,
+        "h_quality_bonus": -13.22,
+        "a_quality_bonus": 0,
+        "quality_edge": 13.22,
+        "ml_edge": 0.2691,
+        "spread_edge": 0.0,
+        "had_dk_odds": 1
+      }
+    },
+    {
+      "sport": "NCAAB",
+      "game": "Montana State Bobcats at BYU Cougars",
+      "home": "Cougars",
+      "away": "Bobcats",
+      "pick": "Cougars (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 80,
+      "notes": "Home: Cougars 3-0 | Away: Bobcats 1-1",
+      "reasoning": [
+        "\ud83d\udccb <strong>Cougars</strong> are 3-0 (100.0% win rate) \u2014 Elite at home this season.",
+        "\ud83d\udccb <strong>Bobcats</strong> are 1-1 (50.0% win rate) \u2014 Below average on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Cougars</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Cougars</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives home team a composite score gap of 38.8 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 80%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-11-12",
+      "event_id": "401921741",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 1.0,
+        "a_win_pct": 0.5,
+        "pct_diff": 0.5,
+        "picking_home": 1,
+        "h_quality_bonus": 13.22,
+        "a_quality_bonus": 0,
+        "quality_edge": 13.22,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 36.123,
-    "w_home_adv": 7.338,
-    "w_quality": 12.867,
-    "w_odds_edge": 3.0,
+    "w_win_pct": 36.485,
+    "w_home_adv": 7.365,
+    "w_quality": 13.218,
+    "w_odds_edge": 2.99,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 235,
-    "version": 76,
-    "last_updated": "2026-11-11"
+    "samples": 240,
+    "version": 77,
+    "last_updated": "2026-11-12"
   }
 }
