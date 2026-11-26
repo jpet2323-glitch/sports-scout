@@ -1,25 +1,25 @@
 {
   "meta": {
     "created": "2026-03-27",
-    "last_updated": "2026-11-25",
+    "last_updated": "2026-11-26",
     "note": "Imported opening record: 11-6"
   },
   "overall": {
-    "wins": 188,
+    "wins": 193,
     "losses": 139,
     "pushes": 0,
-    "units_wagered": 327,
-    "units_net": 32.08000000000001,
-    "roi_pct": 9.8
+    "units_wagered": 332,
+    "units_net": 36.629999999999995,
+    "roi_pct": 11.0
   },
   "by_sport": {
     "NBA": {
-      "wins": 63,
+      "wins": 65,
       "losses": 48,
       "pushes": 0
     },
     "NHL": {
-      "wins": 51,
+      "wins": 53,
       "losses": 44,
       "pushes": 0
     },
@@ -29,7 +29,7 @@
       "pushes": 0
     },
     "NCAAB": {
-      "wins": 27,
+      "wins": 28,
       "losses": 1,
       "pushes": 0
     }
@@ -13178,11 +13178,11 @@
       "ou_pick": "Under 221.5",
       "ou_line": 221.5,
       "ou_conf": 58,
-      "result": "pending",
+      "result": "win",
       "date": "2026-11-25",
       "event_id": "401909318",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 105,
+      "away_score": 107,
       "features": {
         "h_win_pct": 0.25,
         "a_win_pct": 0.2941,
@@ -13194,7 +13194,8 @@
         "ml_edge": 0.8327,
         "spread_edge": 0.4145,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NBA",
@@ -13217,11 +13218,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-11-25",
       "event_id": "401909319",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 121,
+      "away_score": 102,
       "features": {
         "h_win_pct": 0.6471,
         "a_win_pct": 0.5,
@@ -13233,7 +13234,8 @@
         "ml_edge": 0.1093,
         "spread_edge": 0.1665,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -13255,11 +13257,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-11-25",
       "event_id": "401892785",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 2,
       "features": {
         "h_win_pct": 0.6111,
         "a_win_pct": 0.5909,
@@ -13271,7 +13273,8 @@
         "ml_edge": 0.1303,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NHL",
@@ -13293,11 +13296,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-11-25",
       "event_id": "401892786",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 3,
+      "away_score": 6,
       "features": {
         "h_win_pct": 0.3333,
         "a_win_pct": 0.4348,
@@ -13309,7 +13312,8 @@
         "ml_edge": 0.374,
         "spread_edge": 0.0,
         "had_dk_odds": 1
-      }
+      },
+      "_weight_updated": true
     },
     {
       "sport": "NCAAB",
@@ -13333,11 +13337,11 @@
       "ou_pick": null,
       "ou_line": null,
       "ou_conf": 0,
-      "result": "pending",
+      "result": "win",
       "date": "2026-11-25",
       "event_id": "401926065",
-      "home_score": null,
-      "away_score": null,
+      "home_score": 101,
+      "away_score": 72,
       "features": {
         "h_win_pct": 1.0,
         "a_win_pct": 0.1667,
@@ -13349,18 +13353,97 @@
         "ml_edge": 0.0,
         "spread_edge": 0.0,
         "had_dk_odds": 0
+      },
+      "_weight_updated": true
+    },
+    {
+      "sport": "NCAAB",
+      "game": "Alabama Crimson Tide at Kansas State Wildcats",
+      "home": "Wildcats",
+      "away": "Crimson Tide",
+      "pick": "Crimson Tide (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 76,
+      "notes": "Home: Wildcats 3-3 | Away: Crimson Tide 5-1",
+      "reasoning": [
+        "\ud83d\udccb <strong>Wildcats</strong> are 3-3 (50.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Crimson Tide</strong> are 5-1 (83.3% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Wildcats</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Crimson Tide</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives away team a composite score gap of 22.2 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 76%</strong> \u2014 High conviction, consider 2u."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-11-26",
+      "event_id": "401920539",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5,
+        "a_win_pct": 0.8333,
+        "pct_diff": 0.3333,
+        "picking_home": 0,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": 16.96,
+        "quality_edge": 16.96,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
+      }
+    },
+    {
+      "sport": "NCAAB",
+      "game": "Miami Hurricanes at Michigan Wolverines",
+      "home": "Wolverines",
+      "away": "Hurricanes",
+      "pick": "Hurricanes (stat edge)",
+      "pick_type": "Stat Edge",
+      "confidence": 71,
+      "notes": "Home: Wolverines 3-3 | Away: Hurricanes 5-2",
+      "reasoning": [
+        "\ud83d\udccb <strong>Wolverines</strong> are 3-3 (50.0% win rate) \u2014 Below average at home this season.",
+        "\ud83d\udccb <strong>Hurricanes</strong> are 5-2 (71.4% win rate) \u2014 Elite on the road this season.",
+        "\ud83c\udfe0 Home-court/ice advantage gives <strong>Wolverines</strong> a +7 pt scoring bonus in our model.",
+        "\u2b50 <strong>Hurricanes</strong> qualify as an elite team (\u226560% win rate), earning a +8 quality bonus.",
+        "\ud83d\udcca No DraftKings line available. Pure stat model gives away team a composite score gap of 17.6 pts (threshold for pick: 8 pts).",
+        "\ud83d\udca1 Tip: Set ODDS_API_KEY in .env to unlock spread/moneyline edge analysis.",
+        "\ud83c\udfaf <strong>Confidence: 71%</strong> \u2014 Standard 1u play."
+      ],
+      "ou_pick": null,
+      "ou_line": null,
+      "ou_conf": 0,
+      "result": "pending",
+      "date": "2026-11-26",
+      "event_id": "401920537",
+      "home_score": null,
+      "away_score": null,
+      "features": {
+        "h_win_pct": 0.5,
+        "a_win_pct": 0.7143,
+        "pct_diff": 0.2143,
+        "picking_home": 0,
+        "h_quality_bonus": 0,
+        "a_quality_bonus": 16.96,
+        "quality_edge": 16.96,
+        "ml_edge": 0.0,
+        "spread_edge": 0.0,
+        "had_dk_odds": 0
       }
     }
   ],
   "model_weights": {
-    "w_win_pct": 38.651,
-    "w_home_adv": 7.677,
-    "w_quality": 16.299,
-    "w_odds_edge": 2.734,
+    "w_win_pct": 38.93,
+    "w_home_adv": 7.749,
+    "w_quality": 16.959,
+    "w_odds_edge": 3.0,
     "edge_threshold": 0.04,
     "stat_diff_min": 8.0,
-    "samples": 291,
-    "version": 88,
-    "last_updated": "2026-11-25"
+    "samples": 296,
+    "version": 89,
+    "last_updated": "2026-11-26"
   }
 }
